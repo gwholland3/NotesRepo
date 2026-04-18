@@ -423,4 +423,5 @@
  :feature/enable-journals? false
  :feature/enable-flashcards? false
  :default-home {:page "Welcome"}
- :publishing/all-pages-public? true}
+ :publishing/all-pages-public? true
+ :graph/settings {:builtin-pages? false}}
