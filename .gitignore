@@ -1,0 +1,7 @@
+# Do not commit temporary/backup files.
+logseq/bak/
+logseq/.recycle/
+
+# macOS Finder metadata.
+.DS_Store
+
