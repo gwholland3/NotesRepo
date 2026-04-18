@@ -1,0 +1,32 @@
+- In the context of software.
+- # Why Do We Need Versions?
+	- What would a world without versions look like?
+		- Everything would simply be the "now" version.
+		- If I made a change to something, there would be no way to recover the previous version of that thing unless I made the change in reverse.
+		- This would suck - if I changed something, and later decided that I didn't like how I changed it, or realized that the thing no longer worked after I changed it, I would have to remember what it used to be (the "versioning" would effectively be in my head only) and change it back manually (or I would have to make another change to make it better).
+			- For example, if I was working on an essay and completely reworded the introduction, only to decide the next day that the old introduction was actually better.
+		- Things only get worse once there are other people using the thing I'm changing. The minute I change it, the thing they are using is now different, and it may no longer work for their use case.
+			- For example, if I changed the system language on my family's shared iPad from English to Spanish, when no one else in my family spoke Spanish.
+		- Note that the "[live at head](https://github.com/abseil/abseil-cpp/blob/master/FAQ.md#what-is-live-at-head-and-how-do-i-do-it)" philosophy aims for something similar to a world without versions.
+	- Clearly, versions provide benefits. But what does it mean for something to be versioned?
+		- A simple case to consider is a Google Docs document.
+			- As you make changes to it, Google Docs periodically creates a snapshot of the document and stores it as a previous version.
+			- You can later go and restore the document to any of its previous versions, resetting its state/content to mirror what it used to be when that version was saved.
+				- Notably, the versions in this case are **ordered**.
+			- Note that in this example, we can select any of the document's versions to view at a given instant - we can select an older or a newer version if we want. However, there is usually only ever one person viewing/using the document at a given time, and therefore only one version of the document is ever selected.
+		- A slightly more complex example to look at is a software package.
+			- In contrast to the Google Docs document, a software package is used by many people simultaneously.
+			- The software package has versions just like the Google Docs document did, but where they differ is that multiple versions of the software package might be in use at the same time.
+				- This is desirable because it allows different users/consumers to choose which version they want to use. If a new version is created that doesn't work for some users, they can continue using the previous version until they can figure out how to use the new version.
+			- For most software packages, versions are **ordered** just like they are for the Google Docs document. This is generally desirable, as it gives meaning to a version being "newer" or "older".
+				- One example of when software package versions are not strictly ordered are when you have forked versions - e.g. version B is created based on version A, and version C is also created based on version A, rather than being created based on version B.
+				- To come up with a toy example of what a software package with completely unordered versions might look like, consider a piece of software that has a different version for running on macOS, Windows, and Linux, where all three versions are treated as being part of the same "software package".
+					- In practice, we usually apply versions to the *source code* of software packages, which in this hypothetical case might be the same for all three operating systems - it's just that we generate three different output artifacts from that one version of the software package source code.
+- # Version Naming
+	- It is almost always a good thing to have a consistent scheme for naming versions of a thing
+	- The simplest possible naming scheme is just to call the first version you release "1", the second version "2", and so on. Even if you go back and release a new version based off an older version (i.e. you create a forked version), you can still just number your versions by their creation/release date.
+	- Why would we need a different version naming scheme?
+		- After all, a version name is really just an ID into a lookup table - you could have a database that stores additional metadata about each version, such as when it was created/released, what
+	- ## Version Ordering
+		- Do versions actually need to be ordered?
+	-
