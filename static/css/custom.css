@@ -1,0 +1,24 @@
+/* ====================== PUBLISHED SITE ONLY - Clean Minimal Blue ====================== */
+
+/* Block background on hover */
+html.is-publish-mode .ls-block {
+  transition: background-color 0.2s ease;
+}
+html.is-publish-mode .ls-block:hover {
+  background-color: #f5f8fd;
+}
+
+/* Hide Delete buttons and edit-only UI on published site */
+html.is-publish-mode .delete,
+html.is-publish-mode .actions .delete,
+html.is-publish-mode .cp__all_pages .actions-wrap,
+html.is-publish-mode .new-page-link {
+  display: none !important;
+}
+
+/* Link underlining on hover */
+html.is-publish-mode a:hover,
+html.is-publish-mode .page-ref:hover {
+  text-decoration: underline;
+}
+
