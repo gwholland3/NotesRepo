@@ -1,0 +1,1 @@
+Best strategy for getting to orbit: follow a curved path with gravity to get to the right altitude, then burn prograde to reach orbital velocity. Note that it's best to use minimal acceleration to reach altitude, so that you aren't wasting fuel fighting atmosphere.

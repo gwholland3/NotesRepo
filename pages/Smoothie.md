@@ -1,0 +1,14 @@
+- Spinach
+- Banana
+- Peanut butter
+- Chocolate chips
+- Yogurt
+- Milk
+- Nut milk
+- Frozen berries
+- Chia seeds
+- Flax seed
+- Protein powder
+- Honey
+- Açaí 
+- Juice

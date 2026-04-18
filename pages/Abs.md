@@ -1,0 +1,19 @@
+- Wikipedia: https://en.wikipedia.org/wiki/Abdominal_muscles
+- Abdominal muscles are generally divided into four groups:
+	- External obliques: closest to the surface
+	- Internal obliques
+	- Transversus abdominis
+	- Rectus abdominis: what most people are referring to when they say "six-pack"
+- ## Rectus Abdominis
+	- Wikipedia: https://en.wikipedia.org/wiki/Rectus_abdominis_muscle
+	- The rectus abdominis consists of a pair of vertical sheets of muscle that run from the pubic bone to the lower ribs and sternum.
+	- They are separated by a band of dense connective tissue called the [linea alba](https://en.wikipedia.org/wiki/Linea_alba_(abdomen)). This is what produces the vertical midline in a six-pack.
+	- There are additional bands of connective tissue called [tendinous intersections](https://en.wikipedia.org/wiki/Tendinous_intersection) that cross the rectus abdominis horizontally, dividing it into multiple "packs".
+		- Most people have three such bands:
+			- One near the bottom of the sternum: separates the two packs of a "four-pack"
+			- One typically at the level of the belly button: defines the bottom of a "six-pack"
+			- One halfway in between the first two
+		- Occasionally, some people develop a fourth or fifth band that are typically incomplete.
+	- The definition of the rectus abdominis depends on two primary factors:
+		- The size of the muscle itself: this causes the muscle to push harder against the tendinous intersections, producing deeper grooves between the "packs"
+		- The amount of body fat in the region: this allows the skin to cling tighter to the muscles, better displaying their shape.

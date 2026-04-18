@@ -1,0 +1,68 @@
+## Checklist
+	- Kite
+	- Air pump
+	- Control bar and lines
+	- Safety leash
+	- Harness
+	- Board
+	- Wetsuit
+	- Sunscreen
+	- Water bottle
+	- Large towel
+- ## Season
+	- Each location has different times of the year when winds are the strongest and most consistent.
+	- Usually, you can still get strong days during the rest of the year, you just have to be able to forecast them.
+- ## Forecasting
+	- Good services:
+		- iKitesurf
+		- Windy ([windy.com](http://windy.com) *and* windy.app somehow)
+		- Windfinder
+	- When the wind and the tide are moving in the same direction, the wind feels lighter. When they are moving in opposite directions, the wind feels stronger.
+	- The biggest factor that will create strong winds at the beach is a temperature difference between inland and the coast. When inland is much hotter than the coast, cool sea air will flow inland, creating good wind.
+	- ### iKitesurf
+		- Meter types:
+			- White: free meters
+			- Yellow: paid meters
+			- Green: virtual meters (free)
+		- Go to the Wind Graph, detailed view, and select all the models.
+		- Also look at the tide data - when the tide is moving in, the wind will feel weaker, and when it is moving out, the wind will feel stronger.
+	- ### Wind Models
+		- Good YouTube video about wind models: [link](https://www.youtube.com/watch?v=lDNK3iKMu9k&t=13s)
+		- The output of every wind model is simply a grid of the Earth, where each grid section is assigned a wind direction and speed. Different wind models have different resolutions on how small their grid sections are - smaller sections are more likely to be accurate for a single point within that section.
+		- Wind models also only have output for a certain time interval. Some models publish predictions every hour, some only every three hours, etc.
+		  And some models can output different wind predictions for different altitudes. For kiteboarding, 40-meter forecasts tend to be more accurate than sea level forecasts.
+		- TODO: what does synoptic mean?
+		- <u>Global Forecast System (GFS)</u>
+			- Free, but not super accurate. American-produced.
+			- Three-hour time interval, grid resolution of 13 km.
+		- <u>Integrated Forecast System (IFS)</u>
+			- Also known as ECMWF.
+			- Not free, European-produced. Gold standard for global wind models.
+			- Three-hour time interval, grid resolution of 9 km.
+		- <u>Icosahedral Non-hydrostatic (ICON)</u>
+			- German global forecast model.
+			- One-hour time interval, grid resolution of 13 km.
+		- <u>North American Mesoscale model (NAM)</u>
+			- One-hour time interval, grid resolution of 3 km.
+			- Recommended for short-term forecast.
+		- <u>NOAA Environmental Modeling System (NEMS)</u>
+			- European counterpart to NAM
+			- One-hour time interval, grid resolution of 4 km.
+		- <u>Weather Research and Forecast (WRF)</u>
+			- There are several variations that target different regions and with different grid resolutions.
+			- **Tends to overestimate wind speeds,** by at least 10% according to studies.
+		- <u>High Resolution Deterministic Prediction System (HRDPS)</u>
+			- Canadian short-term model, covers most of North America.
+			- One-hour time interval, grid resolution of 2.5 km.
+			- Available for free at SpotWx, WindGuru, and IGetWind.
+		- <u>Predict Wind GFS (PWG) and Predict Wind ECMWF (PWE)</u>
+			- For some areas, they can get 1 km grid resolution.
+		- <u>Weather Flow WRF (WF-WRF)</u>
+			- Grid resolution ranges from 1-4 km.
+			- Somewhat optimistic, but reliable.
+		- <u>High Resolution Rapid Refresh (HRRR)</u>
+			- One-hour time interval, grid resolution of 3 km.
+- ## Piloting
+	- If the wind is lighter, you can move the kite in a figure eight or sine wave to generate apparent wind and keep yourself moving.
+	- One of the most important things for generating consistent pull is to keep tension on the lines. An easy way to do this, especially on an upstroke, is to turn your board away from the kite and lean back into the lines.
+	- Line tension also makes it easier to turn the kite quickly - the kite is more responsive to you pulling on tight lines.

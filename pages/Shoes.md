@@ -1,0 +1,24 @@
+- Good barefoot/natural shoe brands:
+	- Altra
+		- More of an intro brand
+	- Xero
+		- More hardcore
+	- Lems
+- Article comparing good brands: [https://anyasreviews.com/best-barefoot-minimalist-shoe-brands-beginners/](https://anyasreviews.com/best-barefoot-minimalist-shoe-brands-beginners/)
+- ## Anatomy
+- TODO:
+	- Vamp
+	- Tongue
+	- Quarters
+	- Insole
+	- Midsole
+	- Outsole
+- The "upper" is the part that covers the top of the foot.
+- ## Qualities
+	- ### Zero-Drop
+		- A zero-drop shoe has zero drop in height between your heel and your toes. That is, both your heel and your toes are the same distance to the ground.
+- ## My Shoes
+	- ### [Lems Chillum](https://www.lemsshoes.com/collections/all-mens-products/products/mens-chillum?variant=39301541855290&country=US)
+		- [Insole](https://www.lemsshoes.com/collections/insoles/products/minimal-cork-insole?variant=40141733986362&country=US) can be removed
+	- ### [Xero Nexus Knit](https://xeroshoes.com/products/nexus-knit-men?variant=45761253867698)
+		- Barefoot, zero drop, and wide toe box.

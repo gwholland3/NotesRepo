@@ -1,0 +1,76 @@
+## The Big Idea
+	- "Pay taxes later, not now"
+	- If you can do that, you will probably lower the overall amount of taxes you need to pay over your lifetime and grow your personal wealth quicker.
+	- These are probably the three most important things to care about:
+		- Keep your taxes (i.e. tax reporting) as simple as possible
+		- Pay as little tax as possible
+		- Pay tax as late as possible
+- ## General Notes
+	- ### Donations
+		- Certain donations (“charitable gifts”) qualify as being tax-deductible, according to section 501(c)(3) of the Internal Revenue Code ([source](https://www.nerdwallet.com/article/taxes/tax-deductible-donations-charity)). In order to qualify, they must be made to a [501(c)(3) organization](https://en.wikipedia.org/wiki/501(c)(3)_organization). You can check whether an organization falls under that category via the IRS’s [Tax Exempt Organization Search](https://apps.irs.gov/app/eos/) tool.
+		- If a donation does qualify, it allows you to reduce your taxable income, BUT only if you itemize your deductions instead of taking the standard deduction. If so, you can deduct the entire donation’s worth from your taxable income. Note that there is an upper limit to the total amount of deductions you can apply, which is based on your AGI.
+		- Cash donations of more than $250 require a written letter of acknowledgment from the receiving organization in order to claim the donation as tax-deductible on your tax return.
+	- ### Overpaying vs Underpaying Income Taxes
+		- This is only for federal income tax.
+		- Overpaying is simple. If you overpay on federal income tax, the government gives you a refund on the excess amount, sometime shortly after Tax Day. Note that they do not pay you interest for that extra money they were borrowing from you.
+		- Underpaying is slightly more complicated. If you underpay too severely, you will likely owe a penalty after Tax Day. This is called the [Underpayment of Estimated Tax by Individuals Penalty](https://www.irs.gov/payments/underpayment-of-estimated-tax-by-individuals-penalty).
+		- There are some circumstances where you are not penalized:
+			- If you only underpaid by $1000 or less, you avoid the penalty
+			- If you paid at least 90% of your owed taxes, you avoid the penalty
+			- If you paid at least 100% of your owed taxes from the previous tax year, you avoid the penalty
+	- ### Roth IRA Distributions
+		- Normally, there is a 10% tax if you make a distribution from your Roth IRA before you are supposed to. However, if the distribution is for the purposes of correcting an excess contribution, this early distribution tax doesn't apply.
+		- Also, if you are making a distribution to correct an excess contribution, but that distribution takes place *after* the deadline for filing your tax return for the tax year in which you made the excess contribution, there is a 6% tax on the associated earnings. This 6% tax is reported on From 5329. As long as you withdraw before filing your tax return, though, this tax doesn't apply.
+	- ### Backdoor Roth IRA Contributions
+		- My basic understanding is that once you hit a certain income threshold, you can no longer make normal contributions to a Roth IRA with post-tax dollars. However, there is a workaround, in which you contribute post-tax dollars to a traditional IRA, and then initiate a conversion of that money from the traditional IRA to a Roth IRA.
+		- I'm not sure quite how that works, since I thought the whole point of traditional IRAs was that you put pre-tax dollars in them. I also don't know if the same annual limits apply to Roth IRA conversions as they do to normal contributions.
+		- I believe you have to file a [Form 8606](https://www.irs.gov/forms-pubs/about-form-8606) every year that you engage in backdoor Roth IRA contributions, too.
+	- ### Traditional vs Roth
+		- In a Traditional 401(k), your paycheck dollars enter the account without being taxed. Later withdrawals get taxed on their growth.
+		- In a Roth 401(k), you contribute from your paycheck after income tax has already been subtracted. However, any growth in the account is tax-free.
+		- There are several factors that determine which choice is better:
+			- How much you pay in income tax now (when you contribute the dollars).
+			- How much you think you will pay in income tax in the future (when you withdraw the dollars and their gains).
+			- What you would do with the tax dollars you save with a Traditional 401(k) (assuming you max out your annual contributions).
+		- Interestingly, the amount of time the money grows in your account does not affect anything, which at least for me was counterintuitive (I thought a longer time horizon favored Roth). Consider this example:
+			- TODO
+	- ### Tax Loss Harvesting
+		- See [Wikipedia](https://en.wikipedia.org/wiki/Tax_loss_harvesting).
+		- If you realize a loss in one stock in the same tax year that you realize an equivalent gain in another, you can cancel the two out against each other and not have to pay any capital gains taxes.
+		- Note that if you realize a loss in a stock, but you also buy that same stock (or one that is "substantially identical") within 30 days before or after the sale/loss, that loss cannot be used to offset capital gains in that tax year. You're essentially generating an artificial loss, only to immediately reenter the market, which is not allowed. This is called a [wash sale](https://en.wikipedia.org/wiki/Wash_sale).
+		- Things become a little more gray if you are selling ETFs at a loss (rather than individual stocks), because you can quickly buy back into a similar ETF without it being deemed a wash sale. But you still get to "engineer" a loss in a given tax year to offset any gains you expect to have.
+		- If you have a portfolio with both long and short positions, you can expect to generate losses to harvest pretty reliably, even if the market as a whole trends up or downward, because any long gains will be offset by short losses, and vice versa.
+		- This does not allow you to harvest losses forever without realizing gains in the rest of your portfolio, though. Eventually, you will run out of cash to keep purchasing new positions as you realize losses, because by definition you are losing money with each realization.
+- ## Tax Forms
+	- ### Form 1040
+		- Wikipedia: [link](https://en.wikipedia.org/wiki/Form_1040)
+		- IRS documentation: [link](https://www.irs.gov/forms-pubs/about-form-1040)
+		- Form for tax year 2024: [link](https://www.irs.gov/pub/irs-pdf/f1040.pdf)
+		- Form 1040 is also known as "U.S. Individual Income Tax Return". For reporting federal income tax, it is considered the "top-level" form; it calculates and reports your total taxable income for a given tax year.
+		- This allows you to derive the total amount of income tax you owe the government for that tax year, as well as how much income tax still remains to be paid to or refunded from the government.
+		- Like most US tax forms, it is due for a given calendar tax year on Tax Day (April 15) of the following year, unless you file for an extension, in which case it is due on October 15 (note that any taxes owed still must be paid to the government by April 15, even if you successfully file for an extension).
+	- ### Form 4868
+		- IRS documentation: [link](https://www.irs.gov/forms-pubs/about-form-4868)
+		- Form for tax year 2024: [link](https://www.irs.gov/pub/irs-pdf/f4868.pdf)
+		- Form 4868 is also known as "Application for Automatic Extension of Time To File U.S. Individual Income Tax Return". You fill this form out to apply for a filing extension on your income tax return.
+	- ### Form 1099-R
+		- Wikipedia: [link](https://en.wikipedia.org/wiki/Form_1099-R)
+		- IRS documentation: [link](https://www.irs.gov/forms-pubs/about-form-1099-r)
+		- Form for tax year 2024: [link](https://www.irs.gov/pub/irs-pdf/f1099r.pdf)
+		- Form 1099-R is also known as "Distributions From Pensions, Annuities, Retirement or Profit-Sharing Plans, IRAs, Insurance Contracts, etc." This form is filled out by a financial institution for a person they have made a distribution to.
+		- For a given distribution, it reports the distribution itself and how much of the distribution is taxable as income.
+	- ### Form 5329
+		- IRS documentation: [link](https://www.irs.gov/forms-pubs/about-form-5329)
+		- IRS instructions for tax year 2024: [link](https://www.irs.gov/instructions/i5329)
+		- Form for tax year 2024: [link](https://www.irs.gov/pub/irs-pdf/f5329.pdf)
+		- Form 5329 is also known as "Additional Taxes on Qualified Plans (Including IRAs) and Other Tax-Favored Accounts". If you need to fill out and submit this form, it gets attached to your Form 1040.
+	- ### Form 8606
+		- IRS documentation: [link](https://www.irs.gov/forms-pubs/about-form-8606)
+		- IRS instructions for tax year 2024: [link](https://www.irs.gov/instructions/i8606)
+		- Form for tax year 2024: [link](https://www.irs.gov/pub/irs-pdf/f8606.pdf)
+		- Form 8606 is also known as "Nondeductible IRAs". Among other things, you use this form to report distributions from Roth IRAs (but not distributions serving as a return of excess contributions).
+	- ### Form 8960
+		- IRS documentation: [link](https://www.irs.gov/forms-pubs/about-form-8960)
+		- IRS instructions for tax year 2024: [link](https://www.irs.gov/instructions/i8960)
+		- Form for tax year 2024: [link](https://www.irs.gov/pub/irs-pdf/f8960.pdf)
+		- Form 8960 is also known as "Net Investment Income Tax Individuals, Estates, and Trusts". If your modified adjusted gross income is over a certain threshold, you pay an additional tax on investment income, and you report it on this form.

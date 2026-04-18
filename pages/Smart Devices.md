@@ -1,0 +1,3 @@
+- Reputable brands that sell smart devices:
+	- [Govee](https://us.govee.com/)
+	- [Kasa](https://www.kasasmart.com/us)

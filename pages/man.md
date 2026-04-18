@@ -1,0 +1,5 @@
+- See `man man` for documentation.
+- Interesting command-line flags:
+	- `-w`: display the location of the man page instead of its contents.
+- Helpful things:
+	- On macOS, run `man -k -S <section> '.'` to list every man page in section `<section>`.

@@ -1,0 +1,18 @@
+- A [phoneme](https://en.wikipedia.org/wiki/Phoneme) is the smallest unit of sound in a language that can distinguish one word from another.
+- ## Written Language
+	- A [grapheme](https://en.wikipedia.org/wiki/Grapheme) is a single written symbol in a written language.
+	- An [abugida](https://en.wikipedia.org/wiki/Abugida) is a writing system in which vowels are treated as lower-status than consonants.
+		- Consonants usually receive complete letters, while vowels may be represented with diacritics.
+		- The [[Thai]] script is an example of an abugida.
+	- An [abjad](https://en.wikipedia.org/wiki/Abjad) is a writing system in which vowels are normally omitted entirely.
+		- The Arabic script is an example of an abjad.
+- ## Spoken Language
+	- A [phoneme](https://en.wikipedia.org/wiki/Phoneme) is a single/atomic speech sound in a spoken language.
+- ## Language Learning
+	- Good resource: https://www.reddit.com/r/languagelearning/
+	- One strategy is called [crosstalk](https://www.dreaming.com/blog-posts/crosstalk).
+		- You find someone who is a native in the language you want to learn, and you talk with them, but both of you are only speaking your native language.
+	- Another strategy is called comprehensible input.
+		- This focuses on providing input to you in the target language that is as comprehensible, or inherently understandable, as possible.
+		- "Automatic Language Growth" might be related to comprehensible input...
+		- Good Reddit post on comprehensible input: https://www.reddit.com/r/languagelearning/comments/1hs1yrj/2_years_of_learning_random_redditors_thoughts/

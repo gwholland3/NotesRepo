@@ -1,0 +1,12 @@
+- [Humidity](https://en.wikipedia.org/wiki/Humidity) is a measure of the concentration of water vapor in a given region of air.
+- There are three types of humidity measurements:
+	- Absolute humidity: the mass of water vapor per volume of air.
+	- Relative humidity: a ratio of the current absolute humidity to the maximum absolute humidity, given the same temperature.
+	- Specific humidity: the mass of water vapor per mass of air, in a given volume.
+- ## Hygrometers
+	- A [hygrometer](https://en.wikipedia.org/wiki/Hygrometer) is an instrument that measures humidity.
+- ## Dehumidifiers
+	- A [dehumidifier](https://en.wikipedia.org/wiki/Dehumidifier) is a device that reduces or maintains the level of humidity in a local air volume.
+	- There are various types of mechanisms that dehumidifiers can use to function:
+		- Thermal condensation: air is drawn across a cold surface, where it condensates and is removed.
+		- Absorption: a desiccant (moisture-absorbing material) absorbs water from the air, and the water is later removed.
