@@ -1,0 +1,44 @@
+- [Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) is a computer network authentication protocol.
+- Documentation lives [here](https://web.mit.edu/kerberos/) for the free MIT implementation of Kerberos.
+- It provides mutual authentication - both the server and the client verify each others' identities.
+- ## Config
+	- [`krb5.conf`](https://web.mit.edu/kerberos/krb5-current/doc/admin/conf_files/krb5_conf.html) contains high-level Kerberos configuration.
+		- By default, it lives at `/etc/krb5.conf`.
+- ## Terminology
+	- Authentication Server (AS)
+	- Ticket-Granting Service (TGS)
+	- Key Distribution Center (KDC) - consists of the AS + the TGS
+		- I think this is "just another service".
+	- Ticket-Granting Ticket (TGT)
+	- Principal: a unique identity that represents an auth-requiring entity recognized by Kerberos.
+		- For example, `my_user@MY_REALM` or `my_service/my_hostname@MY_REALM`.
+		- A "default principal" on a machine is the default identity that machine assumes when it tries to use Kerberos.
+	- Service Principal Name (SPN) - the principal of a service.
+	- Realm: a Kerberos "domain" - a linked auth network.
+	- Ticket cache: where tickets live on a machine
+- ## Flow
+	- A client (e.g. your desktop) authenticates itself to a trusted third party, using e.g. a password.
+		- The trusted third party is the AS, part of the KDC
+	- It receives a TGT in return - this is a general-purpose ticket that it can use to request service-specific tickets.
+	- The client wants to connect to another service, so it requests a service ticket from a trusted third party using its TGT.
+		- The trusted third party is the TGS, part of the KDC
+	- It receives the requested service ticket in return - this serves as auth for the service it wants to talk to.
+	- The client connects to the other service, providing its service ticket as auth.
+	- So in summary, one-time auth to the trusted third party (with eventual expiration), then service-specific auth *via* that same trusted third party.
+- ## Cache
+	- Tickets (both TGTs and service tickets) are stored in a Kerberos credential cache (aka ticket cache).
+		- I think each cache can support only one principal. If you want e.g. different processes on the same machine to assume different principals, you will need multiple caches.
+	- When a client interacts with Kerberos, it finds the cache with the following method:
+		- Use the `KRB5CCNAME` environment variable if set.
+		- Use the `default_ccache_name` property in the `krb5.conf` config if set.
+		- Use a default compiled-in location, which points at `/tmp/krb5cc_<uid>` (uses [UID](https://en.wikipedia.org/wiki/User_identifier)).
+- ## Tools
+	- `klist` - lists cached Kerberos tickets
+		- You can force it to inspect a specific credential cache with `-c`, e.g. `klist -c FILE:/tmp/my_random_ccache`
+	- `kinit` - acquire a TGT, which has an expiration date
+		- Can use `kinit -R` to renew an existing TGT without needing to re-input your original auth.
+	- `kvno` - acquire service tickets using your TGT.
+		- For example, `kvno HTTP/my_hostname.com@MY_REALM`
+	- `kdestroy` - destroy *all* existing Kerberos tickets (both TGTs and service tickets).
+		- Works by completely clearing the Kerberos credentials caches.
+		- No option for granular deletion.

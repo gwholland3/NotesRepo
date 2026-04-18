@@ -1,0 +1,23 @@
+## General Cleaning Supplies
+	- Vacuum
+	- Long broom
+	- Dustpan
+	- Handheld duster
+	- Swiffer mop
+- ## General Strategies
+	- For the sake of efficiency, try to use the biggest bang-for-buck cleaning method first on a wider swath of area, and then perform spot-checking to clean up any smaller spots that were missed.
+	- Try to remove dust and loose particles with something cheap like a paper towel before going at more stubborn grime with something more specialized, since the surface-layer stuff can get clot up and reduce the effectiveness of your more specialized cleaner.
+- ## How To Clean Specific Things
+	- ### Windows/Mirrors
+		- Spray Windex, wipe with paper towels
+	- ### Oven
+		- If available, use self-clean function first to burn up gunk.
+		- Afterwards/otherwise, use Easy-Off oven cleaner.
+	- ### Stovetop Drip Pans
+		- Scrub with soap and steel wool in the sink (S.O.S. is a good brand)
+	- ### Carpet
+		- Use a carpet cleaner.
+	- ### Regular Surfaces
+		- E.g. stovetops, countertops, cabinet/pantry interiors + exteriors.
+		- Use a regular sponge, or Mr. Clean Magic Eraser for heavier duty.
+			- Scouring pads work pretty well too.

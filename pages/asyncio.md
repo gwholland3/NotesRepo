@@ -1,0 +1,38 @@
+- [`asyncio`](https://docs.python.org/3/library/asyncio.html#module-asyncio) is a Python library that provides a framework for writing [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) software.
+- # Why Use asyncio?
+	- Not quite sure what the intended use cases are...
+	- I think the main use case is for handling lots of I/O concurrently. Example:
+		- Your program needs to talk to 50 other processes over network connections.
+		- For each process, your program needs to send a message, then receive a response message.
+			- This is accomplished by calling a single, blocking method on that process's connection.
+		- If the program were written completely synchronously, you would have to iterate through each process and perform the message exchange one at a time, waiting about a second between each send and receive.
+		- With asyncio, you could queue up these tasks all at once, and each one would yield while waiting for a response, allowing another task to send out its initial message.
+	- ## Alternatives to asyncio
+		- Threading
+		- Multiprocessing
+- # Resources
+	- https://docs.python.org/3/library/asyncio.html#module-asyncio
+	- https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#a-conceptual-overview-of-asyncio
+- # Event Loop
+	- The main thing `asyncio` introduces is the [event loop](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#event-loop), which is basically just a collection of jobs that need to be run concurrently.
+	- The event loop just cycles through its set of jobs; it allows each one to run until it yields (of its own accord), then switches to the next job.
+		- Note that this means a greedy job that runs for a long time before yielding will block all the other jobs from running.
+- # `await`
+	- The [`await`](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#await) keyword is used to execute asynchronous code.
+	- It is commonly used in a few different ways:
+		- `await <task>`
+			- Yields control back to the event loop, and returns when the provided task has completed.
+		- `await <coroutine>`
+			- Executes the coroutine, then returns back to the calling function.
+		- `await <awaitable object>`
+			- An object is [awaitable](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable) if it provides the [`__await__()`](https://docs.python.org/3/reference/datamodel.html#object.__await__) method, which must return an iterator.
+			- This will execute the object's `__await__()` method and wait for the resulting generator object to finish.
+- # Futures
+  id:: 6a1ca207-476f-442f-a48c-2da3d3418bab
+	- A [future](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#futures) is an object that represents the current state of a chunk of computation, and its result if finished.
+	- A task is a subclass of a future, and the former uses the functionality provided by the latter to mark itself (the task) as completed when the task's coroutine finishes.
+- # Miscellaneous Notes
+	- Async functions are also referred to as "coroutine functions".
+	- When you invoke a coroutine function, you receive back a "coroutine object", or just "coroutine".
+	- When you attach a coroutine to an event loop, it becomes a "task". You can think of a task as a wrapper around a coroutine, rather than a type of coroutine.
+	- `asyncio.run()` has a `debug=True` parameter, though I still don't know exactly what kind of debug help it provides.

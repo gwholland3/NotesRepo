@@ -1,0 +1,8 @@
+- A [phoneme](https://en.wikipedia.org/wiki/Phoneme) is the smallest unit of sound in a language that can distinguish one word from another.
+- ## Written Language
+	- A [grapheme](https://en.wikipedia.org/wiki/Grapheme) is a single written symbol in a written language.
+	- An [abugida](https://en.wikipedia.org/wiki/Abugida) is a writing system in which vowels are treated as lower-status than consonants.
+		- Consonants usually receive complete letters, while vowels may be represented with diacritics.
+		- The [[Thai]] script is an example of an abugida.
+	- An [abjad](https://en.wikipedia.org/wiki/Abjad) is a writing system in which vowels are normally omitted entirely.
+		- The Arabic script is an example of an abjad.

@@ -1,0 +1,3 @@
+- A white 1 GB male USB-A drive with "Principal Financial Group" brand on exterior
+- A black 128 GB male USB-A Samsung SSD
+- A black 500 GB female USB-C SanDisk SSD

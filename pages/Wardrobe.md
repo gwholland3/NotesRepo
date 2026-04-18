@@ -1,0 +1,22 @@
+# New
+	- ## Physical Stores
+		- Goodwill
+		- Salvation Army
+		- Savers
+		- Plato’s Closet
+	- ## Online
+		- Facebook Marketplace
+		- eBay
+		- ThredUp
+		- Depop
+		- Vinted
+		- [Buy Nothing](https://en.wikipedia.org/wiki/Buy_Nothing_Project) groups
+	- ## Rental
+		- Rent the Runway
+- # Old
+	- Sort clothes into:
+		- Sell
+		- Donate
+		- Keep
+	- Wash before you give away
+	- See if friends want anything first

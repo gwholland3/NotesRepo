@@ -1,0 +1,19 @@
+- A VLAN is a virtual LAN. It is a way to divide a single physical layer 2 network into multiple logical chunks.
+- VLANs are specified by [IEEE 802.1Q](https://en.wikipedia.org/wiki/IEEE_802.1Q). They are specific to the Ethernet layer 2 protocol.
+- A VLAN has a VLAN ID (VID) to uniquely identify it. This VID is used to tag Ethernet frames (in the frame header), indicating which VLAN the frame belongs to.
+	- A given layer 2 frame can only belong to a single VLAN, or it can be untagged and belong to no VLAN.
+- VLANs are supported by some layer 2 network switches, but not all.
+- Another way to think about it is that a VLAN is a broadcast domain.
+- Every port on a VLAN-supporting switch is associated with one or more VLANs.
+- You can categorize switch ports into two groups:
+	- **Access ports** are connected to a single end device, and they expect to send and receive untagged frames. In other words, that end device sends untagged frames to the switch, and the switch sends untagged frames back to the end device.
+		- Access ports are only associated with a single VLAN. When they receive an untagged frame from their end device, they add that VLAN ID to the frame and forward it. When they receive a frame on that VLAN destined for that end device, they strip the VLAN info and forward the untagged frame to the end device.
+		- In this way, an access port gives its end device **access** to a single VLAN and its other connected devices.
+	- **Trunk ports** are usually ports that connect to another network switch, and they expect to send and receive tagged frames.
+		- Trunk ports are associated with multiple VLANs.
+- Port VLAN ID (PVID): which VID an incoming untagged frame should be tagged with. Also called a port's "default VLAN".
+- Essentially, on a VLAN-supporting network switch, each port needs to know:
+	- Which VLANs it belongs to. Incoming frames on different VLANs are dropped, and frames forwarded by the switch do not egress this port if they are not on an allowed VLAN.
+	- Which is its PVID.
+	- Whether the switch should strip VLAN tags from egressing frames (i.e. access vs trunk port).
+- A VLAN table is a data structure that VLAN-supporting network switches use to store VLAN-related information, such as which ports belong to a VLAN.

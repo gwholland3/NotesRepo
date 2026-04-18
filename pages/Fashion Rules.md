@@ -1,0 +1,1 @@
+- Match your belt (color) to your shoes, not to your pants.

@@ -1,0 +1,2 @@
+- James Clear parenting advice:
+	- [https://jamesclear.com/atomic-habits/parenting](https://jamesclear.com/atomic-habits/parenting)[https://s3.amazonaws.com/jamesclear/Atomic+Habits/Parenting+Appendix.pdf](https://s3.amazonaws.com/jamesclear/Atomic+Habits/Parenting+Appendix.pdf)

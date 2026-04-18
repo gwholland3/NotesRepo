@@ -1,0 +1,24 @@
+- Docker allows you to package an application into a container, such that any machine (Linux, macOS, Windows, etc) can run that application the same way.
+- Processes:
+	- `dockerd` is a daemon process that is responsible for actually managing Docker containers.
+	- The `docker` command-line client is what users use to interface with Docker. `docker` will forward commands to `dockerd`, which carries them out.
+- An image is like template that tells you how to start a running container.
+- A registry is like a repository for images. Once you set up Docker to point at a registry, it can download images from that registry and launch instances of them as containers.
+- Images are built by Dockerfiles. In other words, a Dockerfile is a recipe describing how to create an image and how to run it as a container.
+- To use a metaphor:
+	- A Dockerfile is like a program's source code.
+	- An image is like a compiled program.
+	- A container is like a process running that program.
+- Official docs:
+	- What is Docker: https://docs.docker.com/get-started/docker-overview/
+- ## Image
+	- An image is composed of multiple layers that get overlaid on top of each other.
+	- When you `docker pull` an image, each layer gets downloaded from the registry individually.
+- ## Dockerfile
+	- A Dockerfile is a sequence of **stages**.
+	- A Dockerfile is more imperative than declarative - you specify what commands to run in order to produce the image, rather than specifying properties of the image and letting Docker figure out how to build it.
+- ## Helpful Commands
+	- Inspect a file inside an image (make sure to pull the image first):
+	  ```
+	  docker run --rm <image_name>:<tag> cat /path/to/my_file.txt
+	  ```

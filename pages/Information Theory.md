@@ -1,0 +1,9 @@
+- The "information" of a single event in a distribution represents the amount of uncertainty associated with that event occurring, i.e. the amount of surprise that was delivered to you upon discovering it was that event that had taken place, rather than any other.
+	- A trivial example, where an example distribution represents all the possible weather reports you could receive on a given day:
+		- The report says that it's going to be sunny (p = 0.8) -> you did not gain a lot of information.
+		- The report says that it's going to snow in the Sahara (p = 0.0000001) -> this was highly unexpected, you gained a lot of information.
+- The entropy of a probability distribution measure the total amount of uncertainty in that distribution, if you repeatedly sampled from it.
+	- For example, a distribution with one event occurring 99% of the time has very low entropy, because with each sample, you can be very certain about what event is going to occur.
+	- Entropy can also be interpreted as the average number of bits per event needed to efficiently encode a sequence of events sampled from that distribution.
+	- It's the weighted sum of the information of each event in the distribution, with even probabilities as the weights.
+- The cross entropy of one distribution relative to another is the average number of bits needed to encode events from the second distribution if you used an optimal encoding scheme derived from the first distribution.

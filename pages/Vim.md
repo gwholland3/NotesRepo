@@ -1,0 +1,304 @@
+My personal notes on Vim.
+
+- ## Vim vs Other Editors
+	- ### Emacs
+		- [https://stackoverflow.com/questions/1430164/differences-between-emacs-and-vim#1433315](https://stackoverflow.com/questions/1430164/differences-between-emacs-and-vim#1433315)
+	- ### Vi
+		- See `:h vi-differences` for a comparison.
+- ## My Setup
+	- I have Vim 9.1 installed on my MacBook, and it appears to have come pre-installed with my macOS.
+	- Run `vim —version` to check.
+- ## Misc Links
+	- [VimGolf](https://www.vimgolf.com/)
+- ## Getting Started
+	- `vimtutor` is great for first learning (or re-remembering) the basics of Vim.
+	- Once you’ve completed that, keep these references at your disposal:
+		- `man vim`: the Vim manual, for dealing with invocation of the program
+		- `:help user-manual` (from inside Vim): pull up the user manual
+		- `:help <subject|cmd>` (from inside Vim): pull up a help page for the specified subject/command
+	- You can also find the help pages online at [https://vimhelp.org/](https://vimhelp.org/)
+	- Advanced learning:
+		- [Practical Vim: Edit Text at the Speed of Thought](https://www.goodreads.com/book/show/13607232-practical-vim) (2nd edition published in 2015)
+			- Source code can be found on [GitHub](https://github.com/toshimichimiki/practical-vim-2nd)
+		- Search StackOverflow with the "Vim" tag
+			- [This answer](https://vi.stackexchange.com/a/2137) is really informative about using Vim's documentation
+		- "vim_use" mailing list?
+- ## Things I'm Still Memorizing
+	- General:
+		- Operators:
+			- CTRL-g  - show where you are in the file, as well as the full file path
+			- c  - delete a chunk of text, then enter INSERT mode at the beginning of it
+			- CTRL-o  - move "back to where you came from" (still learning what dictates where this is)
+				- CTRL-i  - move forward
+			- `*` - search forwards for the `word` under the cursor.
+				- `g*` - search forwards for the `word` under the cursor, without `word` delimiters.
+			- `#` - search backwards for the `word` under the cursor.
+				- `g#` - search backwards for the `word` under the cursor, without `word` delimiters.
+			- f<char>  - move to the next occurrence of <char> to the right of the cursor
+				- F<char>  - same as f, but to the left
+			- t<char>  - move to just before the next occurrence of <char> to the right of the cursor
+				- T<char>  - same as t, but to the left
+			- ;  - repeat the last f, F, t, or T command
+			- ,  - undo the last f, F, t, or T command
+			- z<CR>  - move the current line to the top of the screen
+			- ga  - show the character code of the character under the cursor
+			- gR  - enter *Virtual Replace mode* instead of Replace mode
+			- gv  - reselect the last visual selection
+			- gn  - jump to the next search match and select it in Visual Mode
+			- gN  - jump to the previous search match and select it in Visual Mode
+			- gU  - convert selected characters to uppercase
+			- q/  - open the command-line window for search history
+			- q:  - open the command-line window for Ex history
+			- !<motion>  - start an Ex command with a range consisting of the lines encompassed by <motion>
+			- CTRL-^  - switch to the previously-opened buffer
+			- CTRL-w s  - same as :split
+			- CTRL-w v  - same as :vsplit
+			- CTRL-w o  - same as :only
+			- CTRL-w c  - same as :close
+			- CTRL-w =  - equalize the width and height of all windows
+			- CTRL-w _  - maximize the height of the active window
+			- CTRL-w |  - maximize the width of the active window
+			- CTRL-c  - alternate way to exit insert mode, besides ESC
+		- Motions:
+			- gt  - go to the next tab page
+			- gT  - go to the previous tab page
+			- gj  - move down one *display* line
+			- gk  - move up one *display* line
+			- g0  - jump to the first character of the current *display* line
+			- g$  - jump to the last character of the current *display* line
+			- g^  - jump to the first non-blank character of the current *display* line
+			- ^  - jump to the first non-blank character of the current real line
+			- ge  - jump backward to the end of the previous word
+			- Capitalize any of w, b, e, or ge to make them operate on WORDs instead of words
+			- (  - jump to the start of the next sentence
+				- )  - jump to the start of the previous sentence
+			- {  - jump to the start of the next paragraph
+				- }  - jump to the start of the previous paragraph
+			- H  - jump to the top of the screen
+				- M  - jump to the middle of the screen
+				- L  - jump to the bottom of the screen
+			- gf  - jump to the filename under the cursor
+			- g;  - go to the previous entry in the change list (backwards in time)
+				- g,  - go to the next entry in the change list (forwards in time)
+			- gi  - go to the last point Insert mode was exited, and re-enter Insert mode
+		- Automatic Marks:
+			- `  - Position before the last jump in the current file
+			- .  - Location of last change
+			- ^  - Location of last insertion
+			- [  - start of last yank or change
+			- ]  - end of last yank or change
+			- <  - start of last visual selection
+			- >  - end of last visual selection
+		- Command-Line Mode
+			- `%` represents the name of the current file
+			- CTRL-d (while in command-line mode)  - show list of autocomplete options
+				- TAB  - cycle through available autocomplete options
+			- CTRL-r CTRL-w  - insert the word under the cursor into the command line or search field
+				- If the search field already contains some of the first letters of the word, it just fills in the remaining letters.
+			- CTRL-r CTRL-a  - insert the WORD under the cursor into the command line or search field
+			-
+			- Commands:
+				- `:substitute/<pattern>/<string>/<flags>` - substitute every match of `<pattern>` with `<string>`, respecting the provided `<flags>`.
+					- `:%s///gn` - use case to show the number of matches there are for the last-searched pattern.
+				- `:vimgrep /<pattern>/<flags> <files>` - search for `<pattern>` in `<files>` and populate the error list with the matches.
+					- `:cnext` - display the next error in the error list.
+					- `:cprev` - display the previous error in the error list.
+				- @<register>  - execute the contents of <register> as an Ex command
+					- @:  - repeat the last executed Ex command
+				- :!<cmd>  - execute <cmd> in the external shell
+				- :<range>!<cmd>  - filter the lines specified by <range> through the shell command <cmd>, overwriting the result
+				- :read <filename>  - paste the contents of <filename> into the current buffer (e.g. below the cursor line)
+				- :read !<cmd>  - execute <cmd> in the external shell and paste its output into the current buffer (e.g. below the cursor line)
+				- :write !<cmd>  - execute <cmd> with the contents of the current buffer as stdin
+					- For example, `:write !sudo tee % > /dev/null` lets you write with sudo
+				- :set <option> <…>  - sets the specified options for the duration of the current Vim session
+					- Prefix an option with "no" to unset that option
+					- Suffix an option with "?" to output the current value of that option
+				- :global/<pattern>/<cmd>  - execute the command <cmd> on every line that matches <pattern>
+				- :vglobal/<pattern>/<cmd>  - same as :global, but matches the inverse of <pattern>
+				- :<range>norm <commands>  - execute the Normal Mode commands <commands> on the specified range
+				- :scriptnames  - view the list of Vim scripts that have been executed/sourced/loaded in the current Vim session
+				- :<range>s/<pattern>/<string>/<flags>  - substitutes <pattern> for <string> across <range> lines, with <flags> flags set
+				- :tabnew  - Create a new tab
+				- :<range>copy <dst_addr>  - copy the lines specified by <range> to below the line specified by <dst_addr>
+				- :<range>move <dst_addr>  - same as copy, but does a move instead
+				- :<range>normal <operators>  - execute the Normal Mode commands <operators> across the lines specified by <range>, ending in Normal Mode
+				- :print  - print the line under the cursorbu
+				- :shell  - starts an interactive shell
+				- :lcd <path>  - sets the working directory to <path> for the current window
+				- :source <filename>  - executes all Ex commands in <filename>
+				- :argdo <cmd>  - Execute the Ex command <cmd> for all files in Vim's argument list
+				- :bufdo <cmd>  - Execute the Ex command <cmd> for all open buffers
+				- :windo <cmd>  - Execute the Ex command <cmd> for all windows in the current tab page
+				- :mark<letter>  - mark the current cursor position with <letter>
+				- :changes  - view the change list (per-buffer)
+				- :e  - Reload the current buffer from disk
+				- :E  - open the file explorer for the directory of the current file
+				- :Se  - same as :E, but in a new horizontally-split window
+				- :Ve  - same as :E, but in a new vertically-split window
+				- :qall  - Exit Vim, even if there are multiple buffers open
+				- :let <var>=<val>  - assign the variable <var> to the value <val>
+				- :echo <var> - print the value of the variable <var>
+				- File/buffer navigation:
+					- :first  - switches to the first file being edited
+					- :last  - switches to the last file being edited
+					- :next  - switches to the next file being edited
+					- :prev  - switches to the previous file being edited
+					- :args  - lists the files provided in Vim's argument list
+						- :args <pattern> …  - sets the argument list to the files specified by the provided patterns, and opens buffers for those files
+					- :bfirst  - switches to the first buffer
+					- :blast  - switches to the last buffer
+					- :bnext  - switches to the next buffer
+					- :bprev  - switches to the previous buffer
+					- :b <num>  - switch to buffer <num>
+						- :b <string>  - switch to the buffer uniquely identified by <string>
+					- :b #  - switch to the previous buffer
+					- :ls  - lists the open buffers
+					- :bd <num>  - delete buffer number <num>
+				- Window management:
+					- :split  - splits a duplicate window horizontally
+					- :vsplit  - splits a duplicate window vertically
+					- :only  - close all windows except the active one
+					- :close  - close the active window
+				- Tab page management:
+					- :tabedit  - creates a new tab page with a new empty buffer opened
+					- :tabclose  - closes the current tab page
+					- :tabonly  - closes all tab pages except the current one
+		- Insert mode:
+			- Switch back to Normal mode with either ESC or CTRL-[
+			- CTRL-r<reg>  - access a Vim register
+				- `=` refers to the *expression register*, which allows you to evaluate Vim script
+			- CTRL-v<code>  - insert a character by its (Unicode?) code
+		- Visual mode:
+			- o  - jump to the other end of the highlighted text, switching which end is fixed and which end follows your cursor
+			- U  - convert the selected characters to uppercase
+		- Normal mode:
+			- v  - enter character-wise visual mode
+			- V  - enter line-wise visual mode
+			- CTRL-v  - enter block-wise visual mode
+		- Other:
+			- q<register>  - start recording keystrokes to register <register>
+				- q  - while in recording mode, stop recording
+			- q:  - open the command-line window
+				- :q  - exit the command-line window
+				- CTRL-f  - switch from command-line mode to the command-line window
+			- @<register>  - replay the sequence of keystrokes stored in <register>
+			- @@  - replay the most recently used sequence of keystrokes
+	- In help files:
+		- CTRL-]  - Search the help files for the word under the cursor
+	- When searching (`/`):
+		- `\c<pattern>`  - search for `<pattern>` with case insensitivity.
+		- `\C<pattern>` - search for `<pattern>` with case sensitivity.
+		- `\v<pattern>` - search for `<pattern>` with `very magic` regex.
+		- `\V<pattern>` - search for `<pattern>` with `very nomagic` regex.
+		- `<` - represents the beginning of a `word`.
+		- `>` - represents the end of a `word`.
+		- `\zs` - sets the start of the match.
+		- `\ze` - sets the end of the match.
+		- Search flags (appear after a trailing `/`):
+			- `e` - position the cursor at the end of the match.
+	- Options:
+		- `smartcase` - use case insensitivity for search patterns without any uppercase letters, and use case sensitivity for search patterns with uppercase letters.
+- ## Structure of a Vim Session
+	- A vim session has a list of open buffers.
+	- Those buffers can be viewed through different windows.
+	- A tab consists of a collection of windows that are all viewed side-by-side.
+- ## Modes
+	- ### Normal Mode
+		- TODO
+	- ### Insert Mode
+		- Vim recognizes some readline key commands, such as CTRL-w and CTRL-u. You can see the complete list under "VI Mode bindings" in the readline [man page](https://www.man7.org/linux/man-pages/man3/readline.3.html).
+	- ### Visual Mode
+		- Visual mode lets you select/highlight text.
+		- There are three types of visual modes:
+			- Character-wise visual mode: lets you select contiguous strings of characters
+			- Line-wise visual mode: lets you select blocks of contiguous whole lines
+			- Block-wise visual mode: lets you select rectangular regions of characters
+	- ### Command-Line Mode
+		- See `:h ex-cmd-index` for a list of every Ex command.
+		- Vim recognizes some readline key commands, such as CTRL-w and CTRL-u. You can see the complete list under "VI Mode bindings" in the readline [man page](https://www.man7.org/linux/man-pages/man3/readline.3.html).
+		- Most commands accept a range prefix, such as `:3p` to say "print line 3".
+			- A range must be a contiguous set of lines.
+		- Special range characters:
+			- `.`  - the current line
+			- `$`  - the last line in the file
+			- `%`  - all the lines in the file
+			- `'<`  - first line of visual selection
+			- `'>`  - last line of visual selection
+			- `'m`  - line containing mark `m`
+			- `/my_pattern/` - the first line containing "my_pattern"
+			- `my_address+n`  - n lines after the line specified by "my_address"
+			- `my_address-n`  - n lines before the line specified by "my_address"
+	- ### Operator Pending Mode?
+		- TODO
+- ## Miscellaneous Notes
+	- In the Vim ecosystem, the phrase "compatible" typically refers to Vim being compatible or not with Vi
+	- Vim has different classes of feature sets that can be compiled into a given Vim build: tiny, small, normal, big, and huge. If you are using a Vim compiled with only the tiny feature set, you will be missing a lot of things that are in the huge feature set, for example.
+		- The default version that comes with macOS contains the "normal" feature set
+	- There are additional specifier commands unlocked by inputting an operator or entering Visual mode - see [here](https://vimhelp.org/motion.txt.html#object-select)
+	- See `:help operator` for a list of the main operators you can invoke while in normal mode
+	- If you want an easy way to copy text from within Vim to your system clipboard, you can `:set mouse=` to allow highlighting text again
+	- How to find VIMRUNTIME directory: run `:!echo $VIMRUNTIME` from *within* a Vim session. Vim sets this variable by following a list of rules for what it should be set to; see `:help VIMRUNTIME`. It is highly dependent on the value of VIM (also set by Vim).
+- ## Startup
+	- `:help startup`
+	- TODO
+- ## Registers
+	- Copy a line to the system clipboard: "+yy
+		- " specifies to use a register
+		- + refers to the system clipboard register
+		- yy yanks the entire current line
+	- Special registers:
+		- `"` - the unnamed (default) register
+		- `0` - the yank register
+		- `_` - the black hole register
+		- `+` - the system clipboard register
+			- `*` - also the system clipboard register, or the "primary clipboard" register in X11
+		- `a-z` - twenty six named registers
+			- `A-Z` - the same registers, but they get appended to rather than overwritten
+		- `=` - the expression register
+		- Read-only:
+			- `%` - name of the current file
+			- `#` - name of the alternate file
+			- `.` - last inserted text
+			- `:` - last Ex command
+			- `/` - last search pattern (technically writeable with `:let`)
+- ## Buffers
+	- A buffer is an in-memory "file" that you can view/edit.
+	- The list of open buffers is shared across all windows and tabs.
+	- However, each window has its own jump list.
+- ## Macros
+	- Press `q<reg>` to start recording a macro into register `<reg>`.
+		- If `<reg>` is uppercase, it appends to the register rather than overwriting it.
+	- Then press `<n>@<reg>` to play back that macro `<n>` times.
+- ## vimrc
+	- If you suffix a command with `!`, that means to "force" the command. That is, if the command normally wouldn't run due to certain conditions, it will try to run anyway.
+- ## Extending
+- There is a difference between "plugins" and "packages" in Vim. Plugins are the OG method for extending Vim, and packages were introduced in Vim 8. Put simply, a package is just a collection of plugins. This also lets you add namespacing to your plugins, to avoid collisions.
+- Plugin vs package:
+	- [https://vi.stackexchange.com/questions/9522/what-is-the-vim8-package-feature-and-how-should-i-use-it](https://vi.stackexchange.com/questions/9522/what-is-the-vim8-package-feature-and-how-should-i-use-it)
+	- [https://www.reddit.com/r/vim/comments/131n1dg/plugin_vs_package/](https://www.reddit.com/r/vim/comments/131n1dg/plugin_vs_package/)
+- ### Plugins
+	- See `:help plugin`.
+	- A plugin is just a single Vim script file that is loaded (executed) when Vim starts.
+	- You can check which plugins have been loaded in a Vim session with `:scriptnames`.
+	- There are two types: global and filetype plugins. The latter just means it only applies to specific types of files.
+	- There is a list of standard global plugins that come with a Vim installation *and* are automatically loaded on startup. You can see the list at `:help standard-plugin-list`, which will list out the help files for each such plugin (and you can get more info on a plugin with `:help <my_plugin.txt>`). Their Vim script files are stored in the directory `$VIMRUNTIME/plugin/` (note that the VIMRUNTIME environment variable is only set while Vim is running).
+	- To add additional plugins, put the plugin file (yes, it appears that a plugin is contained within a single file) inside `~/.vim/plugin/` (note that filetype plugins go in `~/.vim/ftplugin/`). Vim allows you to store plugin files in subfolders, too, for organization/namespacing (so it appears the native plugin mechanism already offered namespacing).
+	- <u>Comment Plugin</u>
+		- Huh, it appears that there is already an optional comment plugin that comes installed with Vim, which I can activate with `:packadd comment`. That only lasts until the end of the current Vim session, though. Do I have to add it to my .vimrc? Also, is this the same as the [vim-commentary](https://github.com/tpope/vim-commentary?tab=readme-ov-file) GitHub repo?
+		- If I load the `comment` plugin and then run `:scriptnames`, it appears to be an optional plugin under the `dist` package in the directory specified by `$VIMRUNTIME` - aka `$VIMRUNTIME/pack/dist/opt/comment/`.
+	- <u>Plugin Help Files</u>
+		- If you want your local plugin to show up under `:help local-additions`, you need to add a help file for the plugin. This just consists of placing a .txt file under `~/.vim/doc/` and running `:helptags ~/.vim/doc` from within Vim. That final command generates a `tags` file to enable jumping into your help file. See `:help add-local-help` for more details.
+	- <u>Interesting Plugins</u>
+		- vim-commentary, by Tim Pope
+		- unimpaired.vim, by Tim Pope
+		- surround.vim, by Tim Pope
+- ### Packages
+	- See `:help pack-add`.
+	- To add a package on startup, use `packadd! <package>` in your `.vimrc`. To add a package from a Vim session, use `:packadd <package>`
+	- TODO
+- ## Lore
+	- `ed` was one of the first Unix text editors, short for "editor". There was also `em` ("editor for mortals") and `ex` ("extended").
+	- Before Vim, there was `vi`, short for "visual", because it was one of the first text editors to visually display the text that you were editing, instead of just sending your editor commands to be printed out.
+	- vi was also one of the first editors to introduce the concept of "modes".
+	- Vim itself is short for "vi improved", because it builds on `vi`.
