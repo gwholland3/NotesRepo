@@ -47,4 +47,7 @@
 		- I hope you tested your new version thoroughly...
 - # Consuming Versions
   id:: 69e40458-8b1a-4ee8-b46b-4605176d2135
-	- This part is more tricky...
+	- A simple case study for consuming versions is the following:
+		- Suppose you are starting from a "known good" state - you have a software program that consumes an upstream software package, and you have it configured such that your program always uses the most recent version of that package that's available. Currently, it happens to be using a version labeled "1".
+		- Suddenly, a version "2" is released. The next time you try to run your program, it uses version 2 of the software package, and something that changed in version 2 causes your program to no longer work.
+		- This is an example of why it is good to specify/configure which version
