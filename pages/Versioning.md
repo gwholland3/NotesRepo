@@ -1,4 +1,9 @@
 - In the context of software.
+- # Resources
+	- https://praxent.com/blog/what-do-software-version-numbers-mean-a-guide-to-understanding-software-version-conventions
+	- https://dangoslen.me/blog/version-releases-and-deployments-oh-my/
+	- https://launchdarkly.com/blog/software-release-versioning/
+	-
 - # Why Do We Need Versions?
 	- What would a world without versions look like?
 		- Everything would simply be the "now" version.
@@ -23,10 +28,23 @@
 				- To come up with a toy example of what a software package with completely unordered versions might look like, consider a piece of software that has a different version for running on macOS, Windows, and Linux, where all three versions are treated as being part of the same "software package".
 					- In practice, we usually apply versions to the *source code* of software packages, which in this hypothetical case might be the same for all three operating systems - it's just that we generate three different output artifacts from that one version of the software package source code.
 - # Version Naming
-	- It is almost always a good thing to have a consistent scheme for naming versions of a thing
+	- It is almost always a good thing to have a consistent scheme for naming versions of a thing.
 	- The simplest possible naming scheme is just to call the first version you release "1", the second version "2", and so on. Even if you go back and release a new version based off an older version (i.e. you create a forked version), you can still just number your versions by their creation/release date.
+		- A similar naming scheme that is slightly more informative in and of itself is to name each release with the date and time it was created - this is called [CalVer](https://calver.org/).
 	- Why would we need a different version naming scheme?
-		- After all, a version name is really just an ID into a lookup table - you could have a database that stores additional metadata about each version, such as when it was created/released, what
+		- After all, a version name is really just an ID into a lookup table - you could have a database that stores additional metadata about each version, such as when it was created/released, what git commit of the source code it used, etc.
+		- However, what if you want to know information about how a version relates to a *previous* version, not just information about the version itself?
+			- For example, users of a software package always want to know if the authors of that package consider a new version to be backwards-compatible with the previous version.
+			- The [SemVer](https://semver.org/) version naming scheme attempts to address this problem - as far as I can tell, the main real problem it addresses is communicating the expected backwards compatibility of a version, compared to any previous version.
+				- To a lesser extent, it also communicates how "interesting" a version is, which helps users determine whether it is worth their time learning about a new version and deciding whether to use it
+					- For example, under SemVer, if I am on version 1.2.0 of a package and I see they released version 2.0.0, I will be much more interested in reading about the new version (there might be awesome shiny new features) than I would be for a version 1.3.0, and even less so for a version 1.2.1.
+			- The main downside of SemVer is that [Hyrum's Law](https://www.hyrumslaw.com/) severely reduces its effectiveness/benefits - if your version number increments end up not being accurate with regards to backwards compatibility, they lose meaning.
+				- In other words, SemVer ends up communicating the *risk* of backwards incompatibility with its version names, but it's never a guarantee.
 	- ## Version Ordering
-		- Do versions actually need to be ordered?
-	-
+		- Do versions actually need to be ordered? Probably relevant to ((69e40458-8b1a-4ee8-b46b-4605176d2135)).
+- # Releasing Versions
+	- Simply put, if you as the author of a thing think that a new version is working and ready to be used, then release that version for consumption.
+		- I hope you tested your new version thoroughly...
+- # Consuming Versions
+  id:: 69e40458-8b1a-4ee8-b46b-4605176d2135
+	- This part is more tricky...
