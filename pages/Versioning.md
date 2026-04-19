@@ -50,4 +50,11 @@
 	- A simple case study for consuming versions is the following:
 		- Suppose you are starting from a "known good" state - you have a software program that consumes an upstream software package, and you have it configured such that your program always uses the most recent version of that package that's available. Currently, it happens to be using a version labeled "1".
 		- Suddenly, a version "2" is released. The next time you try to run your program, it uses version 2 of the software package, and something that changed in version 2 causes your program to no longer work.
-		- This is an example of why it is good to specify/configure which version
+		- This is an example of why it is good to specify/configure which version of a thing you are using.
+- # Defining Packages / Version Groups
+	- A more subtle question related to versioning is: "how should I define my (versioned) software packages?"
+		- Here is a simple example: you have code under folder A and code under folder B. You can either make a single Git repository that contains both folders, or you can make each folder its own Git repository.
+		- In the first case, you end up with a single software package that will have its own versions.
+		- In the second case, you end up with two software packages, each with its own set of versions.
+			- Now you need to make sure that whenever the two packages are used together, they are compatible with each other.
+			- This is not a concern in the first case, since presumably anyone making changes to both folders in the same Git commit would test to make sure their changes work in combination.
