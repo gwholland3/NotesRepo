@@ -1,0 +1,10 @@
+- ESP32 ([Wikipedia](https://en.wikipedia.org/wiki/ESP32)) is a family of microcontroller chips manufactured by [Espressif Systems](https://www.espressif.com/) ([Wikipedia](https://en.wikipedia.org/wiki/Espressif_Systems)), a Chinese semiconductor company.
+- These microcontrollers typically integrate both Wi-Fi and Bluetooth capabilities.
+- Most often, they are sold in the form of development boards, rather than just the bare chip itself.
+- Resources:
+	- https://randomnerdtutorials.com/getting-started-with-esp32/
+	- https://www.espboards.dev/
+		- https://www.espboards.dev/blog/esp32-soc-options/#esp32-series
+	- Arduino development:
+		- https://docs.espressif.com/projects/arduino-esp32/en/latest/getting_started.html
+		- https://github.com/espressif/arduino-esp32
