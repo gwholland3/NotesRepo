@@ -1,0 +1,36 @@
+# [Pothos](https://en.wikipedia.org/wiki/Epipremnum_aureum)
+	- Scientific name: Epipremnum aureum
+	- Light requirement: low to medium
+	- Water requirement: only needs water when soil dries out, every 1-2 weeks
+		- But can grow directly in water, in addition to in soil
+	- Purifies air
+	- Fast-growing
+	- Vine-like, good for hanging
+- # [Snake Plant](https://en.wikipedia.org/wiki/Dracaena_trifasciata)
+	- Scientific name: Dracaena trifasciata
+	- Light requirement: low to bright indirect light
+	- Water requirement: every 2-4 weeks, sometimes even less frequently is tolerable
+	- Very hardy, nearly indestructible
+	- Purifies air
+	- Mildly toxic if ingested, maybe not great for if you have pets
+- # [Spider Plant](https://en.wikipedia.org/wiki/Chlorophytum_comosum)
+	- Scientific name: Chlorophytum comosum
+	- Light requirement: tolerates a range of light
+	- Water requirement: Not that needy
+	- Purifies air
+- # [Peace Lily](https://en.wikipedia.org/wiki/Spathiphyllum)
+	- Scientific name: Spathiphyllum
+	- Light requirement: low-medium light, lives best in shade
+	- Water requirement: likes consistent moisture, but not soggy soil
+		- Only needs watering if soil is dry, approximately once a week
+	- Purifies air
+- # [Majesty Palm](https://en.wikipedia.org/wiki/Ravenea_rivularis)
+	- Scientific name: Ravenea rivularis
+	- Light requirement: bright, indirect light
+	- Water requirement: likes soil consistently moist but not soggy
+		- Prefer 50-70% humidity
+			- Recommended to mist its leaves frequently, or keep it near a humidifier
+			- Prone to spider mites in dry conditions
+	- Requires specialty fertilizer for palm trees; needs more magnesium than other plants
+		- A pinch of epsom salt can be used as an alternate source of magnesium
+	- Purifies air
