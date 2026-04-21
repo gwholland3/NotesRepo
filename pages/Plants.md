@@ -16,7 +16,8 @@
 - # [Spider Plant](https://en.wikipedia.org/wiki/Chlorophytum_comosum)
 	- Scientific name: Chlorophytum comosum
 	- Light requirement: tolerates a range of light
-	- Water requirement: Not that needy
+	- Water requirement: Not that needy, probably every 2ish weeks
+		- Sensitive to the fluoride in tap water, too much can cause "burnt tips"
 	- Purifies air
 - # [Peace Lily](https://en.wikipedia.org/wiki/Spathiphyllum)
 	- Scientific name: Spathiphyllum
