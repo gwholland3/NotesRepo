@@ -1,0 +1,2 @@
+### Resources
+- Bill Johnson YouTube channel: [link](https://www.youtube.com/@bosnianbill/videos)LockPickingLawyer YouTube channel: [link](https://www.youtube.com/@lockpickinglawyer/videos)Advice on lock picking tension video: [link](https://www.youtube.com/watch?v=9O-CJEwcQnY&list=PLpIvUbO_777x5jZW9BM79Qhj7dEV8EvEe&index=30)LockNoob tutorials YouTube playlist: [link](https://www.youtube.com/playlist?list=PLXm18pW-yyX5yS5R8jsfvpitxLD9faVOI)

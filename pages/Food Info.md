@@ -1,0 +1,1 @@
+Bananas will cause other nearby fruits to ripen faster.

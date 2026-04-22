@@ -1,0 +1,32 @@
+## General Cleaning Supplies
+- Vacuum
+- Long broom
+- Dustpan
+- Handheld duster
+- Swiffer mop
+
+
+## How To Clean Specific Things
+
+### Windows/Mirrors
+Spray Windex, wipe with paper towels
+
+
+### Oven
+If available, use self-clean function first to burn up gunk.
+
+Afterwards/otherwise, use Easy-Off oven cleaner.
+
+
+### Stovetop Drip Pans
+Scrub with soap and steel wool in the sink (S.O.S. is a good brand)
+
+
+### Carpet
+Use a carpet cleaner.
+
+
+### Regular Surfaces
+E.g. stovetops, countertops, cabinet/pantry interiors + exteriors.
+
+Use a regular sponge, or Mr. Clean Magic Eraser for heavier duty.

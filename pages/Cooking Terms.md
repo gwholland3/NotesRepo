@@ -1,0 +1,1 @@
+- Pith: the white, sponge-like substance between the peel and fruit of an orange; safe to eat

@@ -1,0 +1,2 @@
+### Constructors
+If a class does not declare any constructors, the compiler automatically provides a default constructor. It just default-initializes members that can be, and leaves other (more complex) members uninitialized, meaning they point to indeterminate/garbage values.

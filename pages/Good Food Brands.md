@@ -1,0 +1,1 @@
+Simple Truth smoked turkey breast scores pretty high on Yuka.

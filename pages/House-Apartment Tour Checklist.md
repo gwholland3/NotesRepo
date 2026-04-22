@@ -1,0 +1,60 @@
+- Functionality/Damage/Cleanliness:
+	- Electrical outlets work?
+	- Windows open and close?
+	- Window locks work?
+	- Blinds work?
+	- Doors open and close?
+	- Door locks work?
+	- Doorbell works?
+	- Lights work?
+	- Fans work?
+	- Safety: smoke detectors, CO detectors, sprinklers, fire extinguisher
+	- Faucets work? (Sinks, baths, showers)
+	- Hot water works?
+	- Drains work? No leaks under sinks?
+	- Toilets work?
+	- Garbage disposal works? (If exists)
+	- Appliances:
+		- Microwave works?
+		- Oven works?
+		- Stove works?
+		- Dishwasher works?
+		- Fridge/freezer work?
+		- Washer works?
+		- Dryer works?
+	- Heating works?
+	- A/C works?
+	- Fireplace works?
+	- Carpet looks good?
+	- Any water damage, mold, mildew, or water stains?
+	- Any cracks or chips in walls/flooring?
+	- Any bad smells?
+	- Cabinets and closets are clean?
+- Features:
+	- Bedroom size
+	- Closet contents
+	- Parking
+	- Mailboxes
+	- Neighborhood
+	- Noise level
+	- Internet options, and location of Ethernet ports
+	- Location of circuit breakers
+	- Furnishing
+	- Window placement (e.g. sun-relative), natural lighting
+	- Cell reception in the area
+- Legal:
+	- Move-in date
+	- Maintenance policy
+	- HOA
+	- Pets
+	- Average cost of utilities:
+		- Garbage
+		- Sewer
+		- Water
+		- Gas
+		- Electricity
+		- Landscaping
+	- Application fee
+	- Security deposit and other initial fees
+	- Applicant requirements (e.g. credit score, income, etc)
+	- Ask for copy of the lease
