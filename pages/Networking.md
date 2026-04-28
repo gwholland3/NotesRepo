@@ -22,4 +22,8 @@
 	  ```
 	- Get the route to an IP address:
 	  ```
+	  ip route get <address>
+	  
+	  # For example:
+	  ip route get 8.8.8.8
 	  ```
