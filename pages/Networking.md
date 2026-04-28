@@ -20,3 +20,6 @@
 	  ```
 	  iftop -i <interface> -f '<tcpdump filter>'
 	  ```
+	- Get the route to an IP address:
+	  ```
+	  ```
