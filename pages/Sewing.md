@@ -2,6 +2,7 @@
 - Polyester is a good type of [thread](https://en.wikipedia.org/wiki/Thread_(textiles)) that is durable
 - # Darning
 	- The term "[darning](https://en.wikipedia.org/wiki/Darning)" refers specifically to hand-sewing that is used to repair holes or tears in fabric.
+	- Advice for tying off a stitch: "if you can't tie a knot, tie a lot"
 - # Types of Knots/Stitches
 	- Anchor knot: {{video https://www.youtube.com/watch?v=daICD5Y5No8}}
 	- Whip stitch: {{video https://www.youtube.com/watch?v=v9kGyZDWZcA}}
