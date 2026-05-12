@@ -1,2 +1,2 @@
 - Good resource for voter guide: https://calmatters.org/
--
+- For judges specifically, the Los Angeles County Bar Association publishes voter guides that rate candidates ([example](https://lacba.org/?pg=lacba-news&blAction=showEntry&blogEntry=144319))
