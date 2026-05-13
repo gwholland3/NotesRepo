@@ -40,3 +40,5 @@
 			- Tell the coding agent to answer only if it's very confident in its response.
 			- Tell the coding agent to think before answering.
 		- It's helpful to end your prompt with a list of important things for the agent to remember during its task.
+	- ## System Prompt / CLAUDE.md
+		- Good post: https://x.com/TheAIWorld22/status/2053023798170198453
