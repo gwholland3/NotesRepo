@@ -4,7 +4,6 @@
 	- Dustpan
 	- Handheld duster
 	- Swiffer mop
-	-
 - ## How To Clean Specific Things
 	- ### Windows/Mirrors
 		- Spray Windex, wipe with paper towels
@@ -18,3 +17,4 @@
 	- ### Regular Surfaces
 		- E.g. stovetops, countertops, cabinet/pantry interiors + exteriors.
 		- Use a regular sponge, or Mr. Clean Magic Eraser for heavier duty.
+			- Scouring pads work pretty well too.
