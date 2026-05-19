@@ -1,107 +1,80 @@
 ### Resources
-- Main website: [link](https://www.home-assistant.io/)Wikipedia: [link](https://en.wikipedia.org/wiki/Home_Assistant)General advice from HA veteran: [link](https://community.home-assistant.io/t/20-things-i-wished-i-knew-when-i-started-with-home-assistant/576359/8)
-### Hardware
-I will need a server to run HA on.
-
-Relevant Reddit post: [https://www.reddit.com/r/homeassistant/comments/lkpqao/what_is_the_most_ideal_way_to_run_home_assistant/](https://www.reddit.com/r/homeassistant/comments/lkpqao/what_is_the_most_ideal_way_to_run_home_assistant/)
-
-I don't think I can use my Arduino Uno to run Home Assistant; it's not powerful enough.
-I also have two [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-w/) V1.1 boards (with pre-soldered [headers](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio)) from my Google AIY kits (see [Wikipedia](https://en.wikipedia.org/wiki/Raspberry_Pi#Raspberry_Pi_Zero)).
-Per [this article](https://www.home-assistant.io/blog/2017/05/01/home-assistant-on-raspberry-pi-zero-in-30-minutes/) and [this discussion](https://community.home-assistant.io/t/i-want-to-install-ha-on-a-rpi-zero-w-how-do-i-do-it-noob/507640), seems like using a RPi Zero W to run HA is not recommended.
-
-Maybe I should purchase a [NUC](https://en.wikipedia.org/wiki/Next_Unit_of_Computing) for this.
-
-I've also seen recommendations to use a [thin client](https://en.wikipedia.org/wiki/Thin_client) PC.
-And I've also heard good things about [ODROID](https://www.hardkernel.com/) boards ([Wikipedia](https://en.wikipedia.org/wiki/ODROID)).
-
-Looking at the [installation page](https://www.home-assistant.io/installation/) for HA, I think I'm gonna go with using a RPi. Now I just need to figure out what type of RPi to purchase.
-What kind of specs do I need to run HA?
-
-Relevant posts:
-- [https://community.home-assistant.io/t/minimum-hardware-requirements-for-ha/289067/6](https://community.home-assistant.io/t/minimum-hardware-requirements-for-ha/289067/6)[https://community.home-assistant.io/t/what-are-the-minimum-hardware-requirements-to-run-ha-without-references-to-rpi-just-barebone-pc-architecture/493011/4](https://community.home-assistant.io/t/what-are-the-minimum-hardware-requirements-to-run-ha-without-references-to-rpi-just-barebone-pc-architecture/493011/4)[https://community.home-assistant.io/t/best-hardware-to-run-ha-on-in-2023/493834/28](https://community.home-assistant.io/t/best-hardware-to-run-ha-on-in-2023/493834/28)YouTube video: [https://www.youtube.com/watch?v=rXc_zGRYhLo](https://www.youtube.com/watch?v=rXc_zGRYhLo)
-HA installation page specifically for RPi: [link](https://www.home-assistant.io/installation/raspberrypi)
-
-Says that RPi 3 Model A doesn't have enough RAM, but Model B is okay. According to the RPi3 Model A [product page](https://www.raspberrypi.com/products/raspberry-pi-3-model-a-plus/), it has 512 MB of RAM, and [Model B](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) has 1 GB, so that means I need at least 1 GB. If 1 GB is just "okay", probably better to stay on the safe side and get at least 2 GB.
-
-It also says I need at least 32 GB of storage. I should probably double that to be safe, too, and get at least 64 GB. It also says that if I get a micro SD card, it should be "[Application Class 2](https://www.sdcard.org/developers/sd-standard-overview/application-performance-class/)", or A2-labelled. I've [heard online](https://community.home-assistant.io/t/portable-ssd-vs-internal-ssd/631628/20) that SD cards are not great for long-term HA use, so maybe I should get an external SSD to connect to the RPi instead, which are supposedly better.
-
-Specs I Want:
-- At least 2 GB of RAM
-- At least 64 GB of storage
-	- This is independent of the RPi that I buy
-	- Probably gonna go with 256GB, because it's hard to find SSDs with less than that
-
-See [here](https://www.amazon.com/Transcend-ESD310C-External-Portable-Compatible/dp/B0C3B18PKT?th=1) for RPi 4B transfer speeds over its USB 3.0 interfaces.
-
-I ended up buying [this Raspberry Pi 4B kit](https://www.ebay.com/itm/284826299524) on eBay, which has 2GB of RAM. It also came with:
-- A [HighPi case](https://www.hipi.io/highpi/) for the Pi
-- A USB-C power supply
-- A class 10 32GB microSD card, pre-flashed with Raspbian OS
-	- I won't need this, I purchased my own [portable SSD](https://www.amazon.com/Transcend-TS256GESD310C-Portable-ESD310C-10Gbps/dp/B0C3B18PKT?th=1) with 256GB instead
-- A microSD to USB adapter
-	- Also won't need this for same reason as above
-- An HDMI A to HDMI micro D cable
-- Aluminum heatsinks for the Pi
-
-I've connected my SSD to my laptop and used Raspberry Pi Imager to install Home Assistant OS 15.2.
-The SSD supports the USB 3.2 Gen 2 data transfer protocol, which means it supports up to 10 Gbps.
-According to the [RPi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) product page, the two middle USB-A ports support USB 3. If you go to the [tech specs](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/) page, it specifies that those 2 USB ports are 3.0, which means it supports up to 5 Gbps.
-See USB 3.0 [Wikipedia page](https://en.wikipedia.org/wiki/USB_3.0) for more info.
-
-I've connected the RPi directly to my router via an Ethernet LAN port, and I've powered it on.
-Now I can access it remotely via this URL: [http://homeassistant.local:8123/](http://homeassistant.local:8123/)
-
-I've also inserted the RPi into the HighPi case and attached the heatsinks.
-
-I've created an administrator account with the username "grantholland".
-Now I see the default dashboard and the rest of the Home Assistant UI.
-
-### Networking
-I have a main network and a guest network. All my smart devices are currently on the guest network, and my HA server is on the main network.
-
-Resources:
-- [https://community.home-assistant.io/t/using-a-guest-network/96322/9](https://community.home-assistant.io/t/using-a-guest-network/96322/9)[https://community.home-assistant.io/t/can-ha-and-iot-devices-just-live-on-a-guest-network-or-vlan/550878/15](https://community.home-assistant.io/t/can-ha-and-iot-devices-just-live-on-a-guest-network-or-vlan/550878/15)[https://community.home-assistant.io/t/where-to-put-server-iot-devices-in-vlan-network/218029](https://community.home-assistant.io/t/where-to-put-server-iot-devices-in-vlan-network/218029)
-So I need to go with one of the following options:
-- Move my smart devices to the main network
-- Move my HA server to the guest network and figure out a way to still access it from my laptop
-	- Currently, my HA server is connected to the router directly via Ethernet. I'm not sure how I could tell the router to put that interface on the guest network instead of the main one
-		- I don't think this is possible, according to [this user guide](https://www.tp-link.com/us/user-guides/archer-ax20&ax1800_v1/chapter-6-guest-network#ug-sub-title-1)I suppose I could connect my HA server to my router over Wi-Fi instead of Ethernet, but I don't really want to do that
-	- As for connecting to my HA server from my laptop, I could just switch to the guest network on my laptop every time I want to connect. I'm not actually sure if my router's guest network allows devices on it to communicate with each other by default, though
-- Set up a way for my HA server to connect to my smart devices on the guest network, from the main network
-	- I suspect the only way to accomplish this is to just remove the firewall between the guest network and the main network completely, via the "Allow guests to access your local network" option. That basically defeats the purpose of having a guest network, though.
-
-I've decided to just add the smart devices to the main network, since that's simplest and I'm not really worried about the security implications.
-
-I'm adding an automation for waking me up in the morning. See automation intro [here](https://www.home-assistant.io/getting-started/automation/) and debugging tips [here](https://www.home-assistant.io/docs/automation/troubleshooting).
-Also see documentation about the HA API for controlling smart lights [here](https://www.home-assistant.io/integrations/light/).
-
-Maybe I just pull in this automation someone has already made: [link](https://community.home-assistant.io/t/simple-light-wake-up-alarm-with-parabolic-sunrise-effect/673747/2)
-Or this one (I like this one better): [link](https://community.home-assistant.io/t/wake-up-light-alarm-with-sunrise-effect/255193)
-
-I've also enabled "third-party compatibility" in the Kasa app. Not sure exactly what that does, but it specifically says it's for Home Assistant use.
-
-For now I've just made my own janky automation that does the bare minimum I want.
-
-
-### Concepts and Terminology
-Documentation: [concepts and terminology](https://www.home-assistant.io/getting-started/concepts-terminology/)
-
-A "device" is simple, it just represents a device.
-Each device can have any number of "entities", which basically represent distinct input or output data associated with that device.
-
-You can group devices into "areas", for example to represent all devices in a living room. And areas can be grouped into "floors", to represent different floors of a building.
-
-An automation is a collection of actions that are kicked off by a trigger event, as long as certain preconditions hold.
-A script is similar to an automation, but doesn't have a trigger. It allows you to manually trigger a group of actions, or to have multiple automations reference the same group of actions so as not to repeat yourself.
-
-A scene is a predefined bulk configuration of a bunch of devices; for example a "movie night" scene might automatically close blinds and dim lights in a living room.
-
-I don't quite understand the difference between "add-ons" and "integrations" yet…
-
-A "dashboard" is a view composed of multiple "cards". A card can show device data or offer access to a device control.
-There are several default dashboards available, which are listed in the left sidebar of the Home Assistant UI.
-
-A "[blueprint](https://www.home-assistant.io/docs/blueprint/)" is a genericized automation that you can instantiate.
-
-
-
+	- Main website: [link](https://www.home-assistant.io/)
+	- Wikipedia: [link](https://en.wikipedia.org/wiki/Home_Assistant)
+	- General advice from HA veteran: [link](https://community.home-assistant.io/t/20-things-i-wished-i-knew-when-i-started-with-home-assistant/576359/8)
+- ### Hardware
+	- I will need a server to run HA on.
+	- Relevant Reddit post: [https://www.reddit.com/r/homeassistant/comments/lkpqao/what_is_the_most_ideal_way_to_run_home_assistant/](https://www.reddit.com/r/homeassistant/comments/lkpqao/what_is_the_most_ideal_way_to_run_home_assistant/)
+	- I don't think I can use my Arduino Uno to run Home Assistant; it's not powerful enough.
+	- I also have two [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-w/) V1.1 boards (with pre-soldered [headers](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio)) from my Google AIY kits (see [Wikipedia](https://en.wikipedia.org/wiki/Raspberry_Pi#Raspberry_Pi_Zero)).
+	- Per [this article](https://www.home-assistant.io/blog/2017/05/01/home-assistant-on-raspberry-pi-zero-in-30-minutes/) and [this discussion](https://community.home-assistant.io/t/i-want-to-install-ha-on-a-rpi-zero-w-how-do-i-do-it-noob/507640), seems like using a RPi Zero W to run HA is not recommended.
+	- Maybe I should purchase a [NUC](https://en.wikipedia.org/wiki/Next_Unit_of_Computing) for this.
+	- I've also seen recommendations to use a [thin client](https://en.wikipedia.org/wiki/Thin_client) PC.
+	- And I've also heard good things about [ODROID](https://www.hardkernel.com/) boards ([Wikipedia](https://en.wikipedia.org/wiki/ODROID)).
+	- Looking at the [installation page](https://www.home-assistant.io/installation/) for HA, I think I'm gonna go with using a RPi. Now I just need to figure out what type of RPi to purchase.
+	- What kind of specs do I need to run HA?
+		- Relevant posts:
+			- [https://community.home-assistant.io/t/minimum-hardware-requirements-for-ha/289067/6](https://community.home-assistant.io/t/minimum-hardware-requirements-for-ha/289067/6)
+			- [https://community.home-assistant.io/t/what-are-the-minimum-hardware-requirements-to-run-ha-without-references-to-rpi-just-barebone-pc-architecture/493011/4](https://community.home-assistant.io/t/what-are-the-minimum-hardware-requirements-to-run-ha-without-references-to-rpi-just-barebone-pc-architecture/493011/4)
+			- [https://community.home-assistant.io/t/best-hardware-to-run-ha-on-in-2023/493834/28](https://community.home-assistant.io/t/best-hardware-to-run-ha-on-in-2023/493834/28)
+			- YouTube video: [https://www.youtube.com/watch?v=rXc_zGRYhLo](https://www.youtube.com/watch?v=rXc_zGRYhLo)
+		- HA installation page specifically for RPi: [link](https://www.home-assistant.io/installation/raspberrypi)
+		- Says that RPi 3 Model A doesn't have enough RAM, but Model B is okay. According to the RPi3 Model A [product page](https://www.raspberrypi.com/products/raspberry-pi-3-model-a-plus/), it has 512 MB of RAM, and [Model B](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) has 1 GB, so that means I need at least 1 GB. If 1 GB is just "okay", probably better to stay on the safe side and get at least 2 GB.
+		- It also says I need at least 32 GB of storage. I should probably double that to be safe, too, and get at least 64 GB. It also says that if I get a micro SD card, it should be "[Application Class 2](https://www.sdcard.org/developers/sd-standard-overview/application-performance-class/)", or A2-labelled. I've [heard online](https://community.home-assistant.io/t/portable-ssd-vs-internal-ssd/631628/20) that SD cards are not great for long-term HA use, so maybe I should get an external SSD to connect to the RPi instead, which are supposedly better.
+	- Specs I Want:
+		- At least 2 GB of RAM
+		- At least 64 GB of storage
+			- This is independent of the RPi that I buy
+			- Probably gonna go with 256GB, because it's hard to find SSDs with less than that
+	- See [here](https://www.amazon.com/Transcend-ESD310C-External-Portable-Compatible/dp/B0C3B18PKT?th=1) for RPi 4B transfer speeds over its USB 3.0 interfaces.
+	- I ended up buying [this Raspberry Pi 4B kit](https://www.ebay.com/itm/284826299524) on eBay, which has 2GB of RAM. It also came with:
+		- A [HighPi case](https://www.hipi.io/highpi/) for the Pi
+		- A USB-C power supply
+		- A class 10 32GB microSD card, pre-flashed with Raspbian OS
+			- I won't need this, I purchased my own [portable SSD](https://www.amazon.com/Transcend-TS256GESD310C-Portable-ESD310C-10Gbps/dp/B0C3B18PKT?th=1) with 256GB instead
+		- A microSD to USB adapter
+			- Also won't need this for same reason as above
+		- An HDMI A to HDMI micro D cable
+		- Aluminum heatsinks for the Pi
+	- I've connected my SSD to my laptop and used Raspberry Pi Imager to install Home Assistant OS 15.2.
+	- The SSD supports the USB 3.2 Gen 2 data transfer protocol, which means it supports up to 10 Gbps.
+	- According to the [RPi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) product page, the two middle USB-A ports support USB 3. If you go to the [tech specs](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/) page, it specifies that those 2 USB ports are 3.0, which means it supports up to 5 Gbps.
+	- See USB 3.0 [Wikipedia page](https://en.wikipedia.org/wiki/USB_3.0) for more info.
+	- I've connected the RPi directly to my router via an Ethernet LAN port, and I've powered it on.
+	- Now I can access it remotely via this URL: [http://homeassistant.local:8123/](http://homeassistant.local:8123/)
+	- I've also inserted the RPi into the HighPi case and attached the heatsinks.
+	- I've created an administrator account with the username "grantholland".
+	- Now I see the default dashboard and the rest of the Home Assistant UI.
+- ### Networking
+	- I have a main network and a guest network. All my smart devices are currently on the guest network, and my HA server is on the main network.
+	- Resources:
+		- [https://community.home-assistant.io/t/using-a-guest-network/96322/9](https://community.home-assistant.io/t/using-a-guest-network/96322/9
+		- [https://community.home-assistant.io/t/can-ha-and-iot-devices-just-live-on-a-guest-network-or-vlan/550878/15](https://community.home-assistant.io/t/can-ha-and-iot-devices-just-live-on-a-guest-network-or-vlan/550878/15)
+		- [https://community.home-assistant.io/t/where-to-put-server-iot-devices-in-vlan-network/218029](https://community.home-assistant.io/t/where-to-put-server-iot-devices-in-vlan-network/218029)
+	- So I need to go with one of the following options:
+		- Move my smart devices to the main network
+		- Move my HA server to the guest network and figure out a way to still access it from my laptop
+			- Currently, my HA server is connected to the router directly via Ethernet. I'm not sure how I could tell the router to put that interface on the guest network instead of the main one
+				- I don't think this is possible, according to [this user guide](https://www.tp-link.com/us/user-guides/archer-ax20&ax1800_v1/chapter-6-guest-network#ug-sub-title-1)I suppose I could connect my HA server to my router over Wi-Fi instead of Ethernet, but I don't really want to do that
+			- As for connecting to my HA server from my laptop, I could just switch to the guest network on my laptop every time I want to connect. I'm not actually sure if my router's guest network allows devices on it to communicate with each other by default, though
+	- Set up a way for my HA server to connect to my smart devices on the guest network, from the main network
+		- I suspect the only way to accomplish this is to just remove the firewall between the guest network and the main network completely, via the "Allow guests to access your local network" option. That basically defeats the purpose of having a guest network, though.
+	- I've decided to just add the smart devices to the main network, since that's simplest and I'm not really worried about the security implications.
+	- I'm adding an automation for waking me up in the morning. See automation intro [here](https://www.home-assistant.io/getting-started/automation/) and debugging tips [here](https://www.home-assistant.io/docs/automation/troubleshooting).
+	- Also see documentation about the HA API for controlling smart lights [here](https://www.home-assistant.io/integrations/light/).
+	- Maybe I just pull in this automation someone has already made: [link](https://community.home-assistant.io/t/simple-light-wake-up-alarm-with-parabolic-sunrise-effect/673747/2)
+	- Or this one (I like this one better): [link](https://community.home-assistant.io/t/wake-up-light-alarm-with-sunrise-effect/255193)
+	- I've also enabled "third-party compatibility" in the Kasa app. Not sure exactly what that does, but it specifically says it's for Home Assistant use.
+	- For now I've just made my own janky automation that does the bare minimum I want.
+- ### Concepts and Terminology
+	- Documentation: [concepts and terminology](https://www.home-assistant.io/getting-started/concepts-terminology/)
+	- A "device" is simple, it just represents a device.
+	- Each device can have any number of "entities", which basically represent distinct input or output data associated with that device.
+	- You can group devices into "areas", for example to represent all devices in a living room. And areas can be grouped into "floors", to represent different floors of a building.
+	- An automation is a collection of actions that are kicked off by a trigger event, as long as certain preconditions hold.
+	- A script is similar to an automation, but doesn't have a trigger. It allows you to manually trigger a group of actions, or to have multiple automations reference the same group of actions so as not to repeat yourself.
+	- A scene is a predefined bulk configuration of a bunch of devices; for example a "movie night" scene might automatically close blinds and dim lights in a living room.
+	- I don't quite understand the difference between "add-ons" and "integrations" yet…
+	- A "dashboard" is a view composed of multiple "cards". A card can show device data or offer access to a device control.
+	- There are several default dashboards available, which are listed in the left sidebar of the Home Assistant UI.
+	- A "[blueprint](https://www.home-assistant.io/docs/blueprint/)" is a genericized automation that you can instantiate.
