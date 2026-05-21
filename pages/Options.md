@@ -1,0 +1,4 @@
+- An option is something you purchase for a small price (the "premium") that gives you the right to buy or sell an asset at a pre-specified price (the "strike price") on or before a certain date.
+- There are two types of options:
+	- Call options give you the right to buy an asset at a fixed price.
+	- Put options give you the right to sell an asset at a fixed price.
