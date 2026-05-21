@@ -2,3 +2,18 @@
 - There are two types of options:
 	- Call options give you the right to buy an asset at a fixed price.
 	- Put options give you the right to sell an asset at a fixed price.
+- Basic options strategy:
+	- Call options:
+		- If you exercise a call option and the current stock price is greater than the strike price plus the premium, you profit.
+		- If the current price is less than the strike price, you let the option expire without exercising, and your loss is the premium.
+		- If the current price is anywhere in between that range, your loss linearly scales up to the premium.
+	- Put options:
+		- If you exercise a put option and the current stock price is less than the strike price minus the premium, you profit.
+		- If the current price is greater than the strike price, you let the option expire worthless without exercising, and your loss is the premium.
+		- If the current price is anywhere in between that range, your loss linearly scales up to the premium.
+- Why would you ever buy options instead of just buying or selling shares directly?
+	- Because options have a cheaper upfront cost - the premium is a tiny amount compared to the price if individual shares.
+	- If I only have a fixed number of dollars to invest, and I know that the share price is going to increase appreciably, I can purchase many more options than I can shares.
+	- When I later sell those options (for a price equivalent to the profit you'd make by exercising them), my return percentage is much higher than if I had purchased shares and later sold them.
+- # Collars
+	- TODO
