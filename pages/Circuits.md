@@ -9,5 +9,6 @@ tags:: hardware
 		- Ground: a series of parallel lines getting smaller
 - # Circuit Boards
 	- PCB = Printed Circuit Board
+		- Good free software for designing PCBs: [KiCad](https://www.kicad.org/)
 	- PCBA = Printed Circuit Board Assembly
 	- FPCB = Flexible Printed Circuit Board (think LED light strip)
