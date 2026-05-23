@@ -1,4 +1,4 @@
-- An [option](https://en.wikipedia.org/wiki/Option_(finance)) is something you purchase for a small price (the "premium") that gives you the right to buy or sell an asset at a pre-specified price (the "strike price") on or before a certain date.
+- An [option](https://en.wikipedia.org/wiki/Option_(finance)) is something you purchase for a small price (the "premium") that gives you the right to buy or sell an asset (the "underlier") at a pre-specified price (the "strike price") on or before a certain date.
 - There are two types of options:
 	- [Call options](https://en.wikipedia.org/wiki/Call_option) give you the right to buy an asset at a fixed price.
 	- [Put options](https://en.wikipedia.org/wiki/Put_option) give you the right to sell an asset at a fixed price.
@@ -12,8 +12,32 @@
 		- If the current price is greater than the strike price, you let the option expire worthless without exercising, and your loss is the premium.
 		- If the current price is anywhere in between that range, your loss linearly scales up to the premium.
 - Why would you ever buy options instead of just buying or selling shares directly?
-	- Because options have a cheaper upfront cost - the premium is a tiny amount compared to the price if individual shares.
+	- Because options have a cheaper upfront cost - the premium is a tiny amount compared to the price of individual shares.
 	- If I only have a fixed number of dollars to invest, and I know that the share price is going to increase appreciably, I can purchase many more options than I can shares.
 	- When I later sell those options (for a price equivalent to the profit you'd make by exercising them), my return percentage is much higher than if I had purchased shares and later sold them.
+- Where do options come from?
+	- I believe anyone owning shares can write up a call contract and sell it to you, whereby you will be purchasing their shares if you exercise the option.
+	- Similarly, I believe that if you own shares, anyone can write up a put contract and sell it to you, whereby they will be purchasing your shares if you exercise the option.
+- # Covered Calls
+	- [TODO](https://en.wikipedia.org/wiki/Covered_option)
+	- A covered call is a call option that you sell to someone while owning shares of the underlying stock.
+	- It is called a "covered" call because the call option you sold is covered by the shares you own.
+		- This is opposed to a [naked call](https://en.wikipedia.org/wiki/Naked_option), where you sell a call option while not owning sufficient shares to sell if the option is exercised.
+		- Note that for the call to be truly covered, you need to own as many shares as the call option is written against, and retain them until the option expires or is exercised.
+	- A covered call embodies the following financial strategy for a stock you own: "I'd be happy to sell these shares if the price rises somewhat, but otherwise I'd like to earn some extra cash while holding them"
+		- The tradeoff is that your upside is limited in the case where the stock price *does* rise.
+	- Here's how it works:
+		- By selling someone a call option covered by your shares, you instantly make money off of the premium - that's your extra cash earned for holding the shares.
+		- If the option expires out of the money, you've just pocketed that premium as profit while still retaining your shares.
+		- If the option becomes in the money and is exercised, you still get to make some profit from selling your shares (since the strike price will have been higher than the stock FMV at the time the option was written), and you still get to keep the premium, but the profit from the stock sale itself is lower than if you had sold them outside of a call contract, for the now-higher FMV.
+- # Protective Puts
+	- A protective put is a put option that you buy while owning shares of the underlying stock.
+	- It is called "protective" because it protects you from major losses if the stock price plummets.
+	- A protective put embodies the following financial strategy: "I want to own these shares long-term, but there might be some short-term volatility and I want to be protected against that"
+	- It's essentially a form of insurance against your shares, where you pay a small fee (the put option premium) to be protected against loss from those shares.
+	- Here's how it works:
+		- You pay the premium to purchase the put option - this acts as your "insurance premium".
+		- If the option expires out of the money (the stock price rises), you simply make profit off your shares, minus the premium.
+		- If the option becomes in the money (the stock price falls), you can exercise your options to sell your shares for much more than the FMV, minimizing your losses.
 - # Collars
 	- [TODO](https://en.wikipedia.org/wiki/Collar_(finance))
