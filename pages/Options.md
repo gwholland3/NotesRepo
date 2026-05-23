@@ -1,4 +1,5 @@
 - An [option](https://en.wikipedia.org/wiki/Option_(finance)) is something you purchase for a small price (the "premium") that gives you the right to buy or sell an asset (the "underlier") at a pre-specified price (the "strike price") on or before a certain date.
+- Actually using the option to buy or sell is called "exercising".
 - There are two types of options:
 	- [Call options](https://en.wikipedia.org/wiki/Call_option) give you the right to buy an asset at a fixed price.
 	- [Put options](https://en.wikipedia.org/wiki/Put_option) give you the right to sell an asset at a fixed price.
@@ -19,8 +20,7 @@
 	- I believe anyone owning shares can write up a call contract and sell it to you, whereby you will be purchasing their shares if you exercise the option.
 	- Similarly, I believe that if you own shares, anyone can write up a put contract and sell it to you, whereby they will be purchasing your shares if you exercise the option.
 - # Covered Calls
-	- [TODO](https://en.wikipedia.org/wiki/Covered_option)
-	- A covered call is a call option that you sell to someone while owning shares of the underlying stock.
+	- A [covered call](https://en.wikipedia.org/wiki/Covered_option) is a call option that you sell to someone while owning shares of the underlying stock.
 	- It is called a "covered" call because the call option you sold is covered by the shares you own.
 		- This is opposed to a [naked call](https://en.wikipedia.org/wiki/Naked_option), where you sell a call option while not owning sufficient shares to sell if the option is exercised.
 		- Note that for the call to be truly covered, you need to own as many shares as the call option is written against, and retain them until the option expires or is exercised.
@@ -30,14 +30,27 @@
 		- By selling someone a call option covered by your shares, you instantly make money off of the premium - that's your extra cash earned for holding the shares.
 		- If the option expires out of the money, you've just pocketed that premium as profit while still retaining your shares.
 		- If the option becomes in the money and is exercised, you still get to make some profit from selling your shares (since the strike price will have been higher than the stock FMV at the time the option was written), and you still get to keep the premium, but the profit from the stock sale itself is lower than if you had sold them outside of a call contract, for the now-higher FMV.
+			- Or you can buy back the option for an equivalent amount, but still retain share ownership.
 - # Protective Puts
-	- A protective put is a put option that you buy while owning shares of the underlying stock.
+	- A [protective put](https://en.wikipedia.org/wiki/Protective_option) is a put option that you buy while owning shares of the underlying stock.
 	- It is called "protective" because it protects you from major losses if the stock price plummets.
 	- A protective put embodies the following financial strategy: "I want to own these shares long-term, but there might be some short-term volatility and I want to be protected against that"
 	- It's essentially a form of insurance against your shares, where you pay a small fee (the put option premium) to be protected against loss from those shares.
 	- Here's how it works:
 		- You pay the premium to purchase the put option - this acts as your "insurance premium".
 		- If the option expires out of the money (the stock price rises), you simply make profit off your shares, minus the premium.
-		- If the option becomes in the money (the stock price falls), you can exercise your options to sell your shares for much more than the FMV, minimizing your losses.
+		- If the option becomes in the money (the stock price falls), you can exercise your option to sell your shares for much more than the FMV, minimizing your losses.
+			- Or you can sell your option for an equivalent loss, but still retain share ownership.
 - # Collars
-	- [TODO](https://en.wikipedia.org/wiki/Collar_(finance))
+	- A [collar](https://en.wikipedia.org/wiki/Collar_(finance)) combines a covered call with a protective put - you purchase a put option and sell a call option for shares that you own.
+	- It's called a collar because it wraps a "collar" around the effective future value of your shares, capping it on both ends. This limits both upside and downside and provides smoothness protection against a volatile stock.
+	- A collar embodies the following financial strategy: "I want to own these shares long-term, or not pay taxes on selling them yet, but I don't want to risk exposing myself to a share price downturn, and I'm fine with capping my upside in return"
+		- In my view, a collar is most similar to a put, except you pay for your loss protection by capping your upside, rather than paying a premium fee.
+	- Here's how it works:
+		- In a textbook example, the premiums of your purchased put option and sold call option offset each other exactly, so there is no cost.
+		- If the share price stays in between the two strike prices (both options remain out of the money), nothing happens - you keep your shares and the options expire.
+		- If the share price plummets, you can either exercise or sell your put option to minimize your losses.
+		- If the share price soars, you can buy back your call option (or handle its exercise) for a net profit (but a smaller one than you would have made without the call option).
+	- Note that collars start to get into the territory of "constructive sales", where you essentially eliminate all risk of your shares changing value without actually selling and realizing capital gains taxes. The IRS monitors this closely, because it is not encouraged.
+		- One example of this would be a "perfect collar", where you set up a collar on some shares such that your option strike prices are almost exactly wrapping the current FMV (e.g. FMV of $100, put strike price of $99, and call strike price of $101).
+		- In this scenario, you've basically locked in your share value at $100 without actually needing to sell - and since you have this value available to you, it is nearly as liquid as if you had sold for cash (you can borrow against it, for example). You've effectively sold without having to pay taxes just yet.
