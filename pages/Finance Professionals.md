@@ -26,3 +26,9 @@
   id:: 6a13760e-7f27-4614-9de2-e599785a5ea9
 	- A [fiduciary](https://en.wikipedia.org/wiki/Fiduciary) is someone who is legally and ethically bound to act in the best interest of their client at all times, rather than in their own interest or their employer's.
 	- It is more of a general term - an RIA is one specific instance of someone being designated as a fiduciary.
+- # CPWA
+	- A [Certified Private Wealth Advisor](https://en.wikipedia.org/wiki/Investments_and_Wealth_Institute#Certified_Private_Wealth_Advisor_(CPWA)) is someone who has been certified by the Investments and Wealth Institute as someone who is competent in in wealth management for high-net-worth clients.
+	- A CPWA is considered a step up from a CFP for wealthy clients.
+- # ChFC
+	- A [Chartered Financial Consultant](https://en.wikipedia.org/wiki/Chartered_financial_consultant) is someone who has been certified by the American College of Financial Services as competent in providing financial planning advice.
+	- It is similar to a CFP, but with more emphasis on insurance and perhaps a less strict fiduciary requirement.
