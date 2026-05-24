@@ -1,0 +1,28 @@
+# CPA
+	- A [Certified Public Accountant](https://en.wikipedia.org/wiki/Certified_Public_Accountant) is someone who has been certified by the state government to provide accounting services to the public in that state.
+	- Their main responsibilities include:
+		- Tax services - e.g. preparing and filing tax returns
+		- Audit financial statements
+		- Maintain financial records
+	- CPAs most commonly work for corporations, public accounting firms, or the government.
+	- However, some people hire personal CPAs to help with their individual finances.
+- # CFA
+	- A [Chartered Financial Analyst](https://en.wikipedia.org/wiki/Chartered_Financial_Analyst) is someone who has been certified by the CFA Institute as capable of providing exceptional (and ethical) services for investment analysis and portfolio management.
+	- It is considered pretty prestigious in the investing world.
+	- A personal CFA's main responsibilities include:
+		- Research various types of investments and provide buy/sell/hold recommendations
+		- Portfolio management
+		- Risk management
+		- Wealth management
+- # CFP
+	- A [Certified Financial Planner](https://en.wikipedia.org/wiki/Certified_Financial_Planner) is someone who has been certified by (in the US) the CFP Board as competent in financial planning/advising for individuals.
+	- A CFP is much more focused on individual clients - in comparison, many CFAs simply work for and serve large companies.
+	- All CFPs must also be [fiduciaries](((6a13760e-7f27-4614-9de2-e599785a5ea9))).
+- # RIA
+	- A [Registered Investment Advisor](https://en.wikipedia.org/wiki/Registered_investment_adviser) is a firm or individual who is registered with the US SEC as someone who provides investment advice for compensation.
+	- This legal designation (not a certification) mainly exists to ensure that investment advisors are regulated and held to high standards - all RIAs must also be [fiduciaries](((6a13760e-7f27-4614-9de2-e599785a5ea9))).
+	- Many CFAs or CFPs are also RIAs.
+- # Fiduciary
+  id:: 6a13760e-7f27-4614-9de2-e599785a5ea9
+	- A [fiduciary](https://en.wikipedia.org/wiki/Fiduciary) is someone who is legally and ethically bound to act in the best interest of their client at all times, rather than in their own interest or their employer's.
+	- It is more of a general term - an RIA is one specific instance of someone being designated as a fiduciary.
