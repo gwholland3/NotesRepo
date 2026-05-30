@@ -1,2 +1,12 @@
 ### Constructors
-If a class does not declare any constructors, the compiler automatically provides a default constructor. It just default-initializes members that can be, and leaves other (more complex) members uninitialized, meaning they point to indeterminate/garbage values.
+	- If a class does not declare any constructors, the compiler automatically provides a default constructor. It just default-initializes members that can be, and leaves other (more complex) members uninitialized, meaning they point to indeterminate/garbage values.
+- ### Destructors
+	- A [destructor](https://en.cppreference.com/cpp/language/destructor) defines how a program frees the resources belonging to an object once that object is no longer in use.
+	- If you do not explicitly define a destructor method for a class, the compiler will define an [implicit one](https://en.cppreference.com/cpp/language/destructor#Implicitly-declared_destructor) for you with no function body.
+		- By default, such a destructor will perform the [following procedure](https://en.cppreference.com/cpp/language/destructor#Destruction_sequence):
+			- Visit each member of the object (in the reverse order they were declared) and invoke their own destructors.
+			- Then invoke the destructors of each base class of the object (again in reverse order of specification).
+		- All of that behavior is added by the compiler itself, even though there is no C++ code in the destructor function's body.
+		- But if certain conditions (namely when all of the object's members are primitive data types), the destructor actually does nothing - this is called a [trivial destructor](https://en.cppreference.com/cpp/language/destructor#Trivial_destructor).
+- ### Keywords
+	- [`inline`](https://en.cppreference.com/cpp/language/inline) - the body of this function should be substituted inline by the optimizer wherever it is called, rather than setting up a proper function call in assembly.
