@@ -13,18 +13,13 @@
 		- `await <coroutine>`
 		- `await <awaitable object>`
 			- An object is [awaitable](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable) if it provides the [`__await__()`](https://docs.python.org/3/reference/datamodel.html#object.__await__) method, which must return an iterator.
-			- This is basically syntactic sugar like so:
-			  ```python
-			  # This code:
-			  val = await awaitable_object
-			  
-			  # Is syntactic sugar for this code:
-			  val = next(awaitable_object.__await__())
-			  ```
-			-
-			-
+			- This will execute the object's `__await__()` method and wait for the resulting generator object to finish.
+- # Futures
+  id:: 6a1ca207-476f-442f-a48c-2da3d3418bab
+	- A [future](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#futures) is an object that represents the current state of a chunk of computation, and its result if finished.
+	- A task is a subclass of a future, and the former uses the functionality provided by the latter to mark itself (the task) as completed when the task's coroutine finishes.
 - # Miscellaneous Notes
 	- Async functions are also referred to as "coroutine functions".
 	- When you invoke a coroutine function, you receive back a "coroutine object", or just "coroutine".
-	- When you attach a coroutine to an event loop, it becomes a "task".
+	- When you attach a coroutine to an event loop, it becomes a "task". You can think of a task as a wrapper around a coroutine, rather than a type of coroutine.
 	- `asyncio.run()` has a `debug=True` parameter, though I still don't know exactly what kind of debug help it provides.
