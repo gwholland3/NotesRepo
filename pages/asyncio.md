@@ -1,4 +1,15 @@
 - [`asyncio`](https://docs.python.org/3/library/asyncio.html#module-asyncio) is a Python library that provides a framework for writing [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) software.
+- # Why Use asyncio?
+	- Not quite sure what the intended use cases are...
+	- I think the main use case is for handling lots of I/O concurrently. Example:
+		- Your program needs to talk to 50 other processes over network connections.
+		- For each process, your program needs to send a message, then receive a response message.
+			- This is accomplished by calling a single, blocking method on that process's connection.
+		- If the program were written completely synchronously, you would have to iterate through each process and perform the message exchange one at a time, waiting about a second between each send and receive.
+		- With asyncio, you could queue up these tasks all at once, and each one would yield while waiting for a response, allowing another task to send out its initial message.
+	- ## Alternatives to asyncio
+		- Threading
+		- Multiprocessing
 - # Resources
 	- https://docs.python.org/3/library/asyncio.html#module-asyncio
 	- https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#a-conceptual-overview-of-asyncio
@@ -10,7 +21,9 @@
 	- The [`await`](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#await) keyword is used to execute asynchronous code.
 	- It is commonly used in a few different ways:
 		- `await <task>`
+			- Yields control back to the event loop, and returns when the provided task has completed.
 		- `await <coroutine>`
+			- Executes the coroutine, then returns back to the calling function.
 		- `await <awaitable object>`
 			- An object is [awaitable](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable) if it provides the [`__await__()`](https://docs.python.org/3/reference/datamodel.html#object.__await__) method, which must return an iterator.
 			- This will execute the object's `__await__()` method and wait for the resulting generator object to finish.
