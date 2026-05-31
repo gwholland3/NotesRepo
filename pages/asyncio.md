@@ -1,0 +1,11 @@
+- [`asyncio`](https://docs.python.org/3/library/asyncio.html#module-asyncio) is a Python library that provides a framework for writing [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) software.
+- # Resources
+	- https://docs.python.org/3/library/asyncio.html#module-asyncio
+	- https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#a-conceptual-overview-of-asyncio
+- # Event Loop
+	- The main thing `asyncio` introduces is the [event loop](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#event-loop), which is basically just a collection of jobs that need to be run concurrently.
+	- The event loop just cycles through its set of jobs; it allows each one to run until it yields (of its own accord), then switches to the next job.
+		- Note that this means a greedy job that runs for a long time before yielding will block all the other jobs from running.
+- Async functions are also referred to as "coroutine functions".
+- When you invoke a coroutine function, you receive back a "coroutine object", or just "coroutine".
+- When you attach a coroutine to an event loop, it becomes a "task".
