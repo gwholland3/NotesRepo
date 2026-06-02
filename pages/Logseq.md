@@ -1,2 +1,3 @@
 - See this guide on how to reference individual blocks: https://discuss.logseq.com/t/the-basics-of-logseq-block-references/8458
 	- TLDR: use double parentheses
+- For referencing entire pages, use double square brackets.
