@@ -6,3 +6,12 @@
 - # Futures
 	- There are two types of futures in Python: the ones from the `asyncio` library and the ones from the `concurrent.futures` library.
 	- The former are discussed [here](((6a1ca207-476f-442f-a48c-2da3d3418bab))) - this section discusses the latter.
+- # Context Managers
+	- Main docs: https://book.pythontips.com/en/latest/context_managers.html
+	- The main purpose of context managers is to make it simple to write logic like the following:
+	  ```
+	  <set something up>
+	  	<do a thing while the above thing is set up>
+	  <clean up the above thing>
+	  ```
+	- Are context managers good for managing child processes?
