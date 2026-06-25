@@ -70,6 +70,7 @@
 	- Documentation: [concepts and terminology](https://www.home-assistant.io/getting-started/concepts-terminology/)
 	- A "device" is simple, it just represents a device.
 	- Each device can have any number of "entities", which basically represent distinct input or output data associated with that device.
+		- A "helper" is a virtual entity - it represents data just like a normal entity does, but it does not need to be tied to a physical device.
 	- You can group devices into "areas", for example to represent all devices in a living room. And areas can be grouped into "floors", to represent different floors of a building.
 	- An automation is a collection of actions that are kicked off by a trigger event, as long as certain preconditions hold.
 	- A script is similar to an automation, but doesn't have a trigger. It allows you to manually trigger a group of actions, or to have multiple automations reference the same group of actions so as not to repeat yourself.
