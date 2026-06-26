@@ -1,0 +1,2 @@
+- Vault is a product developed by Hashicorp: https://www.hashicorp.com/en/products/vault
+- It allows teams to manage secrets, such as API keys, passwords, certificates, and encryption keys.
