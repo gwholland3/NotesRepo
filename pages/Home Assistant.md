@@ -48,7 +48,7 @@
 - ### Networking
 	- I have a main network and a guest network. All my smart devices are currently on the guest network, and my HA server is on the main network.
 	- Resources:
-		- [https://community.home-assistant.io/t/using-a-guest-network/96322/9](https://community.home-assistant.io/t/using-a-guest-network/96322/9
+		- [https://community.home-assistant.io/t/using-a-guest-network/96322/9](https://community.home-assistant.io/t/using-a-guest-network/96322/9)
 		- [https://community.home-assistant.io/t/can-ha-and-iot-devices-just-live-on-a-guest-network-or-vlan/550878/15](https://community.home-assistant.io/t/can-ha-and-iot-devices-just-live-on-a-guest-network-or-vlan/550878/15)
 		- [https://community.home-assistant.io/t/where-to-put-server-iot-devices-in-vlan-network/218029](https://community.home-assistant.io/t/where-to-put-server-iot-devices-in-vlan-network/218029)
 	- So I need to go with one of the following options:
