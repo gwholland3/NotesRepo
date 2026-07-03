@@ -79,3 +79,5 @@
 	- A "dashboard" is a view composed of multiple "cards". A card can show device data or offer access to a device control.
 	- There are several default dashboards available, which are listed in the left sidebar of the Home Assistant UI.
 	- A "[blueprint](https://www.home-assistant.io/docs/blueprint/)" is a genericized automation that you can instantiate.
+- ### Configuration
+	- Most configuration can be done through the UI, but some of it must be done by editing the [`configuration.yaml`](https://www.home-assistant.io/docs/configuration/) file directly.
