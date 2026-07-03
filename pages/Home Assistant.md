@@ -66,6 +66,12 @@
 	- Or this one (I like this one better): [link](https://community.home-assistant.io/t/wake-up-light-alarm-with-sunrise-effect/255193)
 	- I've also enabled "third-party compatibility" in the Kasa app. Not sure exactly what that does, but it specifically says it's for Home Assistant use.
 	- For now I've just made my own janky automation that does the bare minimum I want.
+- ### Software
+	- Home Assistant software consists of four main components:
+		- Home Assistant Operating System: a minimal operating system designed to run on single-board computers and support the Home Assistant ecosystem
+		- Home Assistant Supervisor: a program that manages the rest of the Home Assistant software (e.g. responsible for installing/updating)
+		- Home Assistant Core: the main program that provides Home Assistant functionality
+		- Apps: add-ons to Home Assistant Core
 - ### Concepts and Terminology
 	- Documentation: [concepts and terminology](https://www.home-assistant.io/getting-started/concepts-terminology/)
 	- A "device" is simple, it just represents a device.
@@ -81,3 +87,7 @@
 	- A "[blueprint](https://www.home-assistant.io/docs/blueprint/)" is a genericized automation that you can instantiate.
 - ### Configuration
 	- Most configuration can be done through the UI, but some of it must be done by editing the [`configuration.yaml`](https://www.home-assistant.io/docs/configuration/) file directly.
+	- If you use the [File Editor](https://www.home-assistant.io/common-tasks/os/#installing-and-using-the-file-editor-app) app to interact with `configuration.yaml`, it should be mounted at `/homeassistant/configuration.yaml` in the app by default.
+	- You can also configure Home Assistant directly through SSH.
+		- There is another app that gives you SSH access from the browser UI: [Terminal & SSH](https://www.home-assistant.io/common-tasks/os/#installing-and-using-the-ssh-app)
+		- The Home Assistant CLI is documented [here](https://www.home-assistant.io/common-tasks/os#home-assistant-via-the-command-line).
