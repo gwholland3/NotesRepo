@@ -1,0 +1,5 @@
+- Options for cooking rice, from most preferable to least preferable:
+	- Pressure cooker (fastest)
+	- Rice cooker (still automatic)
+	- Manually in a pot
+- For most types of rice, you want a ration of 1-1.25 cups of water per 1 cup of rice.
