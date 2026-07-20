@@ -1,3 +1,9 @@
 - See this guide on how to reference individual blocks: https://discuss.logseq.com/t/the-basics-of-logseq-block-references/8458
 	- TLDR: use double parentheses
 - For referencing entire pages, use double square brackets.
+- # Logseq DB
+	- The Logseq team is refactoring the app to have a database be the canonical source for your data, rather than Markdown files. See the resources below.
+	- Initial announcement: https://discuss.logseq.com/t/why-the-database-version-and-how-its-going/26744
+	- Status update: https://logseq.io/p/e3YDyX5AYr
+	- Post-cutover FAQ: https://logseq.io/page/e87c7359-51f7-44fe-87b3-4a0cd9f2dee3/695feeec-88be-4c5b-8bf2-572513c2f730
+	-

@@ -1,0 +1,1 @@
+- Good article from REI on tent repair: https://www.rei.com/learn/expert-advice/tent-repair-how-to.html
