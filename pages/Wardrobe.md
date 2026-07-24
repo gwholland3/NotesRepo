@@ -17,3 +17,4 @@
 		- Sell
 		- Donate
 		- Keep
+	- Wash before you give away
