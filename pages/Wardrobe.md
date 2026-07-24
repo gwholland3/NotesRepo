@@ -7,3 +7,4 @@
 	- eBay
 	- ThredUp
 	- Depop
+	- [Buy Nothing](https://en.wikipedia.org/wiki/Buy_Nothing_Project) groups
