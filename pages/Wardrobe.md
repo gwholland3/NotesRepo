@@ -18,3 +18,4 @@
 		- Donate
 		- Keep
 	- Wash before you give away
+	- See if friends want anything first
