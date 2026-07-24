@@ -6,3 +6,4 @@
 	- Facebook Marketplace
 	- eBay
 	- ThredUp
+	- Depop
