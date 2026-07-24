@@ -13,4 +13,7 @@
 - ## Rental
 	- Rent the Runway
 - # Old
-	- Sort clothes into
+	- Sort clothes into:
+		- Sell
+		- Donate
+		- Keep
