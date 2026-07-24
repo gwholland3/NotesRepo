@@ -5,4 +5,4 @@
 - ## Online
 	- Facebook Marketplace
 	- eBay
-	- Thredup
+	- ThredUp
