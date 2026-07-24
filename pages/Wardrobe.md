@@ -3,6 +3,7 @@
 		- Goodwill
 		- Salvation Army
 		- Savers
+		- Plato’s Closet
 	- ## Online
 		- Facebook Marketplace
 		- eBay
