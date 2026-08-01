@@ -1,0 +1,2 @@
+- See some of my notes from [[Anki]].
+- Specifically, [this documentation](https://docs.ankiweb.net/background.html) from Anki explains some key learning concepts.
