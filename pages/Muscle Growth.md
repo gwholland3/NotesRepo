@@ -1,51 +1,59 @@
 ## Biology
-First, how do muscles work?
-
-Muscles are composed of fibers. All muscles function by contracting, and when you disengage a muscle, it relaxes.
-
-Proteins involved:
-- Actin
-- Myosin
-
-## How to Exercise Better
-([Source](https://www.gq.com/story/how-to-actually-build-muscle-when-you-work-out))
-
-First, there seems to be a difference in methods to gain muscle *size*, and methods to gain muscle *strength*. For instance, the former are used more by bodybuilders, and the latter more by powerlifters.
-
-Muscle growth on its own (without any accompanied increase in muscle strength) is called hypertrophy.
-
-Whether your exercise emphasizes size or strength more depends less on the exercise itself and more on how you do the exercise. Quality is more important than quantity.
-
-Muscle growth is primarily driven by mechanical tension - when your muscle is stretched and straining. Note that when your muscles are fresh, even if they’re lifting a heavy weight, they probably aren’t under much *mechanical* tension, only “normal” tension?
-
-Once a muscle approaches failure in an exercise, that’s when the mechanical tension kicks in. These final reps are referred to as “effective reps”, because, well, they’re the most effective for muscle growth.
-
-Another thing about getting close to failure: this causes you to recruit more motor units and muscle fibers to participate in the exercise.
-
-Theoretically, the amount of weight you’re actually working against is irrelevant - only whether that weight is inducing mechanical tension in any given moment. This also applies to the number of reps you do - if you do 10 reps at a light weight, that will probably result in less muscle growth than 4 reps at a very heavy weight.
-
-I think there’s a difference between the energy you expend during an exercise and the amount of mechanical tension your muscles experience. The former is good for burning calories and losing fat, and the latter is good for increasing muscle size.
-
-One possible downside to training all the way up to muscle failure is that it results in a lot of fatigue, and it may take longer before you’ve recovered enough to do another workout. One recommendation is to stop at one or two reps before failure, so that you optimize getting mechanical tension and workout frequency.
-
-### What Is Fatigue?
-Multiple sources have used this word, but I’m not sure what it represents scientifically…
-
-
-Random Thoughts:
-- There is definitely a genetic factor to muscle growth. Some people respond more to muscle stress, and others don’t
-- Muscle growth happens after exercise, when your body is repairing the damaged muscles
-- The reps where you’re closest to failure is when you stimulate the most growth
-- Can I combine two exercise routines for different muscle groups into one? E.g. do sets for the second muscle group when I’d normally be resting in between sets of the first
-
-Recommendations for optimizing gym workouts for muscle growth:
-- Efficiency: perform exercises that engage as many different muscle groups simultaneously as possible, to get the same effect out of a shorter workout
-- Consistency
-
-## Wide Chest
-([Source](https://chestsculpting.com/how-to-get-a-wider-chest/))
-It seems like developing your inner chest muscles will get you a thicker chest, while developing your outer chest muscles will get you a broader/wider one. You exercise your outer chest muscles the most when you use a full range of motion during your reps, with your shoulders back.
-
-Some other things to help build a wider chest:
-- Train the "antagonizing" muscles to your chest, which are your upper back muscles. These will help broaden your back and hold your shoulders back
-- Train your lateral deltoids (outer shoulder muscles) to give your shoulders some extra width
+	- First, how do muscles work?
+	- Muscles are composed of fibers. All muscles function by contracting, and when you disengage a muscle, it relaxes.
+	- Proteins involved:
+		- Actin
+		- Myosin
+	- Those fibers are grouped into "[motor units](https://en.wikipedia.org/wiki/Motor_unit)", where a single motor neuron controls the activation of several muscle fibers.
+	- Motor units are recruited by the nervous system to activate at different times, depending on the amount of force required.
+		- Motor units recruited at low force are referred to as low-threshold units, while motor units recruited only at high force are called high-threshold units.
+	- Muscle fibers can be classified by their [twitch speed](https://en.wikipedia.org/wiki/Skeletal_muscle#Twitch_speed):
+		- Slow-twitch fibers (also called Type I fibers) use aerobic energy transfer, generate tension slower, and last longer without fatiguing. They are better for endurance, and they typically do not grow as much under stress.
+		- Fast-twitch fibers (also called Type II fibers) use anaerobic energy transfer, generate tension faster, and fatigue quicker. They are better for generating short bursts of high strength/speed, and they typically grow more in response to stress.
+	- Typically, low-threshold motor units control slow-twitch muscle fibers, and high-threshold motor units control fast-twitch muscle fibers.
+		-
+- ## How to Exercise Better
+	- ([Source](https://www.gq.com/story/how-to-actually-build-muscle-when-you-work-out))
+	- First, there seems to be a difference in methods to gain muscle *size*, and methods to gain muscle *strength*. For instance, the former are used more by bodybuilders, and the latter more by powerlifters.
+	- Muscle growth on its own (without any accompanied increase in muscle strength) is called [hypertrophy](https://en.wikipedia.org/wiki/Muscle_hypertrophy).
+	- Whether your exercise emphasizes size or strength more depends less on the exercise itself and more on how you do the exercise. Quality is more important than quantity.
+	- Muscle hypertrophy is primarily driven by mechanical tension - when your muscle is stretched and straining.
+	- ### Mechanical Tension
+		- Mechanical tension is described as the force generated within a muscle as it contracts against resistance.
+		- Note that when your muscles are fresh, even if they’re lifting a heavy weight, you don't experience that much mechanical tension.
+		- This is because initially, your nervous system only calls on lower-threshold motor units, which (when fresh) are sufficient to move the weight.
+		- As you continue to move weight and the lower-threshold units begin to fatigue, you begin to activate more and more higher-threshold motor units.
+		- Towards the end of a set, the desired result is that you have as many motor units activated as possible, and that they are all experiencing high tension as they all fatigue simultaneously.
+			- This high relative tension *per muscle fiber* is what triggers the signaling that produces growth in those fibers.
+			- Note the use of the word "relative" here - if a muscle is only experiencing a low amount of absolute tension, but is severally fatigued and working close to its lowered output ceiling, the tension it experiences is high relative to its current max capability and it triggers muscle growth.
+		- The final reps of a set (which generate the most mechanical tension) are referred to as “effective reps”, because, well, they’re the most effective for muscle growth.
+		- Theoretically, the amount of weight you’re actually working against is irrelevant - only whether that weight is inducing mechanical tension in any given moment. This also applies to the number of reps you do - if you do 10 reps at a light weight, that will probably result in less muscle growth than 4 reps at a very heavy weight.
+	- I think there’s a difference between the energy you expend during an exercise and the amount of mechanical tension your muscles experience. The former is good for burning calories and losing fat, and the latter is good for increasing muscle size.
+	- One possible downside to training all the way up to muscle failure is that it results in a lot of fatigue, and it may take longer before you’ve recovered enough to do another workout. One recommendation is to stop at one or two reps before failure, so that you optimize getting mechanical tension and workout frequency.
+	- You contract your muscles when you exercise. Eccentric contraction is when your muscle is lengthening while it's contracted (e.g. lowering a weight), while concentric contraction is when your muscle is shortening while it's contracted (e.g. raising a weight).
+	- ### Progressive Overload
+		- [Progressive overload](https://en.wikipedia.org/wiki/Progressive_overload) represents the very simple and intuitive concept that over time, you should be increasing the intensity of your training.
+		- I.e. as you get stronger, you will need to train against heavier weight in order to continue growing.
+		- There are four main aspects of exercise that you can play with to achieve progressive overload:
+			- Volume: the total amount of force you're exerting, i.e. weight x reps
+			- Intensity: how hard you're exerting your muscles during a given movement, i.e. the amount of force you output in a single rep
+			- Frequency: how often you exercise
+			- Interval duration: the time in between exercise sets
+	- ### What Is [Fatigue](https://en.wikipedia.org/wiki/Muscle_fatigue)?
+		- Multiple sources have used this word, but I’m not sure what it represents scientifically…
+		- Generally, muscle fatigue is a temporary reduction in a muscle's ability to produce force or power.
+		- There appear to be several biological factors that contribute to muscle fatigue, but the simple way to think about it is to imagine that your muscle is like a car engine. After long periods of continuous activation, it can start to wear down and become less efficient due to build-up of byproducts of the muscle contraction process. After some maintenance (i.e. rest), it can go back to full capacity.
+	- Random Thoughts:
+		- There is definitely a genetic factor to muscle growth. Some people respond more to muscle stress, and others don’t.
+		- Muscle growth happens after exercise, when your body is repairing the damaged muscles
+		- The reps where you’re closest to failure is when you stimulate the most growth
+		- Can I combine two exercise routines for different muscle groups into one? E.g. do sets for the second muscle group when I’d normally be resting in between sets of the first
+	- Recommendations for optimizing gym workouts for muscle growth:
+		- Efficiency: perform exercises that engage as many different muscle groups simultaneously as possible, to get the same effect out of a shorter workout
+		- Consistency
+- ## Wide Chest
+	- ([Source](https://chestsculpting.com/how-to-get-a-wider-chest/))
+	- It seems like developing your inner chest muscles will get you a thicker chest, while developing your outer chest muscles will get you a broader/wider one. You exercise your outer chest muscles the most when you use a full range of motion during your reps, with your shoulders back.
+	- Some other things to help build a wider chest:
+		- Train the "antagonizing" muscles to your chest, which are your upper back muscles. These will help broaden your back and hold your shoulders back
+		- Train your lateral deltoids (outer shoulder muscles) to give your shoulders some extra width

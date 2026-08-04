@@ -1,24 +1,28 @@
-Fats, or lipids, are what compose adipose tissue, commonly known as body fat. There are two main types of adipose tissue:
-- White adipose tissue
-- Brown adipose tissue
-
-## Seed Oils
-Oils are a type of fat that is liquid at room temperature.
-Seed oils are a subset of vegetable oils, which are themselves a subset of all oils.
-
-Wikipedia: [link](https://en.wikipedia.org/wiki/Vegetable_oil#Seed_oil)
-
-TODO: learn more about the nutrition and health effects of seed oils. There is a lot of uncertainty at the moment.
-
-Resources:
-- [https://www.eatright.org/health/essential-nutrients/fats/understanding-seed-oils](https://www.eatright.org/health/essential-nutrients/fats/understanding-seed-oils)[https://www.eatrightpro.org/news-center/practice-trends/nutrition-fact-check-seed-oils](https://www.eatrightpro.org/news-center/practice-trends/nutrition-fact-check-seed-oils)
-### Production
-The majority of seed oil is extracted from seeds via expeller or cold pressing methods. Remaining quantities are drawn out of the leftover matter using solvent extraction.
-
-### Criticism
-There is also a whole Wikipedia article on seed oil misinformation: [link](https://en.wikipedia.org/wiki/Seed_oil_misinformation)
-
-Concerns from critics:
-- Hexane (which can be neurotoxic) is used during seed oil production and can be found in finished products in trace amounts
-	- The US EPA did several studies on this in the 1980s and concluded the consumer products were still safe
-- A too-high consumption of omega-6 fatty acids is suspected by some to increase the risk of some cardiovascular diseases
+- Fats, or lipids, are what compose [adipose tissue](https://en.wikipedia.org/wiki/Adipose_tissue), commonly known as body fat.
+- ## Adipose Tissue
+	- There are two main types of adipose tissue:
+		- [White adipose tissue](https://en.wikipedia.org/wiki/White_adipose_tissue): stores energy as triglycerides and provides insulation/cushioning. Most body fat is white fat.
+		- [Brown adipose tissue](https://en.wikipedia.org/wiki/Brown_adipose_tissue): burns calories and generates heat to regulate body temperature.
+	- Body fat can also be broken down by where it is located:
+		- Subcutaneous fat:
+			- This is fat that is stored directly under the skin, i.e. the layer you can pinch.
+			- Most people's body fat is subcutaneous, and it is considered the safest way to store fat (fewest negative side effects)
+		- Visceral fat:
+			- This is fat that is stored deeper within the body around internal organs.
+			- Excess visceral fat is linked to negative side effects such as inflammation, [insulin resistance](https://en.wikipedia.org/wiki/Insulin_resistance), and cardiometabolic risk.
+- ## Seed Oils
+	- Oils are a type of fat that is liquid at room temperature.
+	- Seed oils are a subset of vegetable oils, which are themselves a subset of all oils.
+	- Wikipedia: [link](https://en.wikipedia.org/wiki/Vegetable_oil#Seed_oil)
+	- TODO: learn more about the nutrition and health effects of seed oils. There is a lot of uncertainty at the moment.
+	- Resources:
+		- https://www.eatright.org/health/essential-nutrients/fats/understanding-seed-oils
+		- https://www.eatrightpro.org/news-center/practice-trends/nutrition-fact-check-seed-oils
+	- ### Production
+		- The majority of seed oil is extracted from seeds via expeller or cold pressing methods. Remaining quantities are drawn out of the leftover matter using solvent extraction.
+	- ### Criticism
+		- There is also a whole Wikipedia article on seed oil misinformation: [link](https://en.wikipedia.org/wiki/Seed_oil_misinformation)
+		- Concerns from critics:
+			- Hexane (which can be neurotoxic) is used during seed oil production and can be found in finished products in trace amounts
+				- The US EPA did several studies on this in the 1980s and concluded the consumer products were still safe
+			- A too-high consumption of omega-6 fatty acids is suspected by some to increase the risk of some cardiovascular diseases
