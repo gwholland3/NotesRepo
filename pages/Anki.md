@@ -1,6 +1,7 @@
 - Website: https://apps.ankiweb.net/
 - Anki is open source: https://github.com/ankitects/anki/blob/main/docs/contributing.md
 - The primary interface is a free desktop app, but there is also a paid mobile app that syncs with your desktop client for free.
+	- Desktop keyboard shortcuts: https://slidetoanki.com/blog/anki-keyboard-shortcuts-guide
 - Documentation: https://docs.ankiweb.net/
 - Anki is a flashcard tool for studying/learning.
 - It uses two well-established strategies from memory sciences:
