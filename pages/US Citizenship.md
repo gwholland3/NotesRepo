@@ -1,0 +1,24 @@
+- Most people that live in the US are citizens.
+- Citizenship is managed by the [U.S. Citizenship and Immigration Services](https://en.wikipedia.org/wiki/United_States_Citizenship_and_Immigration_Services) (USCIS).
+- ## Green Cards
+	- The next closest thing to citizenship is having a [green card](https://en.wikipedia.org/wiki/Green_card), which gives you the right to live and work permanently in the US as a non-citizen.
+	- The official name for a green card is a "permanent resident card".
+	- Green card holders are generally required to carry the card with them.
+	- Here are some differences between a US citizen and a green card holder:
+		- Citizens can vote, green card holders cannot.
+		- Citizens are members of the US and travel on a US passport, while green card holders are still members of their home country, and they travel with their home country passport plus their green card.
+		- Running for office is generally restricted for green card holders, while it is unrestricted for US citizens.
+		- Citizens and green card holders can both sponsor family members, but citizens usually get faster processing.
+	- A green card holder must also maintain US residency in order to retain their green card.
+	- A green card typically expires on its own every 10 years and must be renewed
+		- TODO: what's the renewal process like?
+	- After enough time living with a green card (3-5 years), a holder can apply for US citizenship.
+	- ### How To Get a Green Card
+		- The four most common ways to acquire a green card are:
+			- Family sponsorship
+			- Employment
+			- Refugee/asylum status
+			- The [Diversity Immigrant Visa](https://en.wikipedia.org/wiki/Diversity_Immigrant_Visa) program.
+		- If you are already in the US, the process of acquiring a green card is called "[adjustment of status](https://en.wikipedia.org/wiki/Adjustment_of_status)".
+		- The main application form is called Form I-485 (Application to Register Permanent Residence or Adjust Status). Supporting documents include:
+			- Medical examination results
