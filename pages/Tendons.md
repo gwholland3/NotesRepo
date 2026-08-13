@@ -1,1 +1,1 @@
-- Tendons connect muscle to bone
+- Tendons connect muscle to bone.
