@@ -1,23 +1,25 @@
 Wikipedia: [link](https://en.wikipedia.org/wiki/Light-emitting_diode)
 
-## Polarity
-
-The long leg of an LED should face the source of incoming power, and the short leg should face away.
-
-To be more technical, the longer leg is the positive terminal and the shorter leg is the negative terminal.
-
-## Misc
-
-SMD = "Surface Mount Device"
-It means the LED chip is mounted directly to a surface (such as a light strip) without using wires.
-
-Most LEDs are classified with a number that tells you their 2D dimensions. For example:
-- 5050: 5.0 mm x 5.0 mm
-- 3528: 3.5 mm x 2.8 mm
-- 2835: 2.8 mm x 3.5 mm (but also some other differences/improvements from the 3528)
-
-LEDs are usually also assigned an Ingress Protection (IP) code: [Wikipedia](https://en.wikipedia.org/wiki/IP_code)
-This defines how well-protected it is against water and dust. Some example codes:
-- IP30
-- IP65
-- IP67
+- ## Polarity
+	- The long leg of an LED should face the source of incoming power, and the short leg should face away.
+	- To be more technical, the longer leg is the positive terminal and the shorter leg is the negative terminal.
+- ## Misc
+	- SMD = "Surface Mount Device"
+		- It means the LED chip is mounted directly to a surface (such as a light strip) without using wires.
+	- Most LEDs are classified with a number that tells you their 2D dimensions. For example:
+		- 5050: 5.0 mm x 5.0 mm
+		- 3528: 3.5 mm x 2.8 mm
+		- 2835: 2.8 mm x 3.5 mm (but also some other differences/improvements from the 3528)
+	- LEDs are usually also assigned an Ingress Protection (IP) code: [Wikipedia](https://en.wikipedia.org/wiki/IP_code)
+		- This defines how well-protected it is against water and dust. Some example codes:
+			- IP30
+			- IP65
+			- IP67
+	- LEDs have spec (specification) sheets that describe their properties. You can see an example LED spec sheet [here](https://www.we-online.com/components/products/datasheet/151031SS06000.pdf).
+	- Common spec sheet data:
+		- Forward voltage: the minimum voltage needed for the LED to turn on and conduct any current.
+			- Remember that this is the voltage drop *across the LED*, not the voltage drop across the entire circuit.
+			- Voltage determines current, which determines luminosity.
+		- Current ratings: how much current the LED is able to handle without being damaged.
+			- Usually, you should start with a target current, then work your way backwards to determine how much resistance should be placed in series with the LED (for a fixed input voltage) to achieve that target current.
+	- Unlike resistors, LEDs do not have a constant resistance - an LED's resistance varies depending on the operating conditions.
