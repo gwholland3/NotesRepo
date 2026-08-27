@@ -45,3 +45,4 @@
 	- When choosing a deck to study from your list of decks, each deck will show you the number of cards that you should review in that deck today, divided into the "new", "learning", and "review" states.
 		- For example, one of your decks might say that for today, there are 3 "new" cards to learn, 6 "learning" cards to study, and 18 "review" cards to review.
 	- As a rule of thumb, you should show the answer if you can't remember it within 10 seconds.
+	- If you come across a card you don't like while studying, you can "suspend" it, which hides it from being shown until unsuspended.
