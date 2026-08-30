@@ -1,37 +1,47 @@
-# [Pothos](https://en.wikipedia.org/wiki/Epipremnum_aureum)
-	- Scientific name: Epipremnum aureum
-	- Light requirement: low to medium
-	- Water requirement: only needs water when soil dries out, every 1-2 weeks
-		- But can grow directly in water, in addition to in soil
-	- Purifies air
-	- Fast-growing
-	- Vine-like, good for hanging
-- # [Snake Plant](https://en.wikipedia.org/wiki/Dracaena_trifasciata)
-	- Scientific name: Dracaena trifasciata
-	- Light requirement: low to bright indirect light
-	- Water requirement: every 2-4 weeks, sometimes even less frequently is tolerable
-	- Very hardy, nearly indestructible
-	- Purifies air
-	- Mildly toxic if ingested, maybe not great for if you have pets
-- # [Spider Plant](https://en.wikipedia.org/wiki/Chlorophytum_comosum)
-	- Scientific name: Chlorophytum comosum
-	- Light requirement: tolerates a range of light
-	- Water requirement: Not that needy, probably every 2ish weeks
-		- Sensitive to the fluoride in tap water, too much can cause "burnt tips"
-	- Purifies air
-- # [Peace Lily](https://en.wikipedia.org/wiki/Spathiphyllum)
-	- Scientific name: Spathiphyllum
-	- Light requirement: low-medium light, lives best in shade
-	- Water requirement: likes consistent moisture, but not soggy soil
-		- Only needs watering if soil is dry, approximately once a week
-	- Purifies air
-- # [Majesty Palm](https://en.wikipedia.org/wiki/Ravenea_rivularis)
-	- Scientific name: Ravenea rivularis
-	- Light requirement: bright, indirect light
-	- Water requirement: likes soil consistently moist but not soggy
-		- Prefer 50-70% humidity
-			- Recommended to mist its leaves frequently, or keep it near a humidifier
-			- Prone to spider mites in dry conditions
-	- Requires specialty fertilizer for palm trees; needs more magnesium than other plants
-		- A pinch of epsom salt can be used as an alternate source of magnesium
-	- Purifies air
+# Species
+	- ## [Pothos](https://en.wikipedia.org/wiki/Epipremnum_aureum)
+		- Scientific name: Epipremnum aureum
+		- Light requirement: low to medium
+		- Water requirement: only needs water when soil dries out, every 1-2 weeks
+			- But can grow directly in water, in addition to in soil
+		- Purifies air
+		- Fast-growing
+		- Vine-like, good for hanging
+	- ## [Snake Plant](https://en.wikipedia.org/wiki/Dracaena_trifasciata)
+		- Scientific name: Dracaena trifasciata
+		- Light requirement: low to bright indirect light
+		- Water requirement: every 2-4 weeks, sometimes even less frequently is tolerable
+		- Very hardy, nearly indestructible
+		- Purifies air
+		- Mildly toxic if ingested, maybe not great for if you have pets
+	- ## [Spider Plant](https://en.wikipedia.org/wiki/Chlorophytum_comosum)
+		- Scientific name: Chlorophytum comosum
+		- Light requirement: tolerates a range of light
+		- Water requirement: Not that needy, probably every 2ish weeks
+			- Sensitive to the fluoride in tap water, too much can cause "burnt tips"
+		- Purifies air
+	- ## [Peace Lily](https://en.wikipedia.org/wiki/Spathiphyllum)
+		- Scientific name: Spathiphyllum
+		- Light requirement: low-medium light, lives best in shade
+		- Water requirement: likes consistent moisture, but not soggy soil
+			- Only needs watering if soil is dry, approximately once a week
+		- Purifies air
+	- ## [Majesty Palm](https://en.wikipedia.org/wiki/Ravenea_rivularis)
+		- Scientific name: Ravenea rivularis
+		- Light requirement: bright, indirect light
+		- Water requirement: likes soil consistently moist but not soggy
+			- Prefer 50-70% humidity
+				- Recommended to mist its leaves frequently, or keep it near a humidifier
+				- Prone to spider mites in dry conditions
+		- Requires specialty fertilizer for palm trees; needs more magnesium than other plants
+			- A pinch of epsom salt can be used as an alternate source of magnesium
+		- Purifies air
+- # Watering
+	- Ceramic stake
+		- You stick an unglazed ceramic cone into the soil, tip side down.
+		- The cone is hollow but sealed, with a thin tube running out the top.
+		- The cone is also porous (because it's unglazed), so water can slowly seep out of its sides.
+		- You connect the tube to a water source at roughly the same height as the cone, and fill the cone initially.
+		- When the surrounding soil is dry, water seeps out the cone, creating a vacuum inside it that draws more water in through the tube.
+		- The higher the external water source is, the easier it is to draw water, so the soil stays more moist.
+		- The lower the water source is, the harder it is to draw water, so the soil stays more dry.
