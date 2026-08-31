@@ -1,11 +1,15 @@
-- General syntax of `ip` commands (from `man ip`):
-- ```
-  ip <thing> <command>
-  
-  # Examples of things: address, link, route
-  
-  # Commands are thhing-dependend, but some generic examples are: show, add, set, etc
-  ```
+# Proxies
+	- A [proxy](https://en.wikipedia.org/wiki/Proxy_server) is a computer that acts as an intermediary between other computers, forwarding requests and responses. It typically acts on the behalf of / represents another computer using it.
+	- A forward proxy (commonly just called a "proxy") is a proxy that act on the behalf of clients. A [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) is a proxy that acts on the behalf of servers
+- # Misc
+	- General syntax of `ip` commands (from `man ip`):
+	- ```
+	  ip <thing> <command>
+	  
+	  # Examples of things: address, link, route
+	  
+	  # Commands are thhing-dependend, but some generic examples are: show, add, set, etc
+	  ```
 - # Specific Commands
 	- List all entries in your computer's ARP table:
 	  ```
