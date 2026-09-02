@@ -11,3 +11,14 @@
 	- A container is like a process running that program.
 - Official docs:
 	- What is Docker: https://docs.docker.com/get-started/docker-overview/
+- ## Image
+	- An image is composed of multiple layers that get overlaid on top of each other.
+	- When you `docker pull` an image, each layer gets downloaded from the registry individually.
+- ## Dockerfile
+	- A Dockerfile is a sequence of **stages**.
+	- A Dockerfile is more imperative than declarative - you specify what commands to run in order to produce the image, rather than specifying properties of the image and letting Docker figure out how to build it.
+- ## Helpful Commands
+	- Inspect a file inside an image (make sure to pull the image first):
+	  ```
+	  docker run --rm <image_name>:<tag> cat /path/to/my_file.txt
+	  ```
