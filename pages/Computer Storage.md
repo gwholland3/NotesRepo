@@ -1,4 +1,5 @@
-## Types of Storage
+- See [Wikipedia](https://en.wikipedia.org/wiki/Computer_data_storage).
+- ## Types of Storage
 	- ### Hard Disk Drive
 		- See [Wikipedia](https://en.wikipedia.org/wiki/Hard_disk_drive).
 		- Consists of a spinning disk that stores data.
@@ -13,5 +14,17 @@
 	- ### SSD
 		- See [Wikipedia](https://en.wikipedia.org/wiki/Solid-state_drive).
 		- Supposedly more reliable than SD cards.
+- ## Using Storage
+	- ### Partitions
+		- A single storage device can be split into multiple "[partitions](https://en.wikipedia.org/wiki/Disk_partitioning)", which represent logical regions of storage that can each be used/managed for separate purposes.
+		- Usually, a storage device that has been partitioned ends up with a small data structure written at its beginning - this data structure describes the partitions on that device.
+			- There are two common formats for partitioning that are supported across a wide range of downstream software:
+				- [Master Boot Record](https://en.wikipedia.org/wiki/Master_boot_record) (MBR)
+				- [GUID Partition Table](https://en.wikipedia.org/wiki/GUID_Partition_Table) (GPT)
+		- Multiple layers of the software stack need to know about partitions:
+			- Firmware (e.g. BIOS or UEFI) needs to know where to find a bootloader to run.
+			- The bootloader needs to know where to find the OS/kernel to run.
+			- The kernel's various storage-related drivers need to know what partitions should be presented as block devices.
+			- Userspace tools can also interact with partitions, e.g. to repartition a storage device.
 - ## Analyzing Storage Usage
 	- Check the `~/Library/Caches/` folder to see if anything can be deleted. The `Homebrew/` subdirectory is especially likely to be large, and that entire subdirectory can be safely deleted to recover storage space.
