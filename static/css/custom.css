@@ -1,3 +1,18 @@
+/* Linked inline code should look like a link */
+a.external-link code,
+a.external-link > code,
+.external-link code {
+  color: var(--ls-external-link-color, var(--ls-link-text-color, #0070f3)) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+}
+
+a.external-link:hover code,
+a.external-link:hover > code {
+  color: var(--ls-link-text-hover-color, var(--ls-external-link-color, #0070f3)) !important;
+}
+
 /* ====================== PUBLISHED SITE ONLY - Clean Minimal Blue ====================== */
 
 /* Block background on hover */
@@ -21,4 +36,3 @@ html.is-publish-mode a:hover,
 html.is-publish-mode .page-ref:hover {
   text-decoration: underline;
 }
-
