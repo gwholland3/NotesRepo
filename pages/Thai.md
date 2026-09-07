@@ -1,0 +1,37 @@
+- [Thai](https://en.wikipedia.org/wiki/Thai_language) is the national language of Thailand.
+- The Thai language is governed by the [Royal Institute](https://en.wikipedia.org/wiki/Royal_Society_of_Thailand), which published the official [Royal Institute Dictionary](https://en.wikipedia.org/wiki/Royal_Institute_Dictionary).
+- Within Thailand, there are four major dialects of Thai.
+	- Central Thai is the most common - it is taught in all schools and used for most television broadcasts.
+- Thai is a [tonal](https://en.wikipedia.org/wiki/Tone_(linguistics)) language, meaning that the same letters spoken with a different tone can mean different words.
+	- In linguistics, "tone" is almost synonymous with "pitch". In other words, one vowel sound spoken at a higher pitch than another vowel sound is said to employ a different tone.
+- A Thai syllable must contain a vowel sound, optionally beginning and/or ending with a consonant sound.
+- Every syllable uses one of the five tones in the Thai language: mid (aka common), low, high, rising, or falling.
+- Consonants are divided into three classes: mid, low, and high.
+	- These classes help determine the tone of nearby vowels.
+- All in all, a vowel's tone is determined by a combination of at least these factors:
+	- Type and presence of consonants.
+	- Vowel duration.
+	- The presence of a tone diacritic.
+- ## Register
+	- Thai uses several [registers](https://en.wikipedia.org/wiki/Register_(sociolinguistics)), or variants of the language for different contexts:
+		- Street/Common Thai
+		- Elegant/Formal Thai
+		- Rhetorical Thai: used for public speaking
+		- Religious Thai
+		- Royal Thai
+	- Street and Elegant Thai are the most commonly used in everyday life.
+- ## Grammar
+	- Thai is an [isolating language](https://en.wikipedia.org/wiki/Isolating_language), meaning its [lemmas](https://en.wikipedia.org/wiki/Lemma_(morphology)) are not altered in different contexts.
+		- For example, verbs are not conjugated depending on the subject.
+		- In this aspect, the grammar is simpler than English.
+	- Thai has a rich system of [grammatical aspect](https://en.wikipedia.org/wiki/Grammatical_aspect), compared to English.
+- ## Writing
+	- Thai is written using the [Thai script](https://en.wikipedia.org/wiki/Thai_script), which consists of:
+		- 44 consonant symbols.
+		- 16 vowel symbols.
+		- Four tone [diacritics](https://en.wikipedia.org/wiki/Diacritic).
+		- Other miscellaneous diacritics.
+	- Thai is considered to be an [abugida](https://en.wikipedia.org/wiki/Abugida).
+	- The vowel graphemes are placed above, below, before, or after the consonant whose sound they follow.
+	- Thai is a phonemic language, meaning pronunciation corresponds 1:1 with the writing. In other words, it is always possible to correctly pronounce a written word, even if you've never seen it before.
+	-

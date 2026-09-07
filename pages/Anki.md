@@ -3,7 +3,8 @@
 - The primary interface is a free desktop app, but there is also a paid mobile app that syncs with your desktop client for free.
 	- Desktop keyboard shortcuts: https://slidetoanki.com/blog/anki-keyboard-shortcuts-guide
 - Documentation: https://docs.ankiweb.net/
-- Anki is a flashcard tool for studying/learning.
+- Anki is a flashcard tool for studying.
+	- I would say it is less for learning, and more for remembering/memorizing.
 - It uses two well-established strategies from memory sciences:
 	- Active Recall: you try to remember something actively, rather than just reading or listening passively.
 	  logseq.order-list-type:: number
