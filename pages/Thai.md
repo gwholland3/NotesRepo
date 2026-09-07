@@ -14,7 +14,7 @@
 	- The Thai language has five tones for vowels/syllables: mid (aka common), low, high, rising, or falling.
 	- Consonants are divided into three classes: mid, low, and high.
 		- These classes help determine the tone of nearby vowels.
-	- All in all, a vowel's tone is determined by a combination of at least these factors:
+	- All in all, a vowel's tone is [determined](http://thai-language.com/ref/tone-rules) by a combination of at least these factors:
 		- Type and presence of consonants.
 		- Vowel duration.
 		- The presence of a tone diacritic.
@@ -33,8 +33,8 @@
 	- Thai has a rich system of [grammatical aspect](https://en.wikipedia.org/wiki/Grammatical_aspect), compared to English.
 - ## Writing
 	- Thai is written using the [Thai script](https://en.wikipedia.org/wiki/Thai_script), which consists of:
-		- 44 consonant symbols.
-		- 16 vowel symbols.
+		- 44 [consonant](http://thai-language.com/ref/consonants) symbols.
+		- 16 [vowel](http://thai-language.com/ref/vowels) symbols.
 		- Four tone [diacritics](https://en.wikipedia.org/wiki/Diacritic).
 		- Other miscellaneous diacritics.
 	- Thai consonant letters do not have standalone spoken names the way that English letters do. Instead, people refer to consonants in the following manner: <consonant sound> + <default vowel sound> + <textbook word associated with that letter>.
