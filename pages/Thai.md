@@ -4,14 +4,20 @@
 	- Central Thai is the most common - it is taught in all schools and used for most television broadcasts.
 - Thai is a [tonal](https://en.wikipedia.org/wiki/Tone_(linguistics)) language, meaning that the same letters spoken with a different tone can mean different words.
 	- In linguistics, "tone" is almost synonymous with "pitch". In other words, one vowel sound spoken at a higher pitch than another vowel sound is said to employ a different tone.
-- A Thai syllable must contain a vowel sound, optionally beginning and/or ending with a consonant sound.
-- Every syllable uses one of the five tones in the Thai language: mid (aka common), low, high, rising, or falling.
-- Consonants are divided into three classes: mid, low, and high.
-	- These classes help determine the tone of nearby vowels.
-- All in all, a vowel's tone is determined by a combination of at least these factors:
-	- Type and presence of consonants.
-	- Vowel duration.
-	- The presence of a tone diacritic.
+	- To refer specifically to the tone that determines the meaning of a word, you say "lexical tone"
+	- More info [here](http://thai-language.com/ref/tones).
+- ## Syllables
+	- A Thai orthographic [syllable](https://en.wikipedia.org/wiki/Syllable) is composed of an initial consonant, a vowel sound, and an optional final consonant.
+		- The initial consonant can also be a "consonant cluster", not just a single consonant letter.
+		- The vowel sound can have different durations and tones.
+		- A syllable with a final consonant is called a closed syllable. A syllable without a final consonant is called an open syllable.
+	- The Thai language has five tones for vowels/syllables: mid (aka common), low, high, rising, or falling.
+	- Consonants are divided into three classes: mid, low, and high.
+		- These classes help determine the tone of nearby vowels.
+	- All in all, a vowel's tone is determined by a combination of at least these factors:
+		- Type and presence of consonants.
+		- Vowel duration.
+		- The presence of a tone diacritic.
 - ## Register
 	- Thai uses several [registers](https://en.wikipedia.org/wiki/Register_(sociolinguistics)), or variants of the language for different contexts:
 		- Street/Common Thai
@@ -31,7 +37,17 @@
 		- 16 vowel symbols.
 		- Four tone [diacritics](https://en.wikipedia.org/wiki/Diacritic).
 		- Other miscellaneous diacritics.
+	- Thai consonant letters do not have standalone spoken names the way that English letters do. Instead, people refer to consonants in the following manner: <consonant sound> + <default vowel sound> + <textbook word associated with that letter>.
+		- For example, the consonant letter ก would be referred to as (romanized): gor gài.
+			- In this example, "g" is the consonant sound, "or" is the default vowel sound (consonants need a vowel sound to be speakable), and "gài" means "chicken" in Thai.
+		- The "textbook word" is often called a letter's "mascot".
+		- The English equivalent to this way of describing letters would be like someone saying "D as in dog".
+			- In fact it's almost exactly equivalent: you're taking the "D" consonant sound, adding an "ee" vowel sound (as opposed to something sounding like "do"), and ending with an example word that is commonly associated with that letter.
 	- Thai is considered to be an [abugida](https://en.wikipedia.org/wiki/Abugida).
-	- The vowel graphemes are placed above, below, before, or after the consonant whose sound they follow.
+	- The vowel graphemes are placed differently in writing relative to the consonant that they follow in speech:
+		- Preposed: written before the initial consonant.
+		- Postposed: written after the initial consonant.
+		- Superposed: written above the initial consonant.
+		- Subposed: written below the initial consonant.
 	- Thai is a phonemic language, meaning pronunciation corresponds 1:1 with the writing. In other words, it is always possible to correctly pronounce a written word, even if you've never seen it before.
 	-

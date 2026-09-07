@@ -38,7 +38,7 @@
 		  A: {{English}}
 		  ```
 		- Then, you can plug in the fields from a note into that template to create a single card.
-	- Every note must be of a certain [**note type**](https://docs.ankiweb.net/getting-started.html#note-types). A note type just determines which card types are associated with that note.
+	- Every note must be of a certain [**note type**](https://docs.ankiweb.net/getting-started.html#note-types). A note type just determines which fields that note must have and which card types are associated with that note.
 		- Thus, you can create a new note of a given note type, and it automatically results in the creation of several cards derived from that note's fields, based on which card types were tied to that note type.
 	- Your [**collection**](https://docs.ankiweb.net/getting-started.html#collection) is all the content you have stored in Anki, e.g. all your cards, decks, notes, note types, etc
 	- You can add [**tags**](https://docs.ankiweb.net/editing.html#using-tags) to notes, which allows you to search for them or filter them into temporary study decks.
