@@ -1,0 +1,5 @@
+- Website: https://www.duckdns.org/
+	- Some Reddit discussion [here](https://www.reddit.com/r/technology/comments/56j6pn/duckdns_forever_free_ddns/).
+- Duck DNS is a very barebones service that will point a subdomain of `duckdns.org` at an IP of your choosing.
+	- And it's completely free!
+	- It's funded by the two guys who run it, as well as Patreon/donations.
