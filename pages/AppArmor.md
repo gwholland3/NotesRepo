@@ -1,10 +1,11 @@
 - Resources:
+	- Official documentation: https://apparmor.net/
 	- SUSE Security and Hardening Guide:
 		- https://doc.opensuse.org/documentation/leap/security/html/book-security/part-apparmor.html
 		- https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-apparmor-profiles.html
 	- Ubuntu man: https://manpages.ubuntu.com/manpages/xenial/man5/apparmor.d.5.html
 	- Debian man: https://manpages.debian.org/unstable/apparmor/apparmor.d.5.en.html
-- AppArmor is a way to restrict permissions on a pre-process basis, instead of per-user.
+- [AppArmor](https://en.wikipedia.org/wiki/AppArmor) is a way to restrict permissions on a pre-process basis, instead of per-user.
 - Most of the config lines for a given process just consist of:
 	- Naming a particular file or group of files
 	- Specifying allowed interactions between the process and the file(s) (e.g. read, write, execute)

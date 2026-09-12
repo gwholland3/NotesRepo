@@ -1,0 +1,2 @@
+- From its ["about" page](https://www.qemu.org/docs/master/about/index.html): "QEMU is a generic and open source machine emulator and virtualizer."
+- See the documentation [here](https://www.qemu.org/docs/master/index.html), and the CLI man page [here](https://www.qemu.org/docs/master/system/qemu-manpage.html).
