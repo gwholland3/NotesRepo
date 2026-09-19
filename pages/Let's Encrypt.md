@@ -1,0 +1,28 @@
+- [Let's Encrypt](https://en.wikipedia.org/wiki/Let%27s_Encrypt) is a free public certificate authority service run by the non-profit [Internet Security Research Group](https://en.wikipedia.org/wiki/Internet_Security_Research_Group).
+- A [Certificate Authority](https://en.wikipedia.org/wiki/Certificate_authority) (CA) is a trusted third party that vouches for the identity of a server.
+- Desired properties of an Internet connection:
+	- The data is encrypted, so anyone snooping in the middle can't read anything.
+	- You are confident you are actually talking to who you think you're talking to, instead of an imposter.
+- CAs do Domain Validation (DV), which is what proves \#2.
+- Client devices usually ship with a "root store" - a list of CA certificates trusted by default (e.g. when a MacBook ships with [this root store](https://support.apple.com/en-us/103272), Apple is vouching for those CAs).
+- Every certificate has a few important fields:
+	- Subject: who this cert represents.
+	- Issuer: who signed the cert.
+	- Signature: a public key from the issuer?
+	- Subject public key: which public key you can use to verify the server's identity, assuming you trust the issuer.
+- A certificate's purpose is to prove the identity of whoever is offering it to you.
+- The "chain of trust" works like this (example):
+	- Safari on my MacBook wants to connect to `www.google.com`
+	- Safari does a TLS handshake with whomever it got routed to by DNS for `www.google.com`
+	- The other server sends over a leaf (i.e. end-of-the-line, identifies a public-facing server) certificate, as well as any intermediary certificates (representing CAs) in the chain of trust
+	- Safari verifies that the leaf certificate subject ("who does this cert prove me to be") matches who we intended to talk to (`www.google.com`)
+	- Safari looks at the leaf certificate's issuer, and checks if it got an intermediate certificate for that issuer/CA
+	- It continues hopping up the chain until it reaches a root CA that it inherently trusts in its root store
+	- Now it validates in reverse...
+	- It checks if the root CA's public key verifies the signature on the first intermediate CA's certificate
+	- If not, it halts. If so, it now trusts the public key for that first intermediate CA and uses it to verify the signature on the next intermediate CA's certificate
+	- It continues to do this back down the chain until a CA's public key verifies the signature on the server's leaf certificate
+	- Now it can trust the public key listed in the leaf certificate, and it can use it to challenge the server and verify that it indeed owns the private key corresponding to that public key, thus ultimately proving that the server represents `www.google.com`.
+- So back to Let's Encrypt - it is a service saying "I will vouch that your public key corresponds to your domain".
+	- In order to get set up with Let's Encrypt, you first need to prove to *it* that you indeed own your domain - you do this through the [ACME](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) protocol.
+	- More description here: https://letsencrypt.org/how-it-works/
