@@ -76,6 +76,8 @@
 	- Documentation: [concepts and terminology](https://www.home-assistant.io/getting-started/concepts-terminology/)
 	- A "device" is simple, it just represents a device.
 	- Each device can have any number of "entities", which basically represent distinct input or output data associated with that device.
+		- You can think of an entity as basically just a key-value pair. Note that in addition to its main value (also called its "[state](https://www.home-assistant.io/docs/templating/states/)"), a single entity can also have any number of key-value "attributes".
+			- For example, a temperature sensor device may have an entity representing its temperature reading. The state would be the temperature value, but it could also have a `unit_of_measurement` attribute that maps to `degC` or `degF`.
 		- A "helper" is a virtual entity - it represents data just like a normal entity does, but it does not need to be tied to a physical device.
 	- You can group devices into "areas", for example to represent all devices in a living room. And areas can be grouped into "floors", to represent different floors of a building.
 	- An automation is a collection of actions that are kicked off by a trigger event, as long as certain preconditions hold.
