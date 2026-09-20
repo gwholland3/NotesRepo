@@ -49,6 +49,7 @@ My personal notes on Vim.
 			- CTRL-w CTRL-s  - same as :split
 			- CTRL-w CTRL-v  - same as :split
 			- CTRL-w CTRL-o  - same as :only
+			- CTRL-c  - alternate way to exit insert mode, besides ESC
 		- Motions:
 			- gt  - go to the next tab page
 			- gT  - go to the previous tab page

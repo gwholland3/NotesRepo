@@ -88,6 +88,7 @@
 - ### Configuration
 	- Most configuration can be done through the UI, but some of it must be done by editing the [`configuration.yaml`](https://www.home-assistant.io/docs/configuration/) file directly.
 	- If you use the [File Editor](https://www.home-assistant.io/common-tasks/os/#installing-and-using-the-file-editor-app) app to interact with `configuration.yaml`, it should be mounted at `/homeassistant/configuration.yaml` in the app by default.
+		- Note that the `/homeassistant/` folder in the app corresponds to `/config/` inside the HA Docker container.
 	- You can also configure Home Assistant directly through SSH.
 		- There is another app that gives you SSH access from the browser UI: [Terminal & SSH](https://www.home-assistant.io/common-tasks/os/#installing-and-using-the-ssh-app)
 		- The Home Assistant CLI is documented [here](https://www.home-assistant.io/common-tasks/os#home-assistant-via-the-command-line).
