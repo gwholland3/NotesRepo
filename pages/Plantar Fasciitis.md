@@ -1,0 +1,16 @@
+- [Plantar fasciitis](https://en.wikipedia.org/wiki/Plantar_fasciitis) is a disorder of the [plantar fascia](https://en.wikipedia.org/wiki/Plantar_fascia), a dense connective tissue that starts at the heel bone and branches out towards the base of each toe.
+- External symptoms:
+	- Pain in the heel / bottom of the foot
+	- Increased sensitivity during the first steps of the day or after a long period of rest
+	- Increased sensitivity while stretching the foot / toes towards the shin
+- Ultrasound can help diagnose plantar fasciitis, looking for things like abnormal thickness, microtears, or scarring. An MRI can provide even more detail.
+- Can be confused with [heel pad syndrome](https://en.wikipedia.org/wiki/Heel_pad_syndrome), which does not have the same morning pain as plantar fasciitis.
+- It is not yet understood what causes plantar fasciitis, the suspected causes include:
+	- Overuse
+	- Tight calf muscles / Achilles tendons
+	- [Pronation](https://en.wikipedia.org/wiki/Pronation_of_the_foot)
+	- Sedentary lifestyle
+	- Heel spurs
+- [Pathophysiology](https://en.wikipedia.org/wiki/Pathophysiology):
+	- Plantar fasciitis is generally considered non-inflammatory.
+	- Instead, what appears to occur is a structural breakdown of the plantar fascia caused by microtears.
