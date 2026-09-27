@@ -31,6 +31,7 @@
 		- For example, verbs are not conjugated depending on the subject.
 		- In this aspect, the grammar is simpler than English.
 	- Thai has a rich system of [grammatical aspect](https://en.wikipedia.org/wiki/Grammatical_aspect), compared to English.
+	- Thai makes use of [serial verbs](https://en.wikipedia.org/wiki/Serial_verb_construction).
 - ## Writing
 	- Thai is written using the [Thai script](https://en.wikipedia.org/wiki/Thai_script), which consists of:
 		- 44 [consonant](http://thai-language.com/ref/consonants) symbols.
