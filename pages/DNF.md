@@ -9,6 +9,8 @@
 - ### Helpful Commands
 	- Also see `man dnf`
 	- `dnf list installed`  - lists installed packages
+	- `dnf install <package>` - install a package
+	- `dnf remove <package>` - uninstall a package
 	- `dnf info <package>`  - provides info about a package
 	- `dnf search <name>`  - searches for packages using the provided search term. You can provide multiple search terms, and they support globbing. In the results, you will see the name of each package, and a short summary of the package.
 	- `dnf repolist` - lists all enabled repositories (or all known repositories with `--all`)
