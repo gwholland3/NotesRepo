@@ -42,6 +42,7 @@ My personal notes on Vim.
 			- gR  - enter *Virtual Replace mode* instead of Replace mode
 			- gv  - reselect the last visual selection
 			- gn  - jump to the last search match and select it in Visual Mode
+			- gU  - convert selected characters to uppercase
 			- q/  - open the command-line window for search history
 			- q:  - open the command-line window for Ex history
 			- !<motion>  - start an Ex command with a range consisting of the lines encompassed by <motion>
@@ -81,7 +82,9 @@ My personal notes on Vim.
 			- :<range>s/<pattern>/<string>/<flags>  - substitutes <pattern> for <string> across <range> lines, with <flags> flags set
 			- :tabnew  - Create a new tab
 			- :<range>copy <dst_addr>  - copy the lines specified by <range> to below the line specified by <dst_addr>
-			- :<range>normal <operators>  - execute the Normal Mode commands <operators> across the lines specified by <range>
+			- :<range>move <dst_addr>  - same as copy, but does a move instead
+			- :<range>normal <operators>  - execute the Normal Mode commands <operators> across the lines specified by <range>, ending in Normal Mode
+			- :print  - print the line under the cursor
 			- :shell  - starts an interactive shell
 			- :lcd <path>  - sets the working directory to <path> for the current window
 			- :source <filename>  - executes all Ex commands in <filename>
@@ -124,6 +127,11 @@ My personal notes on Vim.
 			- CTRL-v<code>  - insert a character by its (Unicode?) code
 		- Visual mode:
 			- o  - jump to the other end of the highlighted text, switching which end is fixed and which end follows your cursor
+			- U  - convert the selected characters to uppercase
+		- Normal mode:
+			- v  - enter character-wise visual mode
+			- V  - enter line-wise visual mode
+			- CTRL-v  - enter block-wise visual mode
 		- Other:
 			- CTRL-d (while in command mode)  - show list of autocomplete options
 				- TAB  - cycle through available autocomplete options
@@ -143,10 +151,26 @@ My personal notes on Vim.
 	- ### Insert Mode
 		- Vim recognizes some readline key commands, such as CTRL-w and CTRL-u. You can see the complete list under "VI Mode bindings" in the readline [man page](https://www.man7.org/linux/man-pages/man3/readline.3.html).
 	- ### Visual Mode
-		- TODO
+		- Visual mode lets you select/highlight text.
+		- There are three types of visual modes:
+			- Character-wise visual mode: lets you select contiguous strings of characters
+			- Line-wise visual mode: lets you select blocks of contiguous whole lines
+			- Block-wise visual mode: lets you select rectangular regions of characters
 	- ### Command-Line Mode
 		- See `:h ex-cmd-index` for a list of every Ex command.
 		- Vim recognizes some readline key commands, such as CTRL-w and CTRL-u. You can see the complete list under "VI Mode bindings" in the readline [man page](https://www.man7.org/linux/man-pages/man3/readline.3.html).
+		- Most commands accept a range prefix, such as `:3p` to say "print line 3".
+			- A range must be a contiguous set of lines.
+		- Special range characters:
+			- `.`  - the current line
+			- `$`  - the last line in the file
+			- `%`  - all the lines in the file
+			- `'<`  - first line of visual selection
+			- `'>`  - last line of visual selection
+			- `'m`  - line containing mark `m`
+			- `/my_pattern/` - the first line containing "my_pattern"
+			- `my_address+n`  - n lines after the line specified by "my_address"
+			- `my_address-n`  - n lines before the line specified by "my_address"
 	- ### Operator Pending Mode?
 		- TODO
 - ## Miscellaneous Notes
