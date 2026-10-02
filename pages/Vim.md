@@ -69,57 +69,68 @@ My personal notes on Vim.
 			- ]  - end of last yank or change
 			- <  - start of last visual selection
 			- >  - end of last visual selection
-		- Commands:
-			- @<register>  - execute the contents of <register> as an Ex command
-				- @:  - repeat the last executed Ex command
-			- :!<cmd>  - execute <cmd> in the external shell
-			- :r <filename>  - paste the contents of <filename> below the cursor line
-			- :r !<cmd>  - execute <cmd> in the external shell and paste its output below the cursor line
-			- :set <option> <…>  - sets the specified options for the duration of the current Vim session
-				- Prefix an option with "no" to unset that option
-				- Suffix an option with "?" to output the current value of that option
-			- :scriptnames  - view the list of Vim scripts that have been executed/sourced/loaded in the current Vim session
-			- :<range>s/<pattern>/<string>/<flags>  - substitutes <pattern> for <string> across <range> lines, with <flags> flags set
-			- :tabnew  - Create a new tab
-			- :<range>copy <dst_addr>  - copy the lines specified by <range> to below the line specified by <dst_addr>
-			- :<range>move <dst_addr>  - same as copy, but does a move instead
-			- :<range>normal <operators>  - execute the Normal Mode commands <operators> across the lines specified by <range>, ending in Normal Mode
-			- :print  - print the line under the cursor
-			- :shell  - starts an interactive shell
-			- :lcd <path>  - sets the working directory to <path> for the current window
-			- :source <filename>  - executes all Ex commands in <filename>
-			- :argdo <cmd>  - Execute the Ex command <cmd> for all files in Vim's argument list
-			- :bufdo <cmd>  - Execute the Ex command <cmd> for all open buffers
-			- :windo <cmd>  - Execute the Ex command <cmd> for all windows in the current tab page
-			- :e  - Reload the current buffer from disk
-			- :E  - open the file explorer for the directory of the current file
-			- :Se  - same as :E, but in a new horizontally-split window
-			- :Ve  - same as :E, but in a new vertically-split window
-			- :qall  - Exit Vim, even if there are multiple buffers open
-			- File/buffer navigation:
-				- :first  - switches to the first file being edited
-				- :last  - switches to the last file being edited
-				- :next  - switches to the next file being edited
-				- :prev  - switches to the previous file being edited
-				- :args  - lists the files provided in Vim's argument list
-					- :args <pattern> …  - sets the argument list to the files specified by the provided patterns, and opens buffers for those files
-				- :bfirst  - switches to the first buffer
-				- :blast  - switches to the last buffer
-				- :bnext  - switches to the next buffer
-				- :bprev  - switches to the previous buffer
-				- :b <num>  - switch to buffer <num>
-					- :b <string>  - switch to the buffer uniquely identified by <string>
-				- :b #  - switch to the previous buffer
-				- :ls  - lists the open buffers
-				- :bd <num>  - delete buffer number <num>
-			- Window management:
-				- :split  - splits a duplicate window horizontally
-				- :vsplit  - splits a duplicate window vertically
-				- :only  - close all windows except the active one
-			- Tab page management:
-				- :tabedit  - creates a new tab page with a new empty buffer opened
-				- :tabclose  - closes the current tab page
-				- :tabonly  - closes all tab pages except the current one
+		- Command-Line Mode
+			- `%` represents the name of the current file
+			- CTRL-d (while in command-line mode)  - show list of autocomplete options
+				- TAB  - cycle through available autocomplete options
+			- CTRL-r CTRL-w  - insert the word under the cursor into the command line
+			- CTRL-r CTRL-a  - insert the WORD under the cursor into the command line
+			- Commands:
+				- @<register>  - execute the contents of <register> as an Ex command
+					- @:  - repeat the last executed Ex command
+				- :!<cmd>  - execute <cmd> in the external shell
+				- :<range>!<cmd>  - filter the lines specified by <range> through the shell command <cmd>, overwriting the result
+				- :read <filename>  - paste the contents of <filename> into the current buffer (e.g. below the cursor line)
+				- :read !<cmd>  - execute <cmd> in the external shell and paste its output into the current buffer (e.g. below the cursor line)
+				- :write !<cmd>  - execute <cmd> with the contents of the current buffer as stdin
+				- :set <option> <…>  - sets the specified options for the duration of the current Vim session
+					- Prefix an option with "no" to unset that option
+					- Suffix an option with "?" to output the current value of that option
+				- :global/<pattern>/<cmd>  - execute the command <cmd> on every line that matches <pattern>
+				- :vglobal/<pattern>/<cmd>  - same as :global, but matches the inverse of <pattern>
+				- :<range>norm <commands>  - execute the Normal Mode commands <commands> on the specified range
+				- :scriptnames  - view the list of Vim scripts that have been executed/sourced/loaded in the current Vim session
+				- :<range>s/<pattern>/<string>/<flags>  - substitutes <pattern> for <string> across <range> lines, with <flags> flags set
+				- :tabnew  - Create a new tab
+				- :<range>copy <dst_addr>  - copy the lines specified by <range> to below the line specified by <dst_addr>
+				- :<range>move <dst_addr>  - same as copy, but does a move instead
+				- :<range>normal <operators>  - execute the Normal Mode commands <operators> across the lines specified by <range>, ending in Normal Mode
+				- :print  - print the line under the cursorbu
+				- :shell  - starts an interactive shell
+				- :lcd <path>  - sets the working directory to <path> for the current window
+				- :source <filename>  - executes all Ex commands in <filename>
+				- :argdo <cmd>  - Execute the Ex command <cmd> for all files in Vim's argument list
+				- :bufdo <cmd>  - Execute the Ex command <cmd> for all open buffers
+				- :windo <cmd>  - Execute the Ex command <cmd> for all windows in the current tab page
+				- :e  - Reload the current buffer from disk
+				- :E  - open the file explorer for the directory of the current file
+				- :Se  - same as :E, but in a new horizontally-split window
+				- :Ve  - same as :E, but in a new vertically-split window
+				- :qall  - Exit Vim, even if there are multiple buffers open
+				- File/buffer navigation:
+					- :first  - switches to the first file being edited
+					- :last  - switches to the last file being edited
+					- :next  - switches to the next file being edited
+					- :prev  - switches to the previous file being edited
+					- :args  - lists the files provided in Vim's argument list
+						- :args <pattern> …  - sets the argument list to the files specified by the provided patterns, and opens buffers for those files
+					- :bfirst  - switches to the first buffer
+					- :blast  - switches to the last buffer
+					- :bnext  - switches to the next buffer
+					- :bprev  - switches to the previous buffer
+					- :b <num>  - switch to buffer <num>
+						- :b <string>  - switch to the buffer uniquely identified by <string>
+					- :b #  - switch to the previous buffer
+					- :ls  - lists the open buffers
+					- :bd <num>  - delete buffer number <num>
+				- Window management:
+					- :split  - splits a duplicate window horizontally
+					- :vsplit  - splits a duplicate window vertically
+					- :only  - close all windows except the active one
+				- Tab page management:
+					- :tabedit  - creates a new tab page with a new empty buffer opened
+					- :tabclose  - closes the current tab page
+					- :tabonly  - closes all tab pages except the current one
 		- Insert mode:
 			- Switch back to Normal mode with either ESC or CTRL-[
 			- CTRL-r<reg>  - access a Vim register
@@ -133,10 +144,11 @@ My personal notes on Vim.
 			- V  - enter line-wise visual mode
 			- CTRL-v  - enter block-wise visual mode
 		- Other:
-			- CTRL-d (while in command mode)  - show list of autocomplete options
-				- TAB  - cycle through available autocomplete options
 			- q<register>  - start recording keystrokes to register <register>
 				- q  - while in recording mode, stop recording
+			- q:  - open the command-line window
+				- :q  - exit the command-line window
+				- CTRL-f  - switch from command-line mode to the command-line window
 			- @<register>  - replay the sequence of keystrokes stored in <register>
 			- @@  - replay the most recently used sequence of keystrokes
 	- In help files:
