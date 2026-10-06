@@ -47,9 +47,13 @@ My personal notes on Vim.
 			- q:  - open the command-line window for Ex history
 			- !<motion>  - start an Ex command with a range consisting of the lines encompassed by <motion>
 			- CTRL-^  - switch to the previously-opened buffer
-			- CTRL-w CTRL-s  - same as :split
-			- CTRL-w CTRL-v  - same as :split
-			- CTRL-w CTRL-o  - same as :only
+			- CTRL-w s  - same as :split
+			- CTRL-w v  - same as :vsplit
+			- CTRL-w o  - same as :only
+			- CTRL-w c  - same as :close
+			- CTRL-w =  - equalize the width and height of all windows
+			- CTRL-w _  - maximize the height of the active window
+			- CTRL-w |  - maximize the width of the active window
 			- CTRL-c  - alternate way to exit insert mode, besides ESC
 		- Motions:
 			- gt  - go to the next tab page
@@ -127,6 +131,7 @@ My personal notes on Vim.
 					- :split  - splits a duplicate window horizontally
 					- :vsplit  - splits a duplicate window vertically
 					- :only  - close all windows except the active one
+					- :close  - close the active window
 				- Tab page management:
 					- :tabedit  - creates a new tab page with a new empty buffer opened
 					- :tabclose  - closes the current tab page
