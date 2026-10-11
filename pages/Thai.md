@@ -11,6 +11,13 @@
 		- The initial consonant can also be a "consonant cluster", not just a single consonant letter.
 		- The vowel sound can have different durations and tones.
 		- A syllable with a final consonant is called a closed syllable. A syllable without a final consonant is called an open syllable.
+		- Syllables can also be classified as "live" or "dead".
+			- A dead syllable is either open with a short vowel or closed with a k, p, or t final consonant sound.
+			- A live syllable is either open with a long vowel or closed with a m, n, ng, y, or w final consonant sound.
+			- While a syllable being live vs dead does correlate with the determined tone of the syllable, most people map to a tone from the other aspects of the syllable, since those also derive the "liveness".
+		- A lack of explicit vowel marker (only allowed for closed syllables) implies an "oh" vowel sound by default.
+			- Unless the final consonant is ร, in which case the vowel sound is "aaw".
+	- Vowel duration can either be "long" or "short".
 	- The Thai language has five tones for vowels/syllables: mid (aka common), low, high, rising, or falling.
 	- Consonants are divided into three classes: mid, low, and high.
 		- These classes help determine the tone of nearby vowels.
@@ -42,8 +49,10 @@
 		- For example, the consonant letter ก would be referred to as (romanized): gor gài.
 			- In this example, "g" is the consonant sound, "or" is the default vowel sound (consonants need a vowel sound to be speakable), and "gài" means "chicken" in Thai.
 		- The "textbook word" is often called a letter's "mascot".
-		- The English equivalent to this way of describing letters would be like someone saying "D as in dog".
+		- The English equivalent to this way of describing consonant letters would be like someone saying "D as in dog".
 			- In fact it's almost exactly equivalent: you're taking the "D" consonant sound, adding an "ee" vowel sound (as opposed to something sounding like "do"), and ending with an example word that is commonly associated with that letter.
+	- Thai vowel letters are instead referred to with (romanized) "sà-rà <vowel symbol>".
+		- "sà-rà" literally means "vowel", so it would be like saying "vowel u" in English.
 	- Thai is considered to be an [abugida](https://en.wikipedia.org/wiki/Abugida).
 	- The vowel graphemes are placed differently in writing relative to the consonant that they follow in speech:
 		- Preposed: written before the initial consonant.
