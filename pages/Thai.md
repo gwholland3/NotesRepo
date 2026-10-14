@@ -15,8 +15,9 @@
 			- A dead syllable is either open with a short vowel or closed with a k, p, or t final consonant sound.
 			- A live syllable is either open with a long vowel or closed with a m, n, ng, y, or w final consonant sound.
 			- While a syllable being live vs dead does correlate with the determined tone of the syllable, most people map to a tone from the other aspects of the syllable, since those also derive the "liveness".
-		- A lack of explicit vowel marker (only allowed for closed syllables) implies an "oh" vowel sound by default.
+		- A lack of explicit vowel marker in a closed syllable implies an "oh" vowel sound by default.
 			- Unless the final consonant is ร, in which case the vowel sound is "aaw".
+		- A lack of explicit vowel marker in an open syllable that precedes another syllable implies an "ah" vowel sound by default.
 	- Vowel duration can either be "long" or "short".
 	- The Thai language has five tones for vowels/syllables: mid (aka common), low, high, rising, or falling.
 	- Consonants are divided into three classes: mid, low, and high.
@@ -54,10 +55,15 @@
 	- Thai vowel letters are instead referred to with (romanized) "sà-rà <vowel symbol>".
 		- "sà-rà" literally means "vowel", so it would be like saying "vowel u" in English.
 	- Thai is considered to be an [abugida](https://en.wikipedia.org/wiki/Abugida).
-	- The vowel graphemes are placed differently in writing relative to the consonant that they follow in speech:
+	- The vowel graphemes can be placed differently in writing relative to the consonant that they follow in speech:
 		- Preposed: written before the initial consonant.
 		- Postposed: written after the initial consonant.
 		- Superposed: written above the initial consonant.
 		- Subposed: written below the initial consonant.
+	- Vowel sounds are also often written as *several* vowel graphemes composed together, surrounding the syllable's initial consonant on different sides.
+	- Some of the graphemes have consistent meanings:
+		- ะ means a short vowel sound.
+		- ็ also means a short vowel sound.
+		- เ is nearly always an "eh" sound.
 	- Thai is a phonemic language, meaning pronunciation corresponds 1:1 with the writing. In other words, it is always possible to correctly pronounce a written word, even if you've never seen it before.
 	-
