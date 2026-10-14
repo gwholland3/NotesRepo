@@ -87,6 +87,7 @@ My personal notes on Vim.
 				- :read <filename>  - paste the contents of <filename> into the current buffer (e.g. below the cursor line)
 				- :read !<cmd>  - execute <cmd> in the external shell and paste its output into the current buffer (e.g. below the cursor line)
 				- :write !<cmd>  - execute <cmd> with the contents of the current buffer as stdin
+					- For example, `:write !sudo tee % > /dev/null` lets you write with sudo
 				- :set <option> <…>  - sets the specified options for the duration of the current Vim session
 					- Prefix an option with "no" to unset that option
 					- Suffix an option with "?" to output the current value of that option
