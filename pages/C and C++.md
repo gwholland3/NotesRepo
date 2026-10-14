@@ -1,4 +1,6 @@
-### Constructors
+### Documentation
+	- Most C and C++ documentation lives at https://cppreference.com/
+- ### Constructors
 	- If a class does not declare any constructors, the compiler automatically provides a default constructor. It just default-initializes members that can be, and leaves other (more complex) members uninitialized, meaning they point to indeterminate/garbage values.
 - ### Destructors
 	- A [destructor](https://en.cppreference.com/cpp/language/destructor) defines how a program frees the resources belonging to an object once that object is no longer in use.
@@ -10,3 +12,4 @@
 		- But if certain conditions (namely when all of the object's members are primitive data types), the destructor actually does nothing - this is called a [trivial destructor](https://en.cppreference.com/cpp/language/destructor#Trivial_destructor).
 - ### Keywords
 	- [`inline`](https://en.cppreference.com/cpp/language/inline) - the body of this function should be substituted inline by the optimizer wherever it is called, rather than setting up a proper function call in assembly.
+	- [`extern`](https://en.cppreference.com/cpp/keyword/extern) - designates a global variable that is defined in another file (**extern**ally defined), but used in the current file.
