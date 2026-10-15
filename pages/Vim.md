@@ -66,7 +66,19 @@ My personal notes on Vim.
 			- ^  - jump to the first non-blank character of the current real line
 			- ge  - jump backward to the end of the previous word
 			- Capitalize any of w, b, e, or ge to make them operate on WORDs instead of words
+			- (  - jump to the start of the next sentence
+				- )  - jump to the start of the previous sentence
+			- {  - jump to the start of the next paragraph
+				- }  - jump to the start of the previous paragraph
+			- H  - jump to the top of the screen
+				- M  - jump to the middle of the screen
+				- L  - jump to the bottom of the screen
+			- gf  - jump to the filename under the cursor
+			- g;  - go to the previous entry in the change list (backwards in time)
+				- g,  - go to the next entry in the change list (forwards in time)
+			- gi  - go to the last point Insert mode was exited, and re-enter Insert mode
 		- Automatic Marks:
+			- `  - Position before the last jump in the current file
 			- .  - Location of last change
 			- ^  - Location of last insertion
 			- [  - start of last yank or change
@@ -107,6 +119,8 @@ My personal notes on Vim.
 				- :argdo <cmd>  - Execute the Ex command <cmd> for all files in Vim's argument list
 				- :bufdo <cmd>  - Execute the Ex command <cmd> for all open buffers
 				- :windo <cmd>  - Execute the Ex command <cmd> for all windows in the current tab page
+				- :mark<letter>  - mark the current cursor position with <letter>
+				- :changes  - view the change list
 				- :e  - Reload the current buffer from disk
 				- :E  - open the file explorer for the directory of the current file
 				- :Se  - same as :E, but in a new horizontally-split window
@@ -195,7 +209,8 @@ My personal notes on Vim.
 	- In the Vim ecosystem, the phrase "compatible" typically refers to Vim being compatible or not with Vi
 	- Vim has different classes of feature sets that can be compiled into a given Vim build: tiny, small, normal, big, and huge. If you are using a Vim compiled with only the tiny feature set, you will be missing a lot of things that are in the huge feature set, for example.
 		- The default version that comes with macOS contains the "normal" feature set
-	- There are additional specifier commands unlocked by inputting an operator or entering Visual mode - see [here](https://vimhelp.org/motion.txt.html#object-select)See `:help operator` for a list of the main operators you can invoke while in normal mode
+	- There are additional specifier commands unlocked by inputting an operator or entering Visual mode - see [here](https://vimhelp.org/motion.txt.html#object-select)
+	- See `:help operator` for a list of the main operators you can invoke while in normal mode
 	- If you want an easy way to copy text from within Vim to your system clipboard, you can `:set mouse=` to allow highlighting text again
 	- How to find VIMRUNTIME directory: run `:!echo $VIMRUNTIME` from *within* a Vim session. Vim sets this variable by following a list of rules for what it should be set to; see `:help VIMRUNTIME`. It is highly dependent on the value of VIM (also set by Vim).
 - ## Startup
@@ -207,8 +222,9 @@ My personal notes on Vim.
 		- + refers to the system clipboard register
 		- yy yanks the entire current line
 - ## Buffers
-	- TODO
-	- Something about the "jump list"?
+	- A buffer is an in-memory "file" that you can view/edit.
+	- The list of open buffers is shared across all windows and tabs.
+	- However, each window has its own jump list.
 - ## vimrc
 	- If you suffix a command with `!`, that means to "force" the command. That is, if the command normally wouldn't run due to certain conditions, it will try to run anyway.
 - ## Extending
@@ -231,6 +247,7 @@ My personal notes on Vim.
 	- <u>Interesting Plugins</u>
 		- vim-commentary, by Tim Pope
 		- unimpaired.vim, by Tim Pope
+		- surround.vim, by Tim Pope
 - ### Packages
 	- See `:help pack-add`.
 	- To add a package on startup, use `packadd! <package>` in your `.vimrc`. To add a package from a Vim session, use `:packadd <package>`
