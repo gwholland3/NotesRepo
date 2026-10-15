@@ -62,7 +62,7 @@
 		- Subposed: written below the initial consonant.
 	- Vowel sounds are also often written as *several* vowel graphemes composed together, surrounding the syllable's initial consonant on different sides.
 	- Some of the graphemes have consistent meanings:
-		- ะ means a short vowel sound.
+		- ะ means a short, open vowel sound.
 		- ็ also means a short vowel sound.
 		- เ is nearly always an "eh" sound.
 	- Thai is a phonemic language, meaning pronunciation corresponds 1:1 with the writing. In other words, it is always possible to correctly pronounce a written word, even if you've never seen it before.
