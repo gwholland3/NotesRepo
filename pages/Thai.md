@@ -65,5 +65,6 @@
 		- ะ means a short, open vowel sound.
 		- ็ also means a short vowel sound.
 		- เ is nearly always an "eh" sound.
+		- โ is nearly always an "oh" sound.
 	- Thai is a phonemic language, meaning pronunciation corresponds 1:1 with the writing. In other words, it is always possible to correctly pronounce a written word, even if you've never seen it before.
 	-
