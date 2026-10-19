@@ -26,6 +26,7 @@
 	- Move block up: `Cmd+Shift+Up`
 	- Move block down: `Cmd+Shift+Down`
 	- Search on current page: `Cmd+Shift+k`
+		- *Much* faster than normal `Cmd+f`
 	- Activate command palette: `Cmd+Shift+p`
 	- Go to graph view: (no-edit) `g``g`
 	- Go to settings: (no-edit) `t``s`
