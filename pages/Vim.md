@@ -120,7 +120,7 @@ My personal notes on Vim.
 				- :bufdo <cmd>  - Execute the Ex command <cmd> for all open buffers
 				- :windo <cmd>  - Execute the Ex command <cmd> for all windows in the current tab page
 				- :mark<letter>  - mark the current cursor position with <letter>
-				- :changes  - view the change list
+				- :changes  - view the change list (per-buffer)
 				- :e  - Reload the current buffer from disk
 				- :E  - open the file explorer for the directory of the current file
 				- :Se  - same as :E, but in a new horizontally-split window
@@ -221,6 +221,21 @@ My personal notes on Vim.
 		- " specifies to use a register
 		- + refers to the system clipboard register
 		- yy yanks the entire current line
+	- Special registers:
+		- `"` - the unnamed (default) register
+		- `0` - the yank register
+		- `_` - the black hole register
+		- `+` - the system clipboard register
+			- `*` - also the system clipboard register, or the "primary clipboard" register in X11
+		- `a-z` - twenty six named registers
+			- `A-Z` - the same registers, but they get appended to rather than overwritten
+		- `=` - the expression register
+		- Read-only:
+			- `%` - name of the current file
+			- `#` - name of the alternate file
+			- `.` - last inserted text
+			- `:` - last Ex command
+			- `/` - last search pattern (technically writeable with `:let`)
 - ## Buffers
 	- A buffer is an in-memory "file" that you can view/edit.
 	- The list of open buffers is shared across all windows and tabs.
