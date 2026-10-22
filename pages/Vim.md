@@ -240,6 +240,10 @@ My personal notes on Vim.
 	- A buffer is an in-memory "file" that you can view/edit.
 	- The list of open buffers is shared across all windows and tabs.
 	- However, each window has its own jump list.
+- ## Macros
+	- Press `q<reg>` to start recording a macro into register `<reg>`.
+		- If `<reg>` is uppercase, it appends to the register rather than overwriting it.
+	- Then press `<n>@<reg>` to play back that macro `<n>` times.
 - ## vimrc
 	- If you suffix a command with `!`, that means to "force" the command. That is, if the command normally wouldn't run due to certain conditions, it will try to run anyway.
 - ## Extending
