@@ -1,0 +1,7 @@
+- There appears to be too little housing supply, and too much housing demand.
+- Options to fix:
+	- Build more privately-managed housing
+	- Implement stronger tenant protection
+	- Provide more housing managed publicly or by non-profits
+	- Leave it up to each locality
+	- Encourage more home **ownership**

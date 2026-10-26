@@ -1,0 +1,4 @@
+- Reducing crime is difficult.
+- One strategy was called "[swift, certain, and fair](https://en.wikipedia.org/wiki/Swift,_certain,_and_fair)".
+	- I think the "certain" part is most important - if people believe there is a high chance of getting caught, they will not commit crime.
+- I don't think super long sentences/incarceration is a good solution.
