@@ -1,0 +1,24 @@
+- See `man less` for documentation.
+- Several commands are similar or identical to Vim Normal Mode, for example:
+	- `u` and `d` move a half page up and down, respectively (similar to Vim's `CTRL-U` and `CTRL-D`).
+	- `j` and `k` move one line up and down, respectively.
+	- `g` and `G` jump to the first and last line of the file, respectively (the former similar to Vim's `gg`).
+	- `!<cmd>` executes `cmd` in the `$SHELL` shell.
+	- `:n` and `:p` change to the next and previous file in the file list, respectively.
+- Other helpful things to know:
+	- Press `h` from with a `less` session to see a summary of `less` commands.
+	- Press `r` to re-render the screen (e.g. if the underlying file is modified).
+	- Press `ESC-u` to toggle search highlighting, and `ESC-U` to clear it.
+	- Press `f` and `b` to move a whole page up and down, respectively.
+	- Press `-<flag>` to toggle the `<flag>` command-line flag, for example `-i` to toggle case-insensitive searching.
+	- Press `--<name>` to toggle the full-name `<name>` command-line flag, for example `--ignore-case` to toggle case-insensitive searching.
+	- Press `_<flag>` to view the current setting of the `<flag>` command-line flag.
+	- Press `__<name>` to view the current setting of the full-name `<name>` command-line flag.
+	- Press `v` to edit the current file with the `$VISUAL` or `$EDITOR` editor (usually Vim).
+	- Press `V` to see the current `less` version.
+	- Press `=` to see the current file name.
+- Interesting options:
+	- `-~`, `--tilde`: don't display tildes on each line after the end of the file.
+	- `-N`, `--LINE-NUMBERS`: display a line number at the start of each line.
+	- `--mouse`: enable mouse input for scrolling.
+		- How this interacts with the terminal is probably complicated...

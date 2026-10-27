@@ -1,0 +1,3 @@
+- In my own words, a terminal is an application for running an interactive shell.
+- `man 7 term` has some good information on terminals.
+- Systems recognize different "terminal types" - you can see the list of types your system recognizes with the `toe` command.
