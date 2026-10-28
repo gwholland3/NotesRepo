@@ -91,6 +91,7 @@ My personal notes on Vim.
 				- TAB  - cycle through available autocomplete options
 			- CTRL-r CTRL-w  - insert the word under the cursor into the command line
 			- CTRL-r CTRL-a  - insert the WORD under the cursor into the command line
+			-
 			- Commands:
 				- @<register>  - execute the contents of <register> as an Ex command
 					- @:  - repeat the last executed Ex command
@@ -126,6 +127,8 @@ My personal notes on Vim.
 				- :Se  - same as :E, but in a new horizontally-split window
 				- :Ve  - same as :E, but in a new vertically-split window
 				- :qall  - Exit Vim, even if there are multiple buffers open
+				- :let <var>=<val>  - assign the variable <var> to the value <val>
+				- :echo <var> - print the value of the variable <var>
 				- File/buffer navigation:
 					- :first  - switches to the first file being edited
 					- :last  - switches to the last file being edited
