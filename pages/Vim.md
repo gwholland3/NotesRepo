@@ -30,7 +30,10 @@ My personal notes on Vim.
 			- c  - delete a chunk of text, then enter INSERT mode at the beginning of it
 			- CTRL-o  - move "back to where you came from" (still learning what dictates where this is)
 				- CTRL-i  - move forward
-			- *  - search for the word under the cursor
+			- `*` - search forwards for the `word` under the cursor.
+				- `g*` - search forwards for the `word` under the cursor, without `word` delimiters.
+			- `#` - search backwards for the `word` under the cursor.
+				- `g#` - search backwards for the `word` under the cursor, without `word` delimiters.
 			- f<char>  - move to the next occurrence of <char> to the right of the cursor
 				- F<char>  - same as f, but to the left
 			- t<char>  - move to just before the next occurrence of <char> to the right of the cursor
@@ -176,6 +179,15 @@ My personal notes on Vim.
 			- @@  - replay the most recently used sequence of keystrokes
 	- In help files:
 		- CTRL-]  - Search the help files for the word under the cursor
+	- When searching (`/`):
+		- `\c<pattern>`  - search for `<pattern>` with case insensitivity.
+		- `\C<pattern>` - search for `<pattern>` with case sensitivity.
+		- `\v<pattern>` - search for `<pattern>` with `very magic` regex.
+		- `\V<pattern>` - search for `<pattern>` with `very nomagic` regex.
+		- `<` - represents the beginning of a `word`.
+		- `>` - represents the end of a `word`.
+	- Options:
+		- `smartcase` - use case insensitivity for search patterns without any uppercase letters, and use case sensitivity for search patterns with uppercase letters.
 - ## Structure of a Vim Session
 	- A vim session has a list of open buffers.
 	- Those buffers can be viewed through different windows.
