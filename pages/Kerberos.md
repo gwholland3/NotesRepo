@@ -35,6 +35,7 @@
 - ## Tools
 	- `klist` - lists cached Kerberos tickets
 		- You can force it to inspect a specific credential cache with `-c`, e.g. `klist -c FILE:/tmp/my_random_ccache`
+		-
 	- `kinit` - acquire a TGT, which has an expiration date
 		- Can use `kinit -R` to renew an existing TGT without needing to re-input your original auth.
 	- `kvno` - acquire service tickets using your TGT.
