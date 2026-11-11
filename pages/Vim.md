@@ -103,6 +103,8 @@ My personal notes on Vim.
 				- `:vimgrep /<pattern>/<flags> <files>` - search for `<pattern>` in `<files>` and populate the error list with the matches.
 					- `:cnext` - display the next error in the error list.
 					- `:cprev` - display the previous error in the error list.
+					- `:copen` - browse the error list.
+					- `:cfdo <cmd>` - run `cmd` on every error in the error list.
 				- @<register>  - execute the contents of <register> as an Ex command
 					- @:  - repeat the last executed Ex command
 				- :!<cmd>  - execute <cmd> in the external shell
@@ -197,6 +199,7 @@ My personal notes on Vim.
 		- `\ze` - sets the end of the match.
 		- Search flags (appear after a trailing `/`):
 			- `e` - position the cursor at the end of the match.
+		- `\=` - defines a Vim script expression for the replacement string.
 	- Options:
 		- `smartcase` - use case insensitivity for search patterns without any uppercase letters, and use case sensitivity for search patterns with uppercase letters.
 - ## Structure of a Vim Session
@@ -293,6 +296,7 @@ My personal notes on Vim.
 		- vim-commentary, by Tim Pope
 		- unimpaired.vim, by Tim Pope
 		- surround.vim, by Tim Pope
+		- abolish.vim, by Tim Pope
 - ### Packages
 	- See `:help pack-add`.
 	- To add a package on startup, use `packadd! <package>` in your `.vimrc`. To add a package from a Vim session, use `:packadd <package>`
