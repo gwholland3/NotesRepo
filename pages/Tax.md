@@ -25,15 +25,39 @@
 		- My basic understanding is that once you hit a certain income threshold, you can no longer make normal contributions to a Roth IRA with post-tax dollars. However, there is a workaround, in which you contribute post-tax dollars to a traditional IRA, and then initiate a conversion of that money from the traditional IRA to a Roth IRA.
 		- I'm not sure quite how that works, since I thought the whole point of traditional IRAs was that you put pre-tax dollars in them. I also don't know if the same annual limits apply to Roth IRA conversions as they do to normal contributions.
 		- I believe you have to file a [Form 8606](https://www.irs.gov/forms-pubs/about-form-8606) every year that you engage in backdoor Roth IRA contributions, too.
+		- #### Mega Backdoor
+			- There is an annual limit on how much you can contribute to your 401(k) accounts **directly from your paycheck**.
+			- However, there is a second (larger) annual limit on how much you can contribute to your 401(k) accounts total. This additional capacity is intended to allow for:
+				- Employer matches on employee paycheck contributions.
+				- After-tax (but non-Roth) contributions from your own accounts - **these can be immediately converted to Roth dollars, the 401(k) equivalent of backdoor Roth IRA contributions.**
 	- ### Traditional vs Roth
 		- In a Traditional 401(k), your paycheck dollars enter the account without being taxed. Later withdrawals get taxed on their growth.
 		- In a Roth 401(k), you contribute from your paycheck after income tax has already been subtracted. However, any growth in the account is tax-free.
 		- There are several factors that determine which choice is better:
 			- How much you pay in income tax now (when you contribute the dollars).
+			  logseq.order-list-type:: number
 			- How much you think you will pay in income tax in the future (when you withdraw the dollars and their gains).
+			  logseq.order-list-type:: number
 			- What you would do with the tax dollars you save with a Traditional 401(k) (assuming you max out your annual contributions).
-		- Interestingly, the amount of time the money grows in your account does not affect anything, which at least for me was counterintuitive (I thought a longer time horizon favored Roth). Consider this example:
-			- TODO
+			  logseq.order-list-type:: number
+		- Interestingly, the amount of time the money grows in your account does not affect anything, which at least for me was counterintuitive (I thought a longer time horizon favored Roth, since the money was growing tax-free for longer). Consider this simplified example:
+			- Given: in 2025, you make $10,000 of annual salary, your tax rate is (and will remain) 48%, and investments will grow 10x over 10 years.
+			- If you invest your salary in a Roth 401(k), you first pay 48%, invest the remaining $5,200, and end up with $52,000 10 years from now that you can withdraw tax-free.
+			- If you invest your salary in a Traditional 401(k), you invest the full $10,000, end up with $100,000 10 years from now, then pay 48% on the withdrawal and are left with $52,000.
+		- So the main difference really comes down to: for a given dollar, do you think you will pay more taxes on it now or when you withdraw it and its gains?
+			- Depending on the answer, that dollar should either go into a Traditional or a Roth 401(k).
+			- In other words, is your tax rate going to be higher now or in the future? (factors \#1 and \#2)
+				- When thinking about your current tax rate, you should look at your marginal rate instead of your effective rate because a dollar being switched from Traditional (not taxed now) to Roth (taxed now), i.e. your tax opportunity cost, is effectively taxed in your highest tax bracket.
+				- When thinking about your future tax rate, the situation is slightly more complicated. Withdrawing a Traditional dollar is still taxed as ordinary income by both the federal and state governments, so the marginal rate applies there, but there is also the side effect of that additional ordinary income potentially bumping up any federal long-term capital gains taxes you have that year, since those use a separate rate table that looks at your ordinary income (now increased by your Traditional withdrawals) *plus* the capital gains themselves as the table's income input.
+		- The third factor is the caveat, though:
+			- Returning to the simplified example from above:
+				- Suppose the annual cap for 401(k) contributions is $5,000.
+				- Roth: pay 48%, then invest $5,000 and keep $200 as take-home pay. You end up with $50,000 10 years from now that you can withdraw tax-free, plus your $200 that you kept in a piggy bank, so $50,200 total.
+				- Traditional: invest $5,000, then pay 48% on the remaining $5,000 and keep $2,600 as take-home pay. You end up with $50,000 10 years from now, then pay 48% on the withdrawal and are left with $26,000, plus your $2,600 that you kept in a piggy bank, so $28,600 total.
+			- Notice how Roth ends up with substantially more in the end, even though the tax rate was the same both now and in the future.
+			- However, if that future tax rate magically drops to 0%, then *Traditional* comes out ahead, because on top of the untaxed $50,000 from the 401(k) that both receive, Traditional adds on more take-home cash.
+			- You can play around with the break-even point by adjusting not only the starting/final tax rates but also whether you invest some of your Traditional tax savings ($2,600 vs $200 of take-home yields $2,400 in savings), because seeing those savings achieve (taxed) growth helps close the gap.
+		- All of the above has been focusing on Roth vs Traditional for 401(k) accounts. For IRAs it's a different situation, because past a certain income you get no tax deduction on contributions to a Traditional IRA, meaning those dollars would get taxed twice just like a normal brokerage account. In such a situation, a Roth IRA is your only option, via backdoor Roth contributions.
 	- ### Tax Loss Harvesting
 		- See [Wikipedia](https://en.wikipedia.org/wiki/Tax_loss_harvesting).
 		- If you realize a loss in one stock in the same tax year that you realize an equivalent gain in another, you can cancel the two out against each other and not have to pay any capital gains taxes.
@@ -41,6 +65,17 @@
 		- Things become a little more gray if you are selling ETFs at a loss (rather than individual stocks), because you can quickly buy back into a similar ETF without it being deemed a wash sale. But you still get to "engineer" a loss in a given tax year to offset any gains you expect to have.
 		- If you have a portfolio with both long and short positions, you can expect to generate losses to harvest pretty reliably, even if the market as a whole trends up or downward, because any long gains will be offset by short losses, and vice versa.
 		- This does not allow you to harvest losses forever without realizing gains in the rest of your portfolio, though. Eventually, you will run out of cash to keep purchasing new positions as you realize losses, because by definition you are losing money with each realization.
+- ## Types of Tax
+	- ### Federal
+		- Federal income tax
+		- Medicare tax
+		- Social security tax
+		- Alternative minimum tax (AMT)
+	- ### State
+		- #### California
+			- State income tax
+			- State disability insurance tax
+			- Alternative minimum tax (AMT)
 - ## Tax Forms
 	- ### Form 1040
 		- Wikipedia: [link](https://en.wikipedia.org/wiki/Form_1040)
