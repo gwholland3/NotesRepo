@@ -129,3 +129,15 @@
 	  print("Nor this line.")
 	  # fmt: on
 	  ```
+- # Libraries
+	- ## Tenacity
+		- Docs: https://tenacity.readthedocs.io/en/latest/
+		- Source: https://github.com/jd/tenacity
+		- Common `@retry()` args:
+			- `retry` - determines whether the function should be retried.
+				- Example: `retry=retry_if_exception_type(IOError)`
+			- `stop` - determines when to stop retrying.
+				- Example: `stop=stop_after_attempt(7)`
+			- `wait` - determines how long to wait in between retries.
+				- Example: `wait=wait_fixed(2)`
+		- For any default `@retry()` arguments on a function, you can call that function with custom values with `my_retryable_function.retry_with(**my_retry_override_kwargs)`.
