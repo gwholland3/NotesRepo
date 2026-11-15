@@ -14,3 +14,6 @@
 - [Pathophysiology](https://en.wikipedia.org/wiki/Pathophysiology):
 	- Plantar fasciitis is generally considered non-inflammatory.
 	- Instead, what appears to occur is a structural breakdown of the plantar fascia caused by microtears.
+- ## Treatment
+	- One thing that can help is using a "heel lock knot" on your shoes: [YouTube](https://www.youtube.com/shorts/ZtsBZJaEMpI?vl=en)
+		- This can prevent your heel from sliding up and down in the shoe, which can irritate the heel pad.
