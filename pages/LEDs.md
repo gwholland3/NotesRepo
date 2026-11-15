@@ -1,8 +1,30 @@
-Wikipedia: [link](https://en.wikipedia.org/wiki/Light-emitting_diode)
-
+- An [LED](https://en.wikipedia.org/wiki/Light-emitting_diode) (Light-Emitting Diode) is an electronic component that emits light when current flows through it.
+	- The more current flows through it, the brighter the light is.
+	- Too much current can damage an LED, as with most circuit components.
 - ## Polarity
 	- The long leg of an LED should face the source of incoming power, and the short leg should face away.
 	- To be more technical, the longer leg is the positive terminal and the shorter leg is the negative terminal.
+	- While most LEDs will follow this expectation of having one longer leg and one shorter leg, some may not. In such cases, check the LED's spec sheet, or run a test to see which direction conventional current needs to flow.
+- ## Forward Voltage
+	- This concept has always been confusing to me, so I'm dedicating an entire section to it.
+	- My concise definition would be: the forward voltage of an LED is the voltage drop you will see across the LED when a normal amount of current is running through it.
+	- This concept and its definition might not immediately make sense. Why do we care about this value, and what does this definition imply?
+	- The first thing to understand is that unlike resistors, LEDs do not have a constant resistance - an LED's effective resistance varies depending on the operating conditions.
+	- Furthermore, the "effective resistance" of an LED at a given point of time in a given circuit is not a value people actually care to describe, because it is not very useful.
+	- Instead, when designing LED circuits, people care about two things: the voltage drop across the LED, and the current flowing through it.
+	- These two properties are related; in fact, they form an exponential curve. Here's an example:
+	  ![graph](https://imgs.search.brave.com/tiDRv8zHVF00CCkOgditMY2jxXvZfsuzMyGDbksSudE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnNz/dGF0aWMubmV0L01j/dVBLLnBuZw){:height 311, :width 290}
+		- The exact shape of the curve varies from LED to LED, especially between different colors.
+		- This exponential shape means that below a certain voltage drop, a tiny amount of current will still flow, but you will see pretty much no visible light.
+	- No matter what other properties the rest of the circuit has (e.g. the total circuit voltage, or the resistance of the rest of the circuit), an LED's voltage drop and current will always be a point on its curve.
+	- The first thing to notice about this curve is that it is very steep. In other words, an LED following the curve above might have a normal current operating range of 5 mA (barely visible) to 30 mA (max brightness). Yet despite that wide range of currents, the associated voltage drops only go from 2.6V to 2.9V, a much smaller range.
+	- Because of this, it's important to design an LED circuit so that your default voltage drop across the LED is relatively precise, to avoid missing too low (your LED doesn't turn on) or too high (you damage your LED).
+	- If an LED manufacturer provides you with a forward voltage (usually measured at 20 mA), that tells you everything you need to know:
+		- Target 20 mA of current for the whole circuit.
+		- Subtract the forward voltage from the total circuit / power supply voltage - what's left is how much voltage drop needs to occur across the rest of the circuit, e.g. across a resistor.
+		- With a target current and a target resistor voltage drop, use Ohm's Law to determine what resistance your resistor needs.
+		- If you want a different current through your LED (dimmer or brighter), you can change your target current, but for all intents and purposes you can reuse the same forward voltage in your calculations - remember how an LED's voltage drop doesn't change that much between different operating currents, per its curve.
+			- In this sense, the forward voltage acts as a reference voltage drop for the LED that makes circuit design calculations simpler.
 - ## Misc
 	- SMD = "Surface Mount Device"
 		- It means the LED chip is mounted directly to a surface (such as a light strip) without using wires.
@@ -17,9 +39,12 @@ Wikipedia: [link](https://en.wikipedia.org/wiki/Light-emitting_diode)
 			- IP67
 	- LEDs have spec (specification) sheets that describe their properties. You can see an example LED spec sheet [here](https://www.we-online.com/components/products/datasheet/151031SS06000.pdf).
 	- Common spec sheet data:
-		- Forward voltage: the minimum voltage needed for the LED to turn on and conduct any current.
-			- Remember that this is the voltage drop *across the LED*, not the voltage drop across the entire circuit.
-			- Voltage determines current, which determines luminosity.
+		- Forward voltage: see above.
 		- Current ratings: how much current the LED is able to handle without being damaged.
 			- Usually, you should start with a target current, then work your way backwards to determine how much resistance should be placed in series with the LED (for a fixed input voltage) to achieve that target current.
-	- Unlike resistors, LEDs do not have a constant resistance - an LED's resistance varies depending on the operating conditions.
+	- Why do different color LEDs in parallel need their own resistors?
+		- With a single shared resistor, red always wins...
+		- This means that whatever the total current of the circuit, when it enters the three-way fork for the LEDs, most of the current is flowing down the red branch, while the other two LED colors receive barely any current. Why?
+		- Coincidentally, red also has the lowest forward voltage...
+		- It all comes down to the fact that components in a parallel circuit must share the same voltage drop by definition, since two branches in a parallel circuit share the same start and end points, and two points only ever have one potential difference (voltage) between them.
+		- Once you recognize that, you'll see that the voltage drop across each LED must be the same, and equilibrium will likely fall near the forward voltage for a red LED, which is too low to produce meaningful current through the other color LEDs.

@@ -2,6 +2,7 @@ Homepage: [https://vimium.github.io/](https://vimium.github.io/)
 Wiki: [https://github.com/philc/vimium/wiki](https://github.com/philc/vimium/wiki)
 
 Things to remember:
+
 - Misc:
 	- Use <space> to cycle through the stacking order of link labels when selecting a link
 - Marks:
@@ -11,10 +12,11 @@ Things to remember:
 	- c  - swap to caret mode
 	- V  - enter visual line mode
 - Tabs:
-	- >>  - move the current tab one to the right
-	- <<  - move the current tab one to the left
-	- > (hold)  - start dragging the current tab to the right
-	- < (hold)  - start dragging the current tab to the left
+	- `>>` - move the current tab one to the right.
+	- `<<` - move the current tab one to the left.
+	- `>` (hold) - start dragging the current tab to the right.
+	- `<` (hold) - start dragging the current tab to the left.
+	- `Shift-W` - move the current tab to a new window.
 - Input:
 	- gi  - select the first input field
 		- Use tab to cycle through them
