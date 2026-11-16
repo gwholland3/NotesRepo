@@ -1,0 +1,5 @@
+- [Rectangle](https://rectangleapp.com/) is window management software for macOS.
+- Keyboard Shortcuts To Remember:
+	- `Ctrl-Opt-Enter` - maximize the current window.
+	- `Cmd-Ctrl-Opt-Left` - move the current window one display to the left.
+	- `Cmd-Ctrl-Opt-Right` - move the current window one display to the right.
