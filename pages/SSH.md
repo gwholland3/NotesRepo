@@ -1,3 +1,7 @@
-# Things To Remember
+- [SSH](https://en.wikipedia.org/wiki/SSH) (Secure SHell) is a protocol for connecting to a shell on a remote machine.
+- [OpenSSH](https://en.wikipedia.org/wiki/OpenSSH) is one of the most popular implementations of the SSH protocol. It is maintained by the OpenBSD project under a BSD license.
+- # Architecture
+	- To achieve an SSH connection, you need a client and a server.
+- # Things To Remember
 	- To disconnect from an SSH session, even one that is hanging, you can enter `~+.`
 		- See here for more info: https://www.man7.org/linux/man-pages/man1/ssh.1.html#ESCAPE_CHARACTERS
