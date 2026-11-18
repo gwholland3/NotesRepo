@@ -1,4 +1,46 @@
 - Python3 documentation: [https://docs.python.org/3/](https://docs.python.org/3/)
+- # Modules
+	- A [module](https://docs.python.org/3/tutorial/modules.html) is just a standalone Python file. For example, the file `utils.py` would define an module called `utils`.
+	- A module can be imported from another module, or you can execute a module directly, making it the main module of the process.
+	- Within a module, its own name can be accessed with the global variable `__name__`.
+		- The main module's name will always be `"__main__"`.
+	- ## Importing
+		- Ways to import a module:
+			- `import utils`
+			- `import utils as renamed_module`
+			- `from utils import do_thing`
+			- `from utils import do_thing as renamed_function`
+			- `from utils import *`
+				- Imports every name from the module except ones that start with `_`.
+			- `import importlib; importlib.reload(utils)`
+				- Allows you to import a module a second time, e.g. if the module contents have changed since the first import.
+		- When you run `import my_module`, Python [searches](https://docs.python.org/3/tutorial/modules.html) for `my_module` as follows:
+			- Check if `my_module` is a built-in module (like `sys`).
+			- Check if `my_module.py` is located in any of the directories listed in `sys.path`.
+		- `sys.path` is typically [constructed](https://docs.python.org/3/library/sys_path_init.html#sys-path-init) with:
+			- The directory containing the main module, or the current directory if there is no main module (e.g. for interactive Python).
+			- The `PYTHONPATH` environment variable.
+			- An installation-dependent default directory, e.g. `/usr/lib/python3.11/`.
+	- ## Packages
+		- A [package](https://docs.python.org/3/tutorial/modules.html#packages) is a collection of modules.
+			- More technically, it's a single directory of modules containing an `__init__.py` file.
+			- The `__init__.py` file marks the directory as a *regular* package - a directory of modules without an `__init__.py` files is treated as a [*namespace*](https://docs.python.org/3/glossary.html#term-namespace-package) package.
+		- In Python terminology, a package is [also a module](https://docs.python.org/3/glossary.html#term-namespace-package).
+			- Both are represented internally by an object of type `module`.
+		- A package can contain subpackages.
+		- ### Importing
+			- Ways to import from a package:
+				- `import my_package.my_subpackage.my_module`
+				- `from my_package.my_subpackage import my_module`
+				- `from my_package.my_subpackage.my_module import my_function`
+				- `from my_package import *`
+					- Imports all the names in the `__all__` list defined in the package's `__init__.py`.
+				- `from . import my_sibling_module`
+				- `from .. import my_sibling_package`
+				- `from ..my_sibling_package import my_sibling_package_module`
+- # Compilation
+	- Python can be compiled down to bytecode, I think. I need to look more into this...
+		- See my "Checking Syntax" section below.
 - # Generators
 	- The minute you add a [`yield`](https://docs.python.org/3/reference/expressions.html#yieldexpr) statement to a function's body, calling that function returns a generator object, rather than executing the function body.
 	- There are two main methods for interacting directly with generator objects:
