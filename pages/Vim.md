@@ -105,6 +105,8 @@ My personal notes on Vim.
 					- `:cprev` - display the previous error in the error list.
 					- `:copen` - browse the error list.
 					- `:cfdo <cmd>` - run `cmd` on every error in the error list.
+				- `:reg <register>` - show the contents of the register `<register>`.
+				-
 				- @<register>  - execute the contents of <register> as an Ex command
 					- @:  - repeat the last executed Ex command
 				- :!<cmd>  - execute <cmd> in the external shell
@@ -117,6 +119,7 @@ My personal notes on Vim.
 					- Prefix an option with "no" to unset that option
 					- Suffix an option with "?" to output the current value of that option
 				- :global/<pattern>/<cmd>  - execute the command <cmd> on every line that matches <pattern>
+					- The default command is `:print`.
 				- :vglobal/<pattern>/<cmd>  - same as :global, but matches the inverse of <pattern>
 				- :<range>norm <commands>  - execute the Normal Mode commands <commands> on the specified range
 				- :scriptnames  - view the list of Vim scripts that have been executed/sourced/loaded in the current Vim session
