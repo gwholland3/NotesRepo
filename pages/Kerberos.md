@@ -2,6 +2,12 @@
 	- Sometimes referred to as `krb5`, i.e. Kerberos version 5.
 - Documentation lives [here](https://web.mit.edu/kerberos/) for the free MIT implementation of Kerberos.
 - It provides mutual authentication - both the server and the client verify each others' identities.
+- ## Why
+	- Kerberos was created to solve the problem of allowing different users or machines (more generally, "identities") to authenticate themselves with each other.
+	- There are plenty of other systems/frameworks/protocols that try to solve this problem. Using PKI as an example of an alternative, here are the tradeoffs that Kerberos makes:
+		- **Decentralization:** Kerberos is inherently centralized (everything in a realm interacts with a single KDC), while PKI is much more decentralized (trust can span network boundaries as long as there are agreed-upon root CAs). This makes Kerberos more inclined for use within bounded domains, such as corporate networks.
+		- **Revocation:** With Kerberos, due to the centralized KDC, it is much easier to disable an identity, after which any tickets they already have will expire shortly. With PKI, revoking trust of a CA is much more difficult.
+		- **Password Support:** Kerberos allows users to authenticate their identity with passwords, while PKI requires users to manage their own public-private key pairs.
 - ## Config
 	- [`krb5.conf`](https://web.mit.edu/kerberos/krb5-current/doc/admin/conf_files/krb5_conf.html) contains high-level Kerberos configuration.
 		- By default, it lives at `/etc/krb5.conf`.
