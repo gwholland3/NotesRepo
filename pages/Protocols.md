@@ -1,0 +1,2 @@
+- In technology, a protocol is usually a set of rules for how **multiple parties** interact with each other, as opposed to a general set of instructions for doing a certain thing.
+- Furthermore, most often people referring to protocols are referring to [communication protocols](https://en.wikipedia.org/wiki/Communication_protocol), i.e. a set of rules for how multiple parties **exchange information.**

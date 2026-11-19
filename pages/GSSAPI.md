@@ -1,0 +1,14 @@
+- [GSSAPI](https://en.wikipedia.org/wiki/Generic_Security_Services_Application_Programming_Interface) (General Security Services Application Programming Interface) is a **programming interface** for programs to access security services.
+- Such services include:
+	- Authentication
+	- Message integrity
+	- Encryption
+- Note that it is a programming interface, not an implementation and not a [protocol]([[Protocols]]). This means that any client wanting to use GSSAPI must have available an implementation in their programming language.
+	- For example, `libgssapi_krb5` is a C library that implements GSSAPI.
+	  id:: 6afe4b3c-a3fa-4557-9275-67d60b1c69e5
+- In other words, as a programming interface, expected usage looks like:
+	- "Oh I want to authenticate myself using GSSAPI, let me call the `totally_real_auth_function()` function"
+	- "Oh I just received authentication material from a client in GSSAPI format, let me call the `totally_real_check_auth_function()` function to authenticate the client"
+- And because it is an interface, there can be lots of different implementations under the hood.
+	- For example, if we focus on the authentication part, one implementation of GSSAPI might use [[Kerberos]] as the authentication mechanism, and another implementation might use NTLM.
+	- And another GSSAPI implementation might let the user select which underlying mechanism they want to use - but regardless, the client code can always expect the same interface functions to call.
