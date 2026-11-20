@@ -60,6 +60,9 @@ My personal notes on Vim.
 			- CTRL-w _  - maximize the height of the active window
 			- CTRL-w |  - maximize the width of the active window
 			- CTRL-c  - alternate way to exit insert mode, besides ESC
+			- `CTRL-]` - jump to definition, using tags.
+				- `g CTRL-]` - same as `CTRL-]`, but shows a menu if there are multiple options instead of picking one to jump to.
+				- `CTRL-t` - jump to the previous spot in the tag stack.
 		- Motions:
 			- gt  - go to the next tab page
 			- gT  - go to the previous tab page
@@ -106,9 +109,9 @@ My personal notes on Vim.
 					- `:copen` - browse the error list.
 					- `:cfdo <cmd>` - run `cmd` on every error in the error list.
 				- `:reg <register>` - show the contents of the register `<register>`.
-				-
 				- @<register>  - execute the contents of <register> as an Ex command
 					- @:  - repeat the last executed Ex command
+				- `:autocmd <event> <cmd>` - set up `<cmd>` as a command to automatically execute whenever `<event>` occurs.
 				- :!<cmd>  - execute <cmd> in the external shell
 				- :<range>!<cmd>  - filter the lines specified by <range> through the shell command <cmd>, overwriting the result
 				- :read <filename>  - paste the contents of <filename> into the current buffer (e.g. below the cursor line)
@@ -144,6 +147,12 @@ My personal notes on Vim.
 				- :qall  - Exit Vim, even if there are multiple buffers open
 				- :let <var>=<val>  - assign the variable <var> to the value <val>
 				- :echo <var> - print the value of the variable <var>
+				- `:tag <tag>` - same as `CTRL-]`.
+				- `:tjump <tag>` - same as `g CTRL-]`.
+				- `:pop` - same as `CTRL-t`.
+				- `:tselect` - bring up a menu of tags that match the last tag search.
+				- `:tnext` - jump to the next tag matching the last tag search.
+					- Also has `:tprev`, `:tfirst`, and `:tlast`.
 				- File/buffer navigation:
 					- :first  - switches to the first file being edited
 					- :last  - switches to the last file being edited
