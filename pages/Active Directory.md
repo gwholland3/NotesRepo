@@ -1,0 +1,12 @@
+- [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) (AD) is a service developed by Microsoft that acts as a directory for a computer network.
+	- In this sense, a "directory" means it stores information about a variety of entities on that network (e.g. users, computers, services, etc), and provides that information to other systems.
+- Some specific functions:
+	- Authentication and authorization: it's a central place to keep identities, credentials, and group memberships, so that every system on the network doesn't have to maintain its own database.
+	- Naming and discovery: other systems can use it to find resources, such as which server provides a service.
+- # Architecture
+	- There is a single domain controller that is in charge of AD services.
+- # gMSA
+	- A gMSA (group Managed Service Account) is a type of account in AD that is used for representing services.
+	- With a gMSA account, AD manages the account password (generation and periodic rotation) - no human ever needs to know it.
+	- *Other* AD accounts are allowed to retrieve the password using the LDAP protocol, so that they can temporarily act as the service account.
+	- A gMSA account is in contrast to a plain MSA account, which only allows a single base AD account to retrieve its password and act as that account.
