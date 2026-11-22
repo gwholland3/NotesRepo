@@ -1,0 +1,9 @@
+- [Zigbee](https://en.wikipedia.org/wiki/Zigbee) is a set of protocols/specifications for a low-power wireless mesh network.
+- It defines the link layer (device to device), the network layer (relaying messages through devices), and the application layer (e.g. "turn on the light").
+- The [Zigbee specification](https://csa-iot.org/all-solutions/zigbee/) is maintained by the non-profit Connectivity Standards Alliance.
+- Home Assistant also has [its own page](https://www.home-assistant.io/connectivity/zigbee/) about Zigbee.
+- # Architecture
+	- Every Zigbee network must have one "coordinator" device.
+	- Because Zigbee uses its own network protocol, the coordinator is also responsible for bridging a Zigbee network with an IP network, for example to connect Zigbee devices to a home automation server.
+	- There are also "router" devices, which are expected to have wall power and can relay messages.
+	- Finally you have "end" devices, which are typically battery-powered.

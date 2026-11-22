@@ -3,6 +3,8 @@
 	- Absolute humidity: the mass of water vapor per volume of air.
 	- Relative humidity: a ratio of the current absolute humidity to the maximum absolute humidity, given the same temperature.
 	- Specific humidity: the mass of water vapor per mass of air, in a given volume.
+- ## Living
+	- The EPA [recommends](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home#tab-6) that you keep indoors humidity below 60%, ideally between 30-50%, to prevent mold growth.
 - ## Hygrometers
 	- A [hygrometer](https://en.wikipedia.org/wiki/Hygrometer) is an instrument that measures humidity.
 - ## Dehumidifiers
@@ -10,3 +12,5 @@
 	- There are various types of mechanisms that dehumidifiers can use to function:
 		- Thermal condensation: air is drawn across a cold surface, where it condensates and is removed.
 		- Absorption: a desiccant (moisture-absorbing material) absorbs water from the air, and the water is later removed.
+	- ### Passive
+		- Calcium chloride is a salt that passively pulls moisture from the air and absorbs it.
