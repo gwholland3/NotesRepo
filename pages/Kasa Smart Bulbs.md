@@ -1,6 +1,11 @@
 - Amazon product page: [link](https://www.amazon.com/dp/B08TB8Z5HF)
-- Maybe user guide: [link](https://www.tp-link.com/us/user-guides/kl1xx_v2/)
-- I have three bulbs. Model is KL125P4.
+- I have four bulbs. Model is KL125P4.
+	- Some user guides:
+		- Grok-recommended user guide from TP-Link website: https://www.tp-link.com/us/document/44899/
+		- Another user guide from TP-Link website: https://www.tp-link.com/us/user-guides/kl1xx_v2/
+		- "User Guide" from Amazon product page: [link](https://m.media-amazon.com/images/I/C1uBgitjWWS.pdf)
+		- "User Manual" from Amazon product page: [link](https://m.media-amazon.com/images/I/A1CW6GZzSOL.pdf)
+	- Support page: [link](https://www.tp-link.com/us/support/download/kl125/)
 - Here are their WiFi SSIDs:
 	- TP-LINK_Smart Bulb_7B01
 	- TP-LINK_Smart Bulb_5E97

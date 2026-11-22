@@ -1,4 +1,15 @@
-# Species
+# Taxonomy
+	- There are eight levels/ranks in [taxonomy](https://en.wikipedia.org/wiki/Taxonomic_rank):
+		- Domain
+		- Kingdom
+		- Phylum
+		- Class
+		- Order
+		- Family
+		- Genus
+		- Species
+	- All plants fall under the Eukarya domain and the Plantae kingdom.
+- # Species
 	- ## [Pothos](https://en.wikipedia.org/wiki/Epipremnum_aureum)
 		- Scientific name: Epipremnum aureum
 		- Light requirement: low to medium
@@ -36,6 +47,19 @@
 		- Requires specialty fertilizer for palm trees; needs more magnesium than other plants
 			- A pinch of epsom salt can be used as an alternate source of magnesium
 		- Purifies air
+	- ## Arabian Sunset
+		- Scientific name: Begonia 'Arabian Sunset'.
+	- ## Cacti
+		- Cacti like lots of sunlight and don't need much water.
+		- ## [Cinnamon Bunny Ears](https://en.wikipedia.org/wiki/Opuntia_rufida)
+			- Scientific name: Opuntia rufida.
+		- ## Bunny Ears
+			- Also known as "Honey Mike".
+			- Scientific name: Opuntia microdasys
+		- ## Tacinga Inamoena
+			- Wikipedia: https://en.wikipedia.org/wiki/Tacinga_inamoena
+		- ## [Roadkill Cactus](https://en.wikipedia.org/wiki/Consolea_rubescens)
+			- Scientific name: Consolea rubescens.
 - # Watering
 	- Ceramic stake
 		- You stick an unglazed ceramic cone into the soil, tip side down.

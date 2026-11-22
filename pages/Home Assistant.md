@@ -68,25 +68,34 @@
 	- For now I've just made my own janky automation that does the bare minimum I want.
 - ### Software
 	- Home Assistant software consists of four main components:
-		- Home Assistant Operating System: a minimal operating system designed to run on single-board computers and support the Home Assistant ecosystem
-		- Home Assistant Supervisor: a program that manages the rest of the Home Assistant software (e.g. responsible for installing/updating)
-		- Home Assistant Core: the main program that provides Home Assistant functionality
-		- Apps: add-ons to Home Assistant Core
+		- Home Assistant Operating System: a minimal operating system designed to run on single-board computers and support the Home Assistant ecosystem.
+			- Pretty much everything on top of it runs inside a Docker container, so handling Docker is the bulk of what HA OS is responsible for.
+		- Home Assistant Supervisor: a program that manages the rest of the Home Assistant software (e.g. responsible for installing/updating).
+			- It runs in its own Docker container on HA OS.
+		- Home Assistant Core: the main program that provides Home Assistant functionality.
+			- It runs in its own Docker container on HA OS.
+			- Integrations are pieces of software that plug into HA Core and allow it to connect to additional devices or services. They create devices/entities.
+		- Apps: separate programs that can provide arbitrary functionality to your Home Assistant server.
+			- Each app runs in its own Docker container on HA OS.
+			- Apps were formerly referred to as "add-ons".
 - ### Concepts and Terminology
 	- Documentation: [concepts and terminology](https://www.home-assistant.io/getting-started/concepts-terminology/)
-	- A "device" is simple, it just represents a device.
-	- Each device can have any number of "entities", which basically represent distinct input or output data associated with that device.
+	- A **device** is simple, it just represents a device. The breakdown of what constitute separate devices is a bit arbitrary.
+		- For example, you could either represent an LED strip as a single device, or you could represent each LED on the strip as its own device.
+	- Each device can have any number of **entities**, which basically represent distinct input or output data associated with that device.
 		- You can think of an entity as basically just a key-value pair. Note that in addition to its main value (also called its "[state](https://www.home-assistant.io/docs/templating/states/)"), a single entity can also have any number of key-value "attributes".
 			- For example, a temperature sensor device may have an entity representing its temperature reading. The state would be the temperature value, but it could also have a `unit_of_measurement` attribute that maps to `degC` or `degF`.
-		- A "helper" is a virtual entity - it represents data just like a normal entity does, but it does not need to be tied to a physical device.
-	- You can group devices into "areas", for example to represent all devices in a living room. And areas can be grouped into "floors", to represent different floors of a building.
-	- An automation is a collection of actions that are kicked off by a trigger event, as long as certain preconditions hold.
-	- A script is similar to an automation, but doesn't have a trigger. It allows you to manually trigger a group of actions, or to have multiple automations reference the same group of actions so as not to repeat yourself.
-	- A scene is a predefined bulk configuration of a bunch of devices; for example a "movie night" scene might automatically close blinds and dim lights in a living room.
-	- I don't quite understand the difference between "add-ons" and "integrations" yet…
-	- A "dashboard" is a view composed of multiple "cards". A card can show device data or offer access to a device control.
+		- A **helper** is a virtual entity - it represents data just like a normal entity does, but it does not need to be tied to a physical device.
+	- You can group devices into **areas**, for example to represent all devices in a living room. And areas can be grouped into **floors**, to represent different floors of a building.
+	- An **automation** is a collection of actions that are kicked off by a trigger event, as long as certain preconditions hold.
+	- A **script** is similar to an automation, but doesn't have a trigger. It allows you to manually trigger a group of actions, or to have multiple automations reference the same group of actions so as not to repeat yourself.
+	- A [**blueprint**](https://www.home-assistant.io/docs/blueprint/) is a genericized automation that you can instantiate.
+	- A **scene** is a predefined bulk configuration of a bunch of devices; for example a "movie night" scene might automatically close blinds and dim lights in a living room.
+	- A **dashboard** is what you would expect it to be.
+		- Each dashboard contains one or more **views**, which are tabs at the top of the dashboard.
+		- Within a single view, you can place multiple **cards**. A card can show device data or offer access to a device control.
+			- Cards can also be grouped into **sections**.
 	- There are several default dashboards available, which are listed in the left sidebar of the Home Assistant UI.
-	- A "[blueprint](https://www.home-assistant.io/docs/blueprint/)" is a genericized automation that you can instantiate.
 - ### Configuration
 	- Most configuration can be done through the UI, but some of it must be done by editing the [`configuration.yaml`](https://www.home-assistant.io/docs/configuration/) file directly.
 	- If you use the [File Editor](https://www.home-assistant.io/common-tasks/os/#installing-and-using-the-file-editor-app) app to interact with `configuration.yaml`, it should be mounted at `/homeassistant/configuration.yaml` in the app by default.

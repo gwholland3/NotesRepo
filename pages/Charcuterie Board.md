@@ -1,0 +1,12 @@
+- Cheese:
+	- Brie
+	- Gouda
+	- Boursin
+- Fruit:
+	- Apples
+	- Grapes
+	- Dried apricots
+- Salami
+- Nuts in a bowl
+- Crackers
+- Jam or jelly
