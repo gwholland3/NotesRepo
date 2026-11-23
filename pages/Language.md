@@ -8,11 +8,12 @@
 		- The Arabic script is an example of an abjad.
 - ## Spoken Language
 	- A [phoneme](https://en.wikipedia.org/wiki/Phoneme) is a single/atomic speech sound in a spoken language.
-- ## Language Learning
+- ## [Language Learning](https://en.wikipedia.org/wiki/Language_acquisition)
 	- Good resource: https://www.reddit.com/r/languagelearning/
 	- One strategy is called [crosstalk](https://www.dreaming.com/blog-posts/crosstalk).
 		- You find someone who is a native in the language you want to learn, and you talk with them, but both of you are only speaking your native language.
-	- Another strategy is called comprehensible input.
-		- This focuses on providing input to you in the target language that is as comprehensible, or inherently understandable, as possible.
-		- "Automatic Language Growth" might be related to comprehensible input...
+	- Another strategy is called [comprehensible input](https://en.wikipedia.org/wiki/Input_hypothesis).
+		- This focuses on providing *lots* of input to you in the target language that is as comprehensible, or inherently understandable, as possible.
 		- Good Reddit post on comprehensible input: https://www.reddit.com/r/languagelearning/comments/1hs1yrj/2_years_of_learning_random_redditors_thoughts/
+		- [Automatic Language Growth](https://en.wikipedia.org/wiki/J._Marvin_Brown#Automatic_Language_Growth) is an even stricter variant of comprehensible input - it says that not only should you be listening to lots of input, but you should not try to consciously do output of any kind for hundreds of hours.
+			- E.g. no speaking, translating, or studying grammar.
