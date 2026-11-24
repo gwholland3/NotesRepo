@@ -1,4 +1,6 @@
-# HTTP Response Status Codes
+- [HTTP](https://en.wikipedia.org/wiki/HTTP) (**H**yper**t**ext **T**ransfer **P**rotocol) is a protocol for transferring web pages.
+- Every HTTP message contains several [headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields).
+- # HTTP Response Status Codes
 	- Source of truth: [IANA](https://www.iana.org/assignments/http-status-codes)
 	- ## 403
 		- Means "forbidden" - i.e. usually your auth is bad.

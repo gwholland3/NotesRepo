@@ -54,3 +54,16 @@
 	- Here are some ways that Ansible is actually executed for a managed node:
 		- `ansible-playbook`: run a playbook.
 		- `ansible`: run a single module against managed nodes that match a pattern.
+- # Practical
+	- See a graph of inventory group membership:
+	  ```
+	  ansible-inventory -i my_inventory_directory/ --graph my_inventory_group
+	  ```
+	- Check the syntax of a playbook:
+	  ```
+	  ansible-playbook -i my_inventory_directory/ my_playbook.yaml --syntax-check
+	  ```
+	- See what a playbook would do without actually running it:
+	  ```
+	  ansible-playbook -i my_inventory_directory/ -kK my_playbook.yaml --check --diff
+	  ```
