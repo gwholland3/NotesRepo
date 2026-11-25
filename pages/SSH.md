@@ -2,6 +2,9 @@
 - [OpenSSH](https://en.wikipedia.org/wiki/OpenSSH) is one of the most popular implementations of the SSH protocol. It is maintained by the OpenBSD project under a BSD license.
 - # Architecture
 	- To achieve an SSH connection, you need a client and a server.
+- # Authentication
+	- SSH can use password-based authentication to connect to a remote server as a specific user.
+	- It can also use public-private key pairs.
 - # Things To Remember
 	- To disconnect from an SSH session, even one that is hanging, you can enter `~+.`
 		- See here for more info: https://www.man7.org/linux/man-pages/man1/ssh.1.html#ESCAPE_CHARACTERS
