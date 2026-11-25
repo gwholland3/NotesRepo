@@ -103,11 +103,15 @@ My personal notes on Vim.
 			- Commands:
 				- `:substitute/<pattern>/<string>/<flags>` - substitute every match of `<pattern>` with `<string>`, respecting the provided `<flags>`.
 					- `:%s///gn` - use case to show the number of matches there are for the last-searched pattern.
-				- `:vimgrep /<pattern>/<flags> <files>` - search for `<pattern>` in `<files>` and populate the error list with the matches.
-					- `:cnext` - display the next error in the error list.
-					- `:cprev` - display the previous error in the error list.
-					- `:copen` - browse the error list.
-					- `:cfdo <cmd>` - run `cmd` on every error in the error list.
+				- `:vimgrep /<pattern>/<flags> <files>` - search for `<pattern>` in `<files>` and populate the quickfix list with the matches.
+					- `:cnext` - display the next line in the quickfix list.
+					- `:cprev` - display the previous line in the quickfix list.
+					- `:copen` - browse the quickfix list.
+					- `:cdo <cmd>` - run `cmd` on every line in the quickfix list.
+					- `:cfdo <cmd>` - run `cmd` on every file listed in the quickfix list.
+					- Replace `c` with `l` to interact with the location list instead (the location list is local to the current window, and the quickfix list is global for the Vim session).
+					- `:colder` - view a previous version of the quickfix list.
+					- `:cnewer` - view a more recent version of the quickfix list.
 				- `:reg <register>` - show the contents of the register `<register>`.
 				- @<register>  - execute the contents of <register> as an Ex command
 					- @:  - repeat the last executed Ex command
