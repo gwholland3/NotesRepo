@@ -1,4 +1,3 @@
 - [Bitwarden](https://en.wikipedia.org/wiki/Bitwarden) is a password management tool/service.
 - Its official website is [here](https://bitwarden.com/).
-- Bitwarden organizes secrets into "vaults"
-- Within a vault,
+- Bitwarden organizes secrets into "vaults".
