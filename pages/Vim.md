@@ -112,6 +112,7 @@ My personal notes on Vim.
 					- Replace `c` with `l` to interact with the location list instead (the location list is local to the current window, and the quickfix list is global for the Vim session).
 					- `:colder` - view a previous version of the quickfix list.
 					- `:cnewer` - view a more recent version of the quickfix list.
+					- `<files>` can be filenames, globs, or even `##` to represent all the files in the argument list.
 				- `:reg <register>` - show the contents of the register `<register>`.
 				- @<register>  - execute the contents of <register> as an Ex command
 					- @:  - repeat the last executed Ex command
@@ -187,6 +188,11 @@ My personal notes on Vim.
 			- CTRL-r<reg>  - access a Vim register
 				- `=` refers to the *expression register*, which allows you to evaluate Vim script
 			- CTRL-v<code>  - insert a character by its (Unicode?) code
+			- Autocompletion:
+				- `CTRL-n` - show the autocomplete menu, or move to the next option in the menu.
+				- `CTRL-p` - show the autocomplete menu, or move to the previous option in the menu.
+				- `CTRL-y` - accept the currently-selected option in the menu.
+				- `CTRL-e` - exit autocompletion.
 		- Visual mode:
 			- o  - jump to the other end of the highlighted text, switching which end is fixed and which end follows your cursor
 			- U  - convert the selected characters to uppercase
